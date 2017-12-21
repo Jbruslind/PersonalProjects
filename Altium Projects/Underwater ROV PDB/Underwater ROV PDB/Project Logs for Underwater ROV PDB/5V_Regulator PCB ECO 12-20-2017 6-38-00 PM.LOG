@@ -1,0 +1,109 @@
+Removed Pin From Net: NetName=1 Pin=Cin_1-1
+Removed Pin From Net: NetName=0 Pin=Cin_1-2
+Removed Pin From Net: NetName=2 Pin=Cout_1-1
+Removed Pin From Net: NetName=0 Pin=Cout_1-2
+Removed Pin From Net: NetName=0 Pin=GND1-1
+Removed Pin From Net: NetName=0 Pin=GND-1
+Removed Pin From Net: NetName=2 Pin=VOUT-1
+Change Component Comment : Designator=Creg Old Comment=Comment New Comment=C0603C105Z8VACTU
+Change Component Comment : Designator=Ren Old Comment=Comment New Comment=CRCW040210K5FKED
+Change Component Comment : Designator=Rpgood Old Comment=Comment New Comment=CRCW0402100KFKED
+Change Component Comment : Designator=Rfbt Old Comment=Comment New Comment=ERJ-6ENF1333V
+Change Component Comment : Designator=Cff Old Comment=Comment New Comment=GCM0335C1E100JD03D
+Change Component Comment : Designator=Cin_2 Old Comment=Comment New Comment=GRM21BR61C106KE15L
+Change Component Comment : Designator=Css Old Comment=Comment New Comment=GRM033R61A822KA01D
+Change Component Comment : Designator=Cbst Old Comment=Comment New Comment=GRM155R61A104KA01D
+Change Component Comment : Designator=Cout_2 Old Comment=Comment New Comment=LMK212BJ226MG-T
+Change Component Comment : Designator=Rfbb Old Comment=Comment New Comment=RC0603FR-0724KL
+Change Component Comment : Designator=U1 Old Comment=Comment New Comment=TPS54526PWPR
+Change Component Comment : Designator=Vin Old Comment=Comment New Comment=WB_BATTERY
+Change Component Comment : Designator=L1 Old Comment=Comment New Comment=XAL5030-332MEB
+Change component parameters: Designator = "Cbst"; UniqueID = "\XEYVJHTL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "MuRata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM155R61A104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "GRM155R61A104KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cff"; UniqueID = "\VMDYEFPK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "MuRata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "GCM0335C1E100JD03D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "GCM0335C1E100JD03D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cin_2"; UniqueID = "\WKLNIKDP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "MuRata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM21BR61C106KE15L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "GRM21BR61C106KE15L"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Cout_2"; UniqueID = "\TGKNNEUJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "LMK212BJ226MG-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "LMK212BJ226MG-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Creg"; UniqueID = "\XHVMNBEN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Kemet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "C0603C105Z8VACTU"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "C0603C105Z8VACTU"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Css"; UniqueID = "\EKUFYPEF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "MuRata"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM033R61A822KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "GRM033R61A822KA01D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "8.2nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1"; UniqueID = "\PGUGFKFK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Coilcraft"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "XAL5030-332MEB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "XAL5030-332MEB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3.3uH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Ren"; UniqueID = "\AUUTOMOV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Vishay-Dale"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "CRCW040210K5FKED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "CRCW040210K5FKED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10.5k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbb"; UniqueID = "\MJPUXXBO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Yageo America"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-0724KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "RC0603FR-0724KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "24k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbt"; UniqueID = "\XEKPGEGS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Panasonic"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ERJ-6ENF1333V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "ERJ-6ENF1333V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "133k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rpgood"; UniqueID = "\CVTXHGWM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Vishay-Dale"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "CRCW0402100KFKED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "CRCW0402100KFKED"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U1"; UniqueID = "\XBLOTEQV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "TPS54526PWPR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "TPS54526PWPR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "N/A"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Vin"; UniqueID = "\LSBUDSWV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer Name"; Value = "WB_BATTERY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "WB_BATTERY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "WB_BATTERY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "N/A"; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=1 New Net Name=NetCin_1
+Change Net Name : Old Net Name=2 New Net Name=NetCff_1
+Change Net Name : Old Net Name=4 New Net Name=NetCss_1
+Change Net Name : Old Net Name=5 New Net Name=NetCreg_1
+Change Net Name : Old Net Name=6 New Net Name=NetCff_2
+Change Net Name : Old Net Name=7 New Net Name=NetRen_1
+Change Net Name : Old Net Name=8 New Net Name=NetCbst_2
+Change Net Name : Old Net Name=9 New Net Name=NetRpgood_1
+Change Net Name : Old Net Name=10 New Net Name=NetCbst_1
+Added Class: Name=5V_Regulator
+Added Room: Name=5V_Regulator

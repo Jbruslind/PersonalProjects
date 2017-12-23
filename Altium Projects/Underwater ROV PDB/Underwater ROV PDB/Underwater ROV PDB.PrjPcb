@@ -39,6 +39,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=Top_Level_Underwater_ROV_PDB.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BJOFGIYS
+
+[Document2]
 DocumentPath=5V_Regulator\5V_Regulator.schdoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -55,7 +72,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UNSUWQOO
 
-[Document2]
+[Document3]
 DocumentPath=5v_regulator\5V_Regulator.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -71,23 +88,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UNHYNLJI
-
-[Document3]
-DocumentPath=Top_Level_Underwater_ROV_PDB.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BJOFGIYS
 
 [Configuration1]
 Name=Sources

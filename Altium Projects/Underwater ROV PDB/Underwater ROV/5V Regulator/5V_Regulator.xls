@@ -1,13 +1,13 @@
-Part	Manufacturer	Part Number	Quantity	Price	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value	Footprint
-"Cbst"	"Kemet"	"C0603C104M3VACTU"	"1"	"0.01"	"Cap"	"100nF"	"ESR"	"1mOhm"	""	""	"0603"
-"Cin"	"MuRata"	"GRM31CR71E106KA12L"	"2"	"0.06"	"Cap"	"10uF"	"ESR"	"4.366mOhm"	""	""	"1206_190"
-"Cinx"	"Kemet"	"C0603C104M3VACTU"	"1"	"0.01"	"Cap"	"100nF"	"ESR"	"1mOhm"	""	""	"0603"
-"Cout"	"MuRata"	"GRM31CR61A476KE15L"	"1"	"0.16"	"Cap"	"47uF"	"ESR"	"3.709mOhm"	""	""	"1206_190"
-"Creg"	"Kemet"	"C0603C105Z8VACTU"	"1"	"0.01"	"Cap"	"1uF"	"ESR"	"1mOhm"	""	""	"0603"
-"Css"	"Kemet"	"C0603C752J3GAC7867"	"1"	"0.1"	"Cap"	"7.5nF"	"ESR"	"0Ohm"	""	""	"0603"
-"L1"	"Bourns"	"SRP1040-3R3M"	"1"	"0.61"	"L"	"3.3uH"	"DCR"	"0.01Ohm"	"IDC"	"10A"	"SRP1040"
-"Ren"	"Vishay-Dale"	"CRCW040210K2FKED"	"1"	"0.01"	"Resistance"	"10.2kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"Rfbb"	"Vishay-Dale"	"CRCW040222K1FKED"	"1"	"0.01"	"Resistance"	"22.1kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"Rfbt"	"Vishay-Dale"	"CRCW0402121KFKED"	"1"	"0.01"	"Resistance"	"121kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"U1"	"Texas Instruments"	"TPS54627DDAR"	"1"	"1.05"	""	""	""	""	""	""	"R-PDSO-G8"
-"Cff"	"Kemet"	"C0603C150M8GACTU"	"1"	"0.01"	"Cap"	"15pF"	"ESR"	"0Ohm"	""	""	"0603"
+Part,Manufacturer,Part Number,Quantity,Price,Attribute 1 Name,Attribute 1 Value,Attribute 2 Name,Attribute 2 Value,Attribute 3 Name,Attribute 3 Value,Footprint,
+Cbst,Kemet,C0603C104M3VACTU,1,0.01,Cap,100nF,ESR,1mOhm,,,603,
+Cin,MuRata,GRM31CR71E106KA12L,2,0.06,Cap,10uF,ESR,4.366mOhm,,,1206_190,3216
+Cinx,Kemet,C0603C104M3VACTU,1,0.01,Cap,100nF,ESR,1mOhm,,,603,
+Cout,MuRata,GRM31CR61A476KE15L,1,0.16,Cap,47uF,ESR,3.709mOhm,,,1206_190,
+Creg,Kemet,C0603C105Z8VACTU,1,0.01,Cap,1uF,ESR,1mOhm,,,603,
+Css,Kemet,C0603C752J3GAC7867,1,0.1,Cap,7.5nF,ESR,0Ohm,,,603,
+L1,Bourns,SRP1040-3R3M,1,0.61,L,3.3uH,DCR,0.01Ohm,IDC,10A,SRP1040,
+Ren,Vishay-Dale,CRCW040210K2FKED,1,0.01,Resistance,10.2kOhm,Tolerance,1%,Power,0.063W,402,
+Rfbb,Vishay-Dale,CRCW040222K1FKED,1,0.01,Resistance,22.1kOhm,Tolerance,1%,Power,0.063W,402,
+Rfbt,Vishay-Dale,CRCW0402121KFKED,1,0.01,Resistance,121kOhm,Tolerance,1%,Power,0.063W,402,
+U1,Texas Instruments,TPS54627DDAR,1,1.05,,,,,,,R-PDSO-G8,
+Cff,Kemet,C0603C150M8GACTU,1,0.01,Cap,15pF,ESR,0Ohm,,,603,

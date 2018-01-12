@@ -1,10 +1,10 @@
-Part	Manufacturer	Part Number	Quantity	Price	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value	Footprint
-"Cbst"	"AVX"	"08053C104KAT2A"	"1"	"0.01"	"Cap"	"100nF"	"ESR"	"0.28Ohm"	""	""	"0805"
-"Cin"	"MuRata"	"GRM31CR71E106KA12L"	"2"	"0.06"	"Cap"	"10uF"	"ESR"	"4.366mOhm"	""	""	"1206_190"
-"Cout"	"Taiyo Yuden"	"JMK212BJ476MG-T"	"1"	"0.13"	"Cap"	"47uF"	"ESR"	"1mOhm"	""	""	"0805"
-"Css"	"MuRata"	"GRM033R61A822KA01D"	"1"	"0.01"	"Cap"	"8.2nF"	"ESR"	"1mOhm"	""	""	"0201"
-"L1"	"Bourns"	"SRN8040-2R2Y"	"1"	"0.23"	"L"	"2.2uH"	"DCR"	"0.013Ohm"	"IDC"	"6.3A"	"SRN8040"
-"Rfbb"	"Vishay-Dale"	"CRCW040210K2FKED"	"1"	"0.01"	"Resistance"	"10.2kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"Rfbt"	"Vishay-Dale"	"CRCW040233K2FKED"	"1"	"0.01"	"Resistance"	"33.2kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"Rpg"	"Vishay-Dale"	"CRCW0402100KFKED"	"1"	"0.01"	"Resistance"	"100kOhm"	"Tolerance"	"1%"	"Power"	"0.063W"	"0402"
-"U1"	"Texas Instruments"	"TPS563210DDFR"	"1"	"0.66"	""	""	""	""	""	""	"DDF0008A"
+Part,Manufacturer,Part Number,Quantity,Price,Attribute 1 Name,Attribute 1 Value,Attribute 2 Name,Attribute 2 Value,Attribute 3 Name,Attribute 3 Value,Footprint,
+Cbst,AVX,08053C104KAT2A,1,0.01,Cap,100nF,ESR,0.28Ohm,,,805,
+Cin,MuRata,GRM31CR71E106KA12L,2,0.06,Cap,10uF,ESR,4.366mOhm,,,1206_190,3216
+Cout,Taiyo Yuden,JMK212BJ476MG-T,1,0.13,Cap,47uF,ESR,1mOhm,,,805,
+Css,MuRata,GRM033R61A822KA01D,1,0.01,Cap,8.2nF,ESR,1mOhm,,,201,603
+L1,Bourns,SRN8040-2R2Y,1,0.23,L,2.2uH,DCR,0.013Ohm,IDC,6.3A,SRN8040,
+Rfbb,Vishay-Dale,CRCW040210K2FKED,1,0.01,Resistance,10.2kOhm,Tolerance,1%,Power,0.063W,402,
+Rfbt,Vishay-Dale,CRCW040233K2FKED,1,0.01,Resistance,33.2kOhm,Tolerance,1%,Power,0.063W,402,
+Rpg,Vishay-Dale,CRCW0402100KFKED,1,0.01,Resistance,100kOhm,Tolerance,1%,Power,0.063W,402,
+U1,Texas Instruments,TPS563210DDFR,1,0.66,,,,,,,DDF0008A,

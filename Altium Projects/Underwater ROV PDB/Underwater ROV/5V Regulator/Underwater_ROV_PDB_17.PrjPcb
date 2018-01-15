@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=UTTYSKIJ
 
 [Document2]
-DocumentPath=3_3V Regulator.SchDoc
+DocumentPath=..\12V Regulator\3_3V Regulator.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -71,6 +71,44 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MRVVGGJS
+
+[Document3]
+DocumentPath=..\12V Regulator\12V Regulator.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=2
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VWPAYQJT
+
+[Document4]
+DocumentPath=..\Underwater_ROV_PDB_17.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=THNPIPUK
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Design Rule Check - Underwater_ROV_PDB_17.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources

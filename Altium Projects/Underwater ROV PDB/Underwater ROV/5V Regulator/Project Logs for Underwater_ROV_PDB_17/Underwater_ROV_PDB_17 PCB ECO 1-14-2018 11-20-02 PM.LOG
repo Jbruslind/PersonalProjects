@@ -1,0 +1,18 @@
+Added Component: Designator=U3(PCBComponent_1)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Net*3_2 Pin=U3-1
+Added Pin To Net: NetName=Net*3_4 Pin=U3-2
+Added Pin To Net: NetName=NetP2_2 Pin=U3-3
+Added Pin To Net: NetName=Net*3_4 Pin=U3-4
+Added Pin To Net: NetName=NetP3_4 Pin=U3-5
+Added Pin To Net: NetName=NetP3_3 Pin=U3-6
+Added Pin To Net: NetName=NetP3_2 Pin=U3-7
+Added Pin To Net: NetName=NetP3_1 Pin=U3-8
+Added Pin To Net: NetName=GND Pin=U3-9
+Added Pin To Net: NetName=GND Pin=U3-10
+Added Pin To Net: NetName=NetP2_1 Pin=U3-11
+Added Pin To Net: NetName=12V Pin=U3-12
+Added Pin To Net: NetName=12V Pin=U3-13
+Added Pin To Net: NetName=NetP1_2 Pin=U3-14
+Added Pin To Net: NetName=NetP1_1 Pin=U3-15
+Added Member To Class: ClassName=12V Regulator Member=Component U3 Q48SC12033

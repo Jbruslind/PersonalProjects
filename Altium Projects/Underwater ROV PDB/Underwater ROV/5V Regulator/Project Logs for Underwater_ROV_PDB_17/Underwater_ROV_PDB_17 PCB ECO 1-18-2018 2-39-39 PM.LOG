@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=SMB_ALERT Pin=P3-2
+Removed Pin From Net: NetName=DATA Pin=P3-3
+Removed Pin From Net: NetName=CLOCK Pin=P3-4
+Change Component Footprint: Designator=P3 Old Footprint=HDR1X4 New Footprint=HDR1X5
+Change Component Comment : Designator=P3 Old Comment=Header 4 New Comment=Header 5
+Added Component: Designator=*(PCBComponent_1)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Net*3_2 Pin=*-1
+Added Pin To Net: NetName=Net*3_4 Pin=*-2
+Added Pin To Net: NetName=CASE Pin=*-3
+Added Pin To Net: NetName=Net*3_4 Pin=*-4
+Added Pin To Net: NetName=GND Pin=*-5
+Added Pin To Net: NetName=GND Pin=*-6
+Added Pin To Net: NetName=TRIM Pin=*-7
+Added Pin To Net: NetName=12V Pin=*-8
+Added Pin To Net: NetName=12V Pin=*-9
+Added Pin To Net: NetName=NetP3_1 Pin=*-11
+Added Pin To Net: NetName=DATA Pin=*-12
+Added Pin To Net: NetName=SMB_ALERT Pin=*-13
+Added Pin To Net: NetName=CLOCK Pin=*-14
+Added Pin To Net: NetName=ADDR1 Pin=*-15
+Added Pin To Net: NetName=ADDR0 Pin=*-16
+Added Pin To Net: NetName=SMB_ALERT Pin=P3-3
+Added Pin To Net: NetName=DATA Pin=P3-4
+Added Pin To Net: NetName=CLOCK Pin=P3-5
+Change Net Name : Old Net Name=NetP3_1 New Net Name=DGND
+Added Pin To Net: NetName=Net*_10 Pin=*-10
+Added Pin To Net: NetName=Net*_10 Pin=P3-2
+Added Net: Name=Net*_10
+Added Member To Class: ClassName=12V Regulator Member=Component * Q48SC12033

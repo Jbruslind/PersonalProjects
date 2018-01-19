@@ -1,0 +1,28 @@
+Change Component Footprint: Designator=P3 Old Footprint=HDR1X5 New Footprint=HDR1X4
+Change Component Comment : Designator=P3 Old Comment=Header 5 New Comment=Header 4
+Added Component: Designator=U3(PCBComponent_1)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Net*3_2 Pin=U3-1
+Added Pin To Net: NetName=Net*3_4 Pin=U3-2
+Added Pin To Net: NetName=Net*_3 Pin=U3-3
+Added Pin To Net: NetName=Net*3_4 Pin=U3-4
+Added Pin To Net: NetName=Net*_12 Pin=U3-5
+Added Pin To Net: NetName=Net*_13 Pin=U3-6
+Added Pin To Net: NetName=Net*_10 Pin=U3-7
+Added Pin To Net: NetName=Net*_11 Pin=U3-8
+Added Pin To Net: NetName=GND Pin=U3-9
+Added Pin To Net: NetName=GND Pin=U3-10
+Added Pin To Net: NetName=Net*_7 Pin=U3-11
+Added Pin To Net: NetName=12V Pin=U3-12
+Added Pin To Net: NetName=12V Pin=U3-13
+Added Pin To Net: NetName=Net*_15 Pin=U3-14
+Added Pin To Net: NetName=Net*_16 Pin=U3-15
+Change Net Name : Old Net Name=Net*_3 New Net Name=CASE
+Change Net Name : Old Net Name=Net*_7 New Net Name=TRIM
+Change Net Name : Old Net Name=Net*_10 New Net Name=SMB_ALERT
+Change Net Name : Old Net Name=Net*_11 New Net Name=NetP3_1
+Change Net Name : Old Net Name=Net*_12 New Net Name=CLOCK
+Change Net Name : Old Net Name=Net*_13 New Net Name=DATA
+Change Net Name : Old Net Name=Net*_15 New Net Name=ADDR1
+Change Net Name : Old Net Name=Net*_16 New Net Name=ADDR0
+Added Member To Class: ClassName=12V Regulator Member=Component U3 Q48SC12033

@@ -1,0 +1,102 @@
+Added Component: Designator=1A(Arduino nano)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P7(HDR1X15)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P8(HDR1X15)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=1A-3
+Added Pin To Net: NetName=12V Pin=1A-29
+Added Pin To Net: NetName=12V Pin=P7-1
+Added Pin To Net: NetName=GND Pin=P8-12
+Added Pin To Net: NetName=Net1A_0 Pin=1A-0
+Added Pin To Net: NetName=Net1A_0 Pin=P8-15
+Added Net: Name=Net1A_0
+Added Pin To Net: NetName=Net1A_1 Pin=1A-1
+Added Pin To Net: NetName=Net1A_1 Pin=P8-14
+Added Net: Name=Net1A_1
+Added Pin To Net: NetName=Net1A_2 Pin=1A-2
+Added Pin To Net: NetName=Net1A_2 Pin=P8-13
+Added Net: Name=Net1A_2
+Added Pin To Net: NetName=Net1A_4 Pin=1A-4
+Added Pin To Net: NetName=Net1A_4 Pin=P8-11
+Added Net: Name=Net1A_4
+Added Pin To Net: NetName=Net1A_5 Pin=1A-5
+Added Pin To Net: NetName=Net1A_5 Pin=P8-10
+Added Net: Name=Net1A_5
+Added Pin To Net: NetName=Net1A_6 Pin=1A-6
+Added Pin To Net: NetName=Net1A_6 Pin=P8-9
+Added Net: Name=Net1A_6
+Added Pin To Net: NetName=Net1A_7 Pin=1A-7
+Added Pin To Net: NetName=Net1A_7 Pin=P8-8
+Added Net: Name=Net1A_7
+Added Pin To Net: NetName=Net1A_8 Pin=1A-8
+Added Pin To Net: NetName=Net1A_8 Pin=P8-7
+Added Net: Name=Net1A_8
+Added Pin To Net: NetName=Net1A_9 Pin=1A-9
+Added Pin To Net: NetName=Net1A_9 Pin=P8-6
+Added Net: Name=Net1A_9
+Added Pin To Net: NetName=Net1A_10 Pin=1A-10
+Added Pin To Net: NetName=Net1A_10 Pin=P8-5
+Added Net: Name=Net1A_10
+Added Pin To Net: NetName=Net1A_11 Pin=1A-11
+Added Pin To Net: NetName=Net1A_11 Pin=P8-4
+Added Net: Name=Net1A_11
+Added Pin To Net: NetName=Net1A_12 Pin=1A-12
+Added Pin To Net: NetName=Net1A_12 Pin=P8-3
+Added Net: Name=Net1A_12
+Added Pin To Net: NetName=Net1A_13 Pin=1A-13
+Added Pin To Net: NetName=Net1A_13 Pin=P8-2
+Added Net: Name=Net1A_13
+Added Pin To Net: NetName=Net1A_14 Pin=1A-14
+Added Pin To Net: NetName=Net1A_14 Pin=P8-1
+Added Net: Name=Net1A_14
+Added Pin To Net: NetName=Net1A_15 Pin=1A-15
+Added Pin To Net: NetName=Net1A_15 Pin=P7-15
+Added Net: Name=Net1A_15
+Added Pin To Net: NetName=Net1A_16 Pin=1A-16
+Added Pin To Net: NetName=Net1A_16 Pin=P7-14
+Added Net: Name=Net1A_16
+Added Pin To Net: NetName=Net1A_17 Pin=1A-17
+Added Pin To Net: NetName=Net1A_17 Pin=P7-13
+Added Net: Name=Net1A_17
+Added Pin To Net: NetName=Net1A_18 Pin=1A-18
+Added Pin To Net: NetName=Net1A_18 Pin=P7-12
+Added Net: Name=Net1A_18
+Added Pin To Net: NetName=Net1A_19 Pin=1A-19
+Added Pin To Net: NetName=Net1A_19 Pin=P7-11
+Added Net: Name=Net1A_19
+Added Pin To Net: NetName=Net1A_20 Pin=1A-20
+Added Pin To Net: NetName=Net1A_20 Pin=P7-10
+Added Net: Name=Net1A_20
+Added Pin To Net: NetName=Net1A_21 Pin=1A-21
+Added Pin To Net: NetName=Net1A_21 Pin=P7-9
+Added Net: Name=Net1A_21
+Added Pin To Net: NetName=Net1A_22 Pin=1A-22
+Added Pin To Net: NetName=Net1A_22 Pin=P7-5
+Added Net: Name=Net1A_22
+Added Pin To Net: NetName=Net1A_23 Pin=1A-23
+Added Pin To Net: NetName=Net1A_23 Pin=P7-6
+Added Net: Name=Net1A_23
+Added Pin To Net: NetName=Net1A_24 Pin=1A-24
+Added Pin To Net: NetName=Net1A_24 Pin=P7-7
+Added Net: Name=Net1A_24
+Added Pin To Net: NetName=Net1A_25 Pin=1A-25
+Added Pin To Net: NetName=Net1A_25 Pin=P7-8
+Added Net: Name=Net1A_25
+Added Pin To Net: NetName=Net1A_26 Pin=1A-26
+Added Pin To Net: NetName=Net1A_26 Pin=P7-4
+Added Net: Name=Net1A_26
+Added Pin To Net: NetName=Net1A_27 Pin=1A-27
+Added Pin To Net: NetName=Net1A_27 Pin=P7-3
+Added Net: Name=Net1A_27
+Added Pin To Net: NetName=Net1A_28 Pin=1A-28
+Added Pin To Net: NetName=Net1A_28 Pin=P7-2
+Added Net: Name=Net1A_28
+Added Class: Name=Current sensing
+Added Room: Name=Current sensing

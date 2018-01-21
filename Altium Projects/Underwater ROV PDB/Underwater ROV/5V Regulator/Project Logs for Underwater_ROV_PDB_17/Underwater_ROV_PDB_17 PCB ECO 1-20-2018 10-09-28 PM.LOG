@@ -1,0 +1,15 @@
+Change Component Designator: OldDesignator=P6 (GND) NewDesignator=P6
+Added Member To Class: ClassName=5V Regulator Member=Component 1 TPS54627DDA
+Added Member To Class: ClassName=5V Regulator Member=Component C1 CAP-11378
+Added Member To Class: ClassName=5V Regulator Member=Component C2 CAP-11378
+Added Member To Class: ClassName=5V Regulator Member=Component C3 100nF
+Added Member To Class: ClassName=5V Regulator Member=Component C4 10.0uF
+Added Member To Class: ClassName=5V Regulator Member=Component C5 100nF
+Added Member To Class: ClassName=5V Regulator Member=Component C6 15.0pF
+Added Member To Class: ClassName=5V Regulator Member=Component C7 CAP-11378
+Added Member To Class: ClassName=5V Regulator Member=Component I1 3.3uH
+Added Member To Class: ClassName=5V Regulator Member=Component P4 5V Header
+Added Member To Class: ClassName=12V Regulator Member=Component P6 Header 8X2A
+Added Member To Class: ClassName=5V Regulator Member=Component R1 TBD
+Added Member To Class: ClassName=5V Regulator Member=Component R2 121k
+Added Member To Class: ClassName=5V Regulator Member=Component R3 22.1k

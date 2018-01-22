@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Underwater_ROV_PDB_17.PcbDoc   1/21/2018  10:33:49 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Underwater_ROV_PDB_17.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      8mil (0.2mm)                                              Round             6         PTH        0.26inch (6.60mm)
+T2      28mil (0.711mm)                                           Round             40        PTH        19.65inch (498.98mm)
+T3      30mil (0.762mm)                                           Round             30        PTH        3.90inch (99.06mm)
+T4      32mil (0.8mm)                                             Round             2         PTH        0.20inch (5.00mm)
+T5      35mil (0.9mm)                                             Round             87        PTH        15.33inch (389.49mm)
+T6      47mil (1.2mm)                                             Round             7         PTH        0.47inch (12.00mm)
+T7      59mil (1.499mm)                                           Round             3         PTH        0.44inch (11.18mm)
+T8      63mil (1.6mm)                                             Round             7         PTH        2.91inch (73.80mm)
+T9      83mil (2.1mm)                                             Round             2         PTH        0.60inch (15.24mm)
+T10     128mil (3.26mm)                                           Round             4         PTH        11.68inch (296.64mm)
+T11     394mil (10mm)                                             Round             4         PTH        20.66inch (524.87mm)
+T12     162mil (4.115mm)                                          Round             1         NPTH       0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              193
+
+Total Processing Time (hh:mm:ss) : 00:00:00

@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Underwater_ROV_PDB_17.GBR   1/22/2018  8:04:37 PM
+Gerber File Extension Report For: Underwater_ROV_PDB_17.GBR   1/22/2018  11:24:11 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -24,6 +24,4 @@ Layer Extension     Layer Description
 .GM15               Mechanical 15                           
 .GM30               Mechanical 30                           
 .GM34               Mechanical 34                           
-.GML                Multi-Layer                             
-.1                  Dielectric 1                            
 ------------------------------------------------------------------------------------------

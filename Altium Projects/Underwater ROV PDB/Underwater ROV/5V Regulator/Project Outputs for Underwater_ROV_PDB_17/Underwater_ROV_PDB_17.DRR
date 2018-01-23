@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Underwater_ROV_PDB_17.PcbDoc   1/21/2018  10:33:49 AM
+NCDrill File Report For: Underwater_ROV_PDB_17.PcbDoc   1/22/2018  8:04:59 PM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,7 +7,7 @@ ASCII RoundHoles File : Underwater_ROV_PDB_17.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      8mil (0.2mm)                                              Round             6         PTH        0.26inch (6.60mm)
+T1      12mil (0.31mm)                                            Round             6         PTH        0.26inch (6.60mm)
 T2      28mil (0.711mm)                                           Round             40        PTH        19.65inch (498.98mm)
 T3      30mil (0.762mm)                                           Round             30        PTH        3.90inch (99.06mm)
 T4      32mil (0.8mm)                                             Round             2         PTH        0.20inch (5.00mm)
@@ -22,4 +22,4 @@ T12     162mil (4.115mm)                                          Round         
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              193
 
-Total Processing Time (hh:mm:ss) : 00:00:00
+Total Processing Time (hh:mm:ss) : 00:00:01

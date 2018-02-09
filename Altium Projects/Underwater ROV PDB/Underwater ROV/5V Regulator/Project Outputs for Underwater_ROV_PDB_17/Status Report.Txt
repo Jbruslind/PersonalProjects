@@ -1,12 +1,9 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [Underwater_ROV_PDB_17.PrjPcb]
-   Generated File[Underwater_ROV_PDB_17.TXT]
-   Generated File[Underwater_ROV_PDB_17.LDP]
-   Generated File[Underwater_ROV_PDB_17.DRR]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [Underwater_ROV_PDB_17.PrjPcb]
 
 
-Files Generated   : 3
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 11:24:35 PM On 1/22/2018
+Finished Output Generation At 9:59:26 AM On 2/5/2018

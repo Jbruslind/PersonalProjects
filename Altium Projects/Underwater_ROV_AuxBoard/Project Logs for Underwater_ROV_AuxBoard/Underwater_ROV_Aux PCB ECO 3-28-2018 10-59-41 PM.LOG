@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=P8 NewDesignator=Pressure
+Change Component Designator: OldDesignator=P9 NewDesignator=9DOF
+Change Component Designator: OldDesignator=P10 NewDesignator=Current Viout
+Change Component Designator: OldDesignator=P11 NewDesignator=Water
+Change Component Designator: OldDesignator=P12 NewDesignator=Light
+Change Net Name : Old Net Name=NetNano_1_A1 New Net Name=NetLight_2

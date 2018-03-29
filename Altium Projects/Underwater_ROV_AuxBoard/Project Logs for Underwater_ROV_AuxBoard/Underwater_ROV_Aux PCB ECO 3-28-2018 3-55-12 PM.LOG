@@ -1,0 +1,310 @@
+Change Component Designator: OldDesignator=GND NewDesignator=GND_Nano
+Added Component: Designator=Current_1(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_2(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_3(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_4(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_5(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_6(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=Current_7(SOIC127P600X175-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy"; Value = "�4%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Sensors, Transducers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.allegromicro.com/~/media/Files/Datasheets/ACS711-Datasheet.ashx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Sensing"; Value = "25A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply (Max)"; Value = "5.5mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "For Measuring"; Value = "AC/DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "DC ~ 100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Linearity"; Value = "�1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Allegro MicroSystems, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ACS711ELCTR-25AB-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40캜 ~ 85캜"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output"; Value = "Ratiometric, Voltage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC (0.154", 3.90mm Width)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarization"; Value = "Bidirectional"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=3.36, 5=3.116, 10=2.588, 25=2.1568, 50=1.9174, 100=1.8214, 500=1.53384, 1000=1.43798 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Response Time"; Value = "4.6탎"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensitivity"; Value = "55mV/A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sensor Type"; Value = "Hall Effect, Open Loop"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "19632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "620-1371-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3 V ~ 5.5 V"; VariantName = "[No Variations]"
+Added Component: Designator=RPI_GPIO*1(HDR2X20)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=12V Pin=Current_1-1
+Added Pin To Net: NetName=12V Pin=Current_1-2
+Added Pin To Net: NetName=NetCurrent_1_3 Pin=Current_1-3
+Added Pin To Net: NetName=NetCurrent_1_3 Pin=Current_1-4
+Added Pin To Net: NetName=GND Pin=Current_1-5
+Added Pin To Net: NetName=NetCurrent_1_6 Pin=Current_1-6
+Added Pin To Net: NetName=NetC1_2 Pin=Current_1-7
+Added Pin To Net: NetName=3_3V Pin=Current_1-8
+Added Pin To Net: NetName=12V Pin=Current_2-1
+Added Pin To Net: NetName=12V Pin=Current_2-2
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-3
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-4
+Added Pin To Net: NetName=GND Pin=Current_2-5
+Added Pin To Net: NetName=NetCurrent_2_6 Pin=Current_2-6
+Added Pin To Net: NetName=NetC2_2 Pin=Current_2-7
+Added Pin To Net: NetName=3_3V Pin=Current_2-8
+Added Pin To Net: NetName=12V Pin=Current_3-1
+Added Pin To Net: NetName=12V Pin=Current_3-2
+Added Pin To Net: NetName=NetCurrent_3_3 Pin=Current_3-3
+Added Pin To Net: NetName=NetCurrent_3_3 Pin=Current_3-4
+Added Pin To Net: NetName=GND Pin=Current_3-5
+Added Pin To Net: NetName=NetCurrent_3_6 Pin=Current_3-6
+Added Pin To Net: NetName=NetC3_2 Pin=Current_3-7
+Added Pin To Net: NetName=3_3V Pin=Current_3-8
+Added Pin To Net: NetName=12V Pin=Current_4-1
+Added Pin To Net: NetName=12V Pin=Current_4-2
+Added Pin To Net: NetName=NetCurrent_4_3 Pin=Current_4-3
+Added Pin To Net: NetName=NetCurrent_4_3 Pin=Current_4-4
+Added Pin To Net: NetName=GND Pin=Current_4-5
+Added Pin To Net: NetName=NetCurrent_4_6 Pin=Current_4-6
+Added Pin To Net: NetName=NetC4_2 Pin=Current_4-7
+Added Pin To Net: NetName=3_3V Pin=Current_4-8
+Added Pin To Net: NetName=12V Pin=Current_5-1
+Added Pin To Net: NetName=12V Pin=Current_5-2
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-3
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-4
+Added Pin To Net: NetName=GND Pin=Current_5-5
+Added Pin To Net: NetName=NetCurrent_5_6 Pin=Current_5-6
+Added Pin To Net: NetName=NetC5_2 Pin=Current_5-7
+Added Pin To Net: NetName=3_3V Pin=Current_5-8
+Added Pin To Net: NetName=12V Pin=Current_6-1
+Added Pin To Net: NetName=12V Pin=Current_6-2
+Added Pin To Net: NetName=NetCurrent_6_3 Pin=Current_6-3
+Added Pin To Net: NetName=NetCurrent_6_3 Pin=Current_6-4
+Added Pin To Net: NetName=GND Pin=Current_6-5
+Added Pin To Net: NetName=NetCurrent_6_6 Pin=Current_6-6
+Added Pin To Net: NetName=12V Pin=Current_6-7
+Added Pin To Net: NetName=3_3V Pin=Current_6-8
+Added Pin To Net: NetName=12V Pin=Current_7-1
+Added Pin To Net: NetName=12V Pin=Current_7-2
+Added Pin To Net: NetName=12V Pin=Current_7-3
+Added Pin To Net: NetName=12V Pin=Current_7-4
+Added Pin To Net: NetName=GND Pin=Current_7-5
+Added Pin To Net: NetName=NetCurrent_7_6 Pin=Current_7-6
+Added Pin To Net: NetName=NetC7_2 Pin=Current_7-7
+Added Pin To Net: NetName=3_3V Pin=Current_7-8
+Added Pin To Net: NetName=NetP6_1 Pin=RPI_GPIO*1-1
+Added Pin To Net: NetName=NetD3_2 Pin=RPI_GPIO*1-2
+Added Pin To Net: NetName=SDA Pin=RPI_GPIO*1-3
+Added Pin To Net: NetName=NetP6_4 Pin=RPI_GPIO*1-4
+Added Pin To Net: NetName=SCL Pin=RPI_GPIO*1-5
+Added Pin To Net: NetName=GND Pin=RPI_GPIO*1-6
+Added Pin To Net: NetName=NetP6_7 Pin=RPI_GPIO*1-7
+Added Pin To Net: NetName=NetP6_8 Pin=RPI_GPIO*1-8
+Added Pin To Net: NetName=NetP6_9 Pin=RPI_GPIO*1-9
+Added Pin To Net: NetName=NetP6_10 Pin=RPI_GPIO*1-10
+Added Pin To Net: NetName=NetP6_11 Pin=RPI_GPIO*1-11
+Added Pin To Net: NetName=NetP6_12 Pin=RPI_GPIO*1-12
+Added Pin To Net: NetName=NetP6_13 Pin=RPI_GPIO*1-13
+Added Pin To Net: NetName=GND Pin=RPI_GPIO*1-14
+Added Pin To Net: NetName=NetP6_15 Pin=RPI_GPIO*1-15
+Added Pin To Net: NetName=NetP6_16 Pin=RPI_GPIO*1-16
+Added Pin To Net: NetName=3_3V Pin=RPI_GPIO*1-17
+Added Pin To Net: NetName=NetP6_18 Pin=RPI_GPIO*1-18
+Added Pin To Net: NetName=NetP6_19 Pin=RPI_GPIO*1-19
+Added Pin To Net: NetName=GND Pin=RPI_GPIO*1-20
+Added Pin To Net: NetName=NetP6_21 Pin=RPI_GPIO*1-21
+Added Pin To Net: NetName=NetP6_22 Pin=RPI_GPIO*1-22
+Added Pin To Net: NetName=NetP6_23 Pin=RPI_GPIO*1-23
+Added Pin To Net: NetName=NetP6_24 Pin=RPI_GPIO*1-24
+Added Pin To Net: NetName=NetP6_9 Pin=RPI_GPIO*1-25
+Added Pin To Net: NetName=NetP6_26 Pin=RPI_GPIO*1-26
+Added Pin To Net: NetName=NetP6_27 Pin=RPI_GPIO*1-27
+Added Pin To Net: NetName=NetP6_28 Pin=RPI_GPIO*1-28
+Added Pin To Net: NetName=NetP6_29 Pin=RPI_GPIO*1-29
+Added Pin To Net: NetName=NetP6_30 Pin=RPI_GPIO*1-30
+Added Pin To Net: NetName=NetP6_31 Pin=RPI_GPIO*1-31
+Added Pin To Net: NetName=NetP6_32 Pin=RPI_GPIO*1-32
+Added Pin To Net: NetName=NetP6_33 Pin=RPI_GPIO*1-33
+Added Pin To Net: NetName=GND Pin=RPI_GPIO*1-34
+Added Pin To Net: NetName=NetP6_35 Pin=RPI_GPIO*1-35
+Added Pin To Net: NetName=NetP6_36 Pin=RPI_GPIO*1-36
+Added Pin To Net: NetName=NetP6_37 Pin=RPI_GPIO*1-37
+Added Pin To Net: NetName=NetP6_38 Pin=RPI_GPIO*1-38
+Added Pin To Net: NetName=NetP6_9 Pin=RPI_GPIO*1-39
+Added Pin To Net: NetName=NetP6_40 Pin=RPI_GPIO*1-40
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_1 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_2 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_3 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_4 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_5 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_6 ACS711
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Current_7 ACS711
+Added Member To Class: ClassName=Underwater_ROV_RPI Member=Component RPI_GPIO*1 Raspberry_Pi_GPIO

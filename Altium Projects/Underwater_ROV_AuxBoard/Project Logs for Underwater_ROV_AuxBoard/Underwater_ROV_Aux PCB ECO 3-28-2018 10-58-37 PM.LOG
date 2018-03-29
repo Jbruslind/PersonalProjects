@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=21 NewDesignator=P2
+Change Component Designator: OldDesignator=43 NewDesignator=P3
+Change Component Designator: OldDesignator=65 NewDesignator=P4
+Change Component Designator: OldDesignator=87 NewDesignator=P5
+Added Pin To Net: NetName=12V Pin=PCB1-VIN

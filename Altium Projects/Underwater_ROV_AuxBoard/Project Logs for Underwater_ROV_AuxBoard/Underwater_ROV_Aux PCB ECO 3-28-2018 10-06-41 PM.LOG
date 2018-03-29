@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=12V Pin=C6-2
+Removed Pin From Net: NetName=12V Pin=Current_6-7
+Removed Pin From Net: NetName=12V Pin=Current_7-3
+Removed Pin From Net: NetName=12V Pin=Current_7-4
+Removed Pin From Net: NetName=12V Pin=ESC 7-1
+Removed Pin From Net: NetName=12V Pin=Vout Curret-6
+Change Component Designator: OldDesignator=12 NewDesignator=P2
+Change Component Designator: OldDesignator=34 NewDesignator=P3
+Change Component Designator: OldDesignator=56 NewDesignator=P4
+Change Component Designator: OldDesignator=78 NewDesignator=P5
+Change Component Designator: OldDesignator=Photo NewDesignator=P12
+Change Component Designator: OldDesignator=Servo (7,6) NewDesignator=Servo (6,7)
+Change Component Designator: OldDesignator=Servo (9,8) NewDesignator=Servo (4,5)
+Change Component Designator: OldDesignator=Vout Curret NewDesignator=P10
+Change Component Designator: OldDesignator=Water NewDesignator=P11
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=Current_6-7
+Added Pin To Net: NetName=NetC6_2 Pin=P10-6
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetCurrent_7_3 Pin=Current_7-3
+Added Pin To Net: NetName=NetCurrent_7_3 Pin=Current_7-4
+Added Pin To Net: NetName=NetCurrent_7_3 Pin=ESC 7-1
+Added Net: Name=NetCurrent_7_3
+Added Member To Class: ClassName=Underwater_ROV_ESCS Member=Component P5 ESC 7, 8

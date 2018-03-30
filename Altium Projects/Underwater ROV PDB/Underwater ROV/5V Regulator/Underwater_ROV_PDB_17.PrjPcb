@@ -158,94 +158,102 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.DRR
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.BOM
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.EXTREP
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.CSV
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBL
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBO
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBP
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBS
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GKO
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM1
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM2
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM8
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM13
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM15
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM30
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM34
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GPB
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM30
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GPT
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GM34
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTL
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTO
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTP
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTS
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.LDP
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.REP
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument23]
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.REP
+DItemRevisionGUID=
+
+[GeneratedDocument25]
 DocumentPath=Project Outputs for Underwater_ROV_PDB_17\Underwater_ROV_PDB_17.RUL
 DItemRevisionGUID=
 
@@ -908,7 +916,7 @@ Configuration12_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=\\engrprn.engr.oregonstate.edu\COEprint
+TargetPrinter=Send To OneNote 2016
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -938,6 +946,8 @@ OutputName5=Simple BOM
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
+Configuration5_Name1=OutputConfigurationParameter1
+Configuration5_Item1=Record=SimpleBOMView|SimpleBOMMode=0
 OutputType6=SinglePinNetReporter
 OutputName6=Report Single Pin Nets
 OutputDocumentPath6=

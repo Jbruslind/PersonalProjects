@@ -1,0 +1,932 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mm').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3/31/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:51:41 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc" class="file"><acronym title="C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc">C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="ID0T2PE3Y3URERGXZB0G4HPXF1PFOMKZIRHXEY2JF1ZVO5TPAU3A2J"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1583.992mil|Location2.X=3393.33mil|Location1.Y=1123.953mil|Location2.Y=3641.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1583.992mil|Location2.X=3393.33mil|Location1.Y=1123.953mil|Location2.Y=3641.795mil|Absolute=True">12V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="73465770">186.6031mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1057.024mil|Location2.X=3592.118mil|Location1.Y=2816.732mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1057.024mil|Location2.X=3592.118mil|Location1.Y=2816.732mil|Location2.Y=4746.126mil|Absolute=True">3_3V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="127862023">324.7695mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.591mil|Location2.X=4684.709mil|Location1.Y=1017.654mil|Location2.Y=4891.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.591mil|Location2.X=4684.709mil|Location1.Y=1017.654mil|Location2.Y=4891.008mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="255696620">649.4694mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2721.788mil|Location2.X=3603.268mil|Location1.Y=3401.732mil|Location2.Y=4289.434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2721.788mil|Location2.X=3603.268mil|Location1.Y=3401.732mil|Location2.Y=4289.434mil|Absolute=True">NetC1_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="18149021">46.0985mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.796mil|Location2.X=3554.708mil|Location1.Y=3370.017mil|Location2.Y=4326.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2158.796mil|Location2.X=3554.708mil|Location1.Y=3370.017mil|Location2.Y=4326.378mil|Absolute=True">NetC2_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="26400791">67.058mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2875.33mil|Location2.X=3566.268mil|Location1.Y=2896.464mil|Location2.Y=4289.434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2875.33mil|Location2.X=3566.268mil|Location1.Y=2896.464mil|Location2.Y=4289.434mil|Absolute=True">NetC3_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="23354591">59.3207mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1587.93mil|Location2.X=3235.301mil|Location1.Y=3717.457mil|Location2.Y=4313.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1587.93mil|Location2.X=3235.301mil|Location1.Y=3717.457mil|Location2.Y=4313.268mil|Absolute=True">NetC4_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="36554027">92.8472mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2150.922mil|Location2.X=3038.449mil|Location1.Y=3768.738mil|Location2.Y=4289.434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2150.922mil|Location2.X=3038.449mil|Location1.Y=3768.738mil|Location2.Y=4289.434mil|Absolute=True">NetC5_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="15713289">39.9118mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1455.732mil|Location2.X=2947.897mil|Location1.Y=3370.017mil|Location2.Y=4289.434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1455.732mil|Location2.X=2947.897mil|Location1.Y=3370.017mil|Location2.Y=4289.434mil|Absolute=True">NetC6_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="25362793">64.4215mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2076mil|Location2.X=2788.646mil|Location1.Y=2689.732mil|Location2.Y=4289.434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2076mil|Location2.X=2788.646mil|Location1.Y=2689.732mil|Location2.Y=4289.434mil|Absolute=True">NetC7_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24177983">61.4121mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.371mil|Location2.X=4807.15mil|Location1.Y=3150.239mil|Location2.Y=4245.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2614.371mil|Location2.X=4807.15mil|Location1.Y=3150.239mil|Location2.Y=4245.985mil|Absolute=True">NetCurrent_1_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="29372317">74.6057mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2671.788mil|Location2.X=3444.945mil|Location1.Y=3323.732mil|Location2.Y=3684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2671.788mil|Location2.X=3444.945mil|Location1.Y=3323.732mil|Location2.Y=3684mil|Absolute=True">NetCurrent_1_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11236722">28.5413mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.686mil|Location2.X=4807.15mil|Location1.Y=3081.3mil|Location2.Y=4181.654mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2054.686mil|Location2.X=4807.15mil|Location1.Y=3081.3mil|Location2.Y=4181.654mil|Absolute=True">NetCurrent_2_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="37408044">95.0164mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2108.796mil|Location2.X=3055.181mil|Location1.Y=3324.048mil|Location2.Y=3614.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2108.796mil|Location2.X=3055.181mil|Location1.Y=3324.048mil|Location2.Y=3614.631mil|Absolute=True">NetCurrent_2_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="10547289">26.7901mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2770.078mil|Location2.X=4807.15mil|Location1.Y=2700.354mil|Location2.Y=3775.654mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2770.078mil|Location2.X=4807.15mil|Location1.Y=2700.354mil|Location2.Y=3775.654mil|Absolute=True">NetCurrent_3_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="24897970">63.2408mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822mil|Location2.X=3255.967mil|Location1.Y=2854.232mil|Location2.Y=3618.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2822mil|Location2.X=3255.967mil|Location1.Y=2854.232mil|Location2.Y=3618.567mil|Absolute=True">NetCurrent_3_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="10614851">26.9617mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1482.678mil|Location2.X=4807.15mil|Location1.Y=2640.354mil|Location2.Y=3663.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1482.678mil|Location2.X=4807.15mil|Location1.Y=2640.354mil|Location2.Y=3663.268mil|Absolute=True">NetCurrent_4_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="61690930">156.695mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1033.732mil|Location2.X=1577.426mil|Location1.Y=3007.811mil|Location2.Y=3875.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1033.732mil|Location2.X=1577.426mil|Location1.Y=3007.811mil|Location2.Y=3875.268mil|Absolute=True">NetCurrent_4_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="14673051">37.2695mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.686mil|Location2.X=4807.15mil|Location1.Y=2556.732mil|Location2.Y=3641.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1994.686mil|Location2.X=4807.15mil|Location1.Y=2556.732mil|Location2.Y=3641.795mil|Absolute=True">NetCurrent_5_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="41354561">105.0406mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.922mil|Location2.X=2369.749mil|Location1.Y=3791.275mil|Location2.Y=3905.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2100.922mil|Location2.X=2369.749mil|Location1.Y=3791.275mil|Location2.Y=3905.436mil|Absolute=True">NetCurrent_5_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2964726">7.5304mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1476.575mil|Location2.X=4807.15mil|Location1.Y=2415.944mil|Location2.Y=3220.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1476.575mil|Location2.X=4807.15mil|Location1.Y=2415.944mil|Location2.Y=3220.535mil|Absolute=True">NetCurrent_6_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="43653049">110.8787mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1346mil|Location2.X=1573.488mil|Location1.Y=2838.519mil|Location2.Y=3435.103mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1346mil|Location2.X=1573.488mil|Location1.Y=2838.519mil|Location2.Y=3435.103mil|Absolute=True">NetCurrent_6_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7082259">17.9889mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2065.356mil|Location2.X=4807.15mil|Location1.Y=2255.75mil|Location2.Y=2779.591mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2065.356mil|Location2.X=4807.15mil|Location1.Y=2255.75mil|Location2.Y=2779.591mil|Absolute=True">NetCurrent_7_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="29784678">75.6531mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1887.732mil|Location2.X=2381.953mil|Location1.Y=2906.532mil|Location2.Y=3637.072mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1887.732mil|Location2.X=2381.953mil|Location1.Y=2906.532mil|Location2.Y=3637.072mil|Absolute=True">NetCurrent_7_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="13966101">35.4739mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.67mil|Location2.X=2172.064mil|Location1.Y=4037.74mil|Location2.Y=4479.198mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.67mil|Location2.X=2172.064mil|Location1.Y=4037.74mil|Location2.Y=4479.198mil|Absolute=True">NetD1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5939347">15.0859mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.67mil|Location2.X=2082.741mil|Location1.Y=4460.173mil|Location2.Y=4891.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1641.67mil|Location2.X=2082.741mil|Location1.Y=4460.173mil|Location2.Y=4891.008mil|Absolute=True">NetD1_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="5135631">13.0445mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2407.416mil|Location2.X=2671.323mil|Location1.Y=4247.968mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2407.416mil|Location2.X=2671.323mil|Location1.Y=4247.968mil|Location2.Y=4846.126mil|Absolute=True">NetD3_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6686267">16.9831mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1566.473mil|Location2.X=2742.268mil|Location1.Y=1476.315mil|Location2.Y=4518.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1566.473mil|Location2.X=2742.268mil|Location1.Y=1476.315mil|Location2.Y=4518.268mil|Absolute=True">NetD5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="50910223">129.312mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1901.512mil|Location2.X=4143.268mil|Location1.Y=2078.283mil|Location2.Y=4537.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1901.512mil|Location2.X=4143.268mil|Location1.Y=2078.283mil|Location2.Y=4537.268mil|Absolute=True">NetD6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="47873904">121.5997mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1428.677mil|Location2.X=2715.268mil|Location1.Y=1123.953mil|Location2.Y=4332.739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1428.677mil|Location2.X=2715.268mil|Location1.Y=1123.953mil|Location2.Y=4332.739mil|Absolute=True">NetLight_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="51167701">129.966mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1216.867mil|Location2.X=1294.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1216.867mil|Location2.X=1294.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_3V3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2216.867mil|Location2.X=2294.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2216.867mil|Location2.X=2294.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1416.867mil|Location2.X=4237.466mil|Location1.Y=1017.654mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1416.867mil|Location2.X=4237.466mil|Location1.Y=1017.654mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_A0</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.867mil|Location2.X=1694.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.867mil|Location2.X=1694.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_A2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1716.867mil|Location2.X=1794.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1716.867mil|Location2.X=1794.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_A3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2016.867mil|Location2.X=2094.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2016.867mil|Location2.X=2094.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_A6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2116.867mil|Location2.X=2194.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2116.867mil|Location2.X=2194.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_A7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.906mil|Location2.X=1394.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.906mil|Location2.X=1394.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D10</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1216.906mil|Location2.X=1294.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1216.906mil|Location2.X=1294.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D11</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1194.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.906mil|Location2.X=1194.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.867mil|Location2.X=1929.591mil|Location1.Y=1123.953mil|Location2.Y=1539.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1116.867mil|Location2.X=1929.591mil|Location1.Y=1123.953mil|Location2.Y=1539.433mil|Absolute=True">NetNano_1_D13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9624247">24.4456mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2116.906mil|Location2.X=2194.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2116.906mil|Location2.X=2194.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2016.906mil|Location2.X=2094.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2016.906mil|Location2.X=2094.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1916.906mil|Location2.X=1994.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1916.906mil|Location2.X=1994.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1816.906mil|Location2.X=1894.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1816.906mil|Location2.X=1894.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1716.906mil|Location2.X=1794.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1716.906mil|Location2.X=1794.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.906mil|Location2.X=1694.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1616.906mil|Location2.X=1694.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1516.906mil|Location2.X=1594.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1516.906mil|Location2.X=1594.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1416.906mil|Location2.X=1494.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1416.906mil|Location2.X=1494.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_D9</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.867mil|Location2.X=1394.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.867mil|Location2.X=1394.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_REF</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.906mil|Location2.X=2394.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.906mil|Location2.X=2394.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_RST</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.867mil|Location2.X=2394.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.867mil|Location2.X=2394.906mil|Location1.Y=1123.953mil|Location2.Y=1320.89mil|Absolute=True">NetNano_1_RST.</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266931">3.218mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2416.906mil|Location2.X=2494.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2416.906mil|Location2.X=2494.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_RX1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.906mil|Location2.X=2594.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.906mil|Location2.X=2594.906mil|Location1.Y=1842.89mil|Location2.Y=2021.717mil|Absolute=True">NetNano_1_TX1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1079303">2.7414mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.33mil|Location2.X=4693.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.33mil|Location2.X=4693.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_3V3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3615.33mil|Location2.X=3693.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3615.33mil|Location2.X=3693.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_5V</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4415.33mil|Location2.X=4493.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4415.33mil|Location2.X=4493.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A0</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4315.33mil|Location2.X=4393.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4315.33mil|Location2.X=4393.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.33mil|Location2.X=4293.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4215.33mil|Location2.X=4293.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4115.33mil|Location2.X=4193.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4115.33mil|Location2.X=4193.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.33mil|Location2.X=3893.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.33mil|Location2.X=3893.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.33mil|Location2.X=3793.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.33mil|Location2.X=3793.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_A7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4515.33mil|Location2.X=4593.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4515.33mil|Location2.X=4593.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D10</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.33mil|Location2.X=4693.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4615.33mil|Location2.X=4693.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D11</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4715.33mil|Location2.X=4793.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4715.33mil|Location2.X=4793.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3728.283mil|Location2.X=4830.268mil|Location1.Y=1824.78mil|Location2.Y=2488.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3728.283mil|Location2.X=4830.268mil|Location1.Y=1824.78mil|Location2.Y=2488.268mil|Absolute=True">NetNano_2_D13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17481833">44.4039mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.33mil|Location2.X=3793.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3715.33mil|Location2.X=3793.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.33mil|Location2.X=3893.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3815.33mil|Location2.X=3893.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.33mil|Location2.X=3993.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.33mil|Location2.X=3993.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4015.33mil|Location2.X=4093.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4015.33mil|Location2.X=4093.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_D5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3011.748mil|Location2.X=4193.33mil|Location1.Y=1104.268mil|Location2.Y=1740.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3011.748mil|Location2.X=4193.33mil|Location1.Y=1104.268mil|Location2.Y=1740.268mil|Absolute=True">NetNano_2_D6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16450523">41.7843mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.898mil|Location2.X=4293.33mil|Location1.Y=1104.268mil|Location2.Y=1586.678mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2814.898mil|Location2.X=4293.33mil|Location1.Y=1104.268mil|Location2.Y=1586.678mil|Absolute=True">NetNano_2_D7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16384823">41.6175mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3007.812mil|Location2.X=4393.33mil|Location1.Y=1082.614mil|Location2.Y=1434mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3007.812mil|Location2.X=4393.33mil|Location1.Y=1082.614mil|Location2.Y=1434mil|Absolute=True">NetNano_2_D8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17345389">44.0573mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2791.732mil|Location2.X=4493.33mil|Location1.Y=1082.614mil|Location2.Y=1769.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2791.732mil|Location2.X=4493.33mil|Location1.Y=1082.614mil|Location2.Y=1769.268mil|Absolute=True">NetNano_2_D9</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="25943568">65.8967mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4515.33mil|Location2.X=4593.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4515.33mil|Location2.X=4593.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_REF</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3515.33mil|Location2.X=3593.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3515.33mil|Location2.X=3593.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_RST</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3515.33mil|Location2.X=3593.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3515.33mil|Location2.X=3593.33mil|Location1.Y=1824.78mil|Location2.Y=2033.527mil|Absolute=True">NetNano_2_RST.</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1365464">3.4683mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.33mil|Location2.X=3493.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3415.33mil|Location2.X=3493.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_RX1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.33mil|Location2.X=3393.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3315.33mil|Location2.X=3393.33mil|Location1.Y=1104.268mil|Location2.Y=1302.78mil|Absolute=True">NetNano_2_TX1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1266360">3.2166mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3150.064mil|Location2.X=4105.967mil|Location1.Y=3833.732mil|Location2.Y=4119.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3150.064mil|Location2.X=4105.967mil|Location1.Y=3833.732mil|Location2.Y=4119.74mil|Absolute=True">NetP2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11945343">30.3412mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3050.064mil|Location2.X=4005.968mil|Location1.Y=3014mil|Location2.Y=4119.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3050.064mil|Location2.X=4005.968mil|Location1.Y=3014mil|Location2.Y=4119.74mil|Absolute=True">NetP2_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="25715518">65.3174mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1306.14mil|Location2.X=3111.268mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1306.14mil|Location2.X=3111.268mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True">NetP3_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="25982360">65.9952mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1421.591mil|Location2.X=4879.468mil|Location1.Y=4037.74mil|Location2.Y=4677.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1421.591mil|Location2.X=4879.468mil|Location1.Y=4037.74mil|Location2.Y=4677.268mil|Absolute=True">NetP3_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="59412816">150.9086mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1322.379mil|Location2.X=2911.268mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1322.379mil|Location2.X=2911.268mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True">NetP4_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="21534639">54.698mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1222.379mil|Location2.X=2672.064mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1222.379mil|Location2.X=2672.064mil|Location1.Y=4037.74mil|Location2.Y=4652.426mil|Absolute=True">NetP4_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="18035914">45.8112mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.591mil|Location2.X=2572.064mil|Location1.Y=4037.74mil|Location2.Y=4653.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1121.591mil|Location2.X=2572.064mil|Location1.Y=4037.74mil|Location2.Y=4653.999mil|Absolute=True">NetP5_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17773903">45.1457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.591mil|Location2.X=2472.064mil|Location1.Y=4037.74mil|Location2.Y=4653.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1021.591mil|Location2.X=2472.064mil|Location1.Y=4037.74mil|Location2.Y=4653.999mil|Absolute=True">NetP5_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="17643238">44.8138mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.269mil|Location2.X=2694.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2604.269mil|Location2.X=2694.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2981.732mil|Location2.X=3071.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2981.732mil|Location2.X=3071.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_10</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718775">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3104.269mil|Location2.X=3194.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3104.269mil|Location2.X=3194.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_11</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3081.732mil|Location2.X=3171.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3081.732mil|Location2.X=3171.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_12</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3204.269mil|Location2.X=3294.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3204.269mil|Location2.X=3294.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_13</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3304.269mil|Location2.X=3394.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3304.269mil|Location2.X=3394.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_15</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3281.732mil|Location2.X=3371.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3281.732mil|Location2.X=3371.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_16</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3381.732mil|Location2.X=3471.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3381.732mil|Location2.X=3471.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_18</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3504.269mil|Location2.X=3594.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3504.269mil|Location2.X=3594.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_19</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3604.269mil|Location2.X=3694.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3604.269mil|Location2.X=3694.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_21</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3581.732mil|Location2.X=3671.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3581.732mil|Location2.X=3671.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_22</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3704.269mil|Location2.X=3794.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3704.269mil|Location2.X=3794.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_23</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3681.732mil|Location2.X=3771.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3681.732mil|Location2.X=3771.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_24</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3781.732mil|Location2.X=3871.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3781.732mil|Location2.X=3871.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_26</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.269mil|Location2.X=3994.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3904.269mil|Location2.X=3994.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_27</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3881.732mil|Location2.X=3971.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3881.732mil|Location2.X=3971.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_28</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.269mil|Location2.X=4094.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4004.269mil|Location2.X=4094.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_29</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3981.732mil|Location2.X=4071.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3981.732mil|Location2.X=4071.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_30</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4104.269mil|Location2.X=4194.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4104.269mil|Location2.X=4194.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_31</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4081.732mil|Location2.X=4171.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4081.732mil|Location2.X=4171.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_32</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4204.269mil|Location2.X=4294.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4204.269mil|Location2.X=4294.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_33</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4304.269mil|Location2.X=4394.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4304.269mil|Location2.X=4394.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_35</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4281.732mil|Location2.X=4371.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4281.732mil|Location2.X=4371.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_36</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4404.269mil|Location2.X=4494.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4404.269mil|Location2.X=4494.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_37</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3722156">9.4543mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4381.732mil|Location2.X=4471.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4381.732mil|Location2.X=4471.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_38</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2681.732mil|Location2.X=2771.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2681.732mil|Location2.X=2771.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4481.732mil|Location2.X=4571.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4481.732mil|Location2.X=4571.324mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_40</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2904.269mil|Location2.X=2998.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2904.269mil|Location2.X=2998.268mil|Location1.Y=4346.788mil|Location2.Y=4746.126mil|Absolute=True">NetP6_7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3755292">9.5384mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2881.732mil|Location2.X=2971.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2881.732mil|Location2.X=2971.323mil|Location1.Y=4446.788mil|Location2.Y=4846.126mil|Absolute=True">NetP6_8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3718776">9.4457mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3004.269mil|Location2.X=4594.268mil|Location1.Y=4346.788mil|Location2.Y=4769.268mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3004.269mil|Location2.X=4594.268mil|Location1.Y=4346.788mil|Location2.Y=4769.268mil|Absolute=True">NetP6_9</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="26968419">68.4998mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1057.024mil|Location2.X=4584.709mil|Location1.Y=1069.732mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1057.024mil|Location2.X=4584.709mil|Location1.Y=1069.732mil|Location2.Y=4746.126mil|Absolute=True">SCL</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="105531753">268.0507mm
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1033.732mil|Location2.X=4484.709mil|Location1.Y=1123.953mil|Location2.Y=4746.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1033.732mil|Location2.X=4484.709mil|Location1.Y=1123.953mil|Location2.Y=4746.126mil|Absolute=True">SDA</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="106819220">271.3208mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1328.677mil|Location2.X=4884.709mil|Location1.Y=1017.654mil|Location2.Y=4594.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1328.677mil|Location2.X=4884.709mil|Location1.Y=1017.654mil|Location2.Y=4594.551mil|Absolute=True">VCC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="95695754">243.0672mm
+			</a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

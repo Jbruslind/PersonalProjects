@@ -123,6 +123,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YURHTBWV
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Underwater_ROV_AuxBoard\Net Status - Underwater_ROV_Aux.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

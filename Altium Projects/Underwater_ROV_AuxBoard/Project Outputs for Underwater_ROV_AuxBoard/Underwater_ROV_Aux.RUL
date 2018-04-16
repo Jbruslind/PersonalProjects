@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Aux.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=2.28
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

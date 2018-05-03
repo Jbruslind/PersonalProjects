@@ -1,0 +1,4 @@
+Replace Part D2 Diode 11DQ03 in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_RPI.SchDoc with Diode 11DQ03 from Miscellaneous Devices.IntLib
+Replace Part D4 Diode 11DQ03 in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_RPI.SchDoc with Diode 11DQ03 from Miscellaneous Devices.IntLib
+Replace Part P6 Header 20X2 in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_RPI.SchDoc with Header 20X2 from Miscellaneous Connectors.IntLib
+Replace Part RPI_GPIO*1 Raspberry_Pi_GPIO in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_RPI.SchDoc with Raspberry_Pi_GPIO from UROV_Aux_Lib.IntLib

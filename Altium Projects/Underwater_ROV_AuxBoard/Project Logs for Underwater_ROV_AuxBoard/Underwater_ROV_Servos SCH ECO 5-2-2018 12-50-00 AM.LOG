@@ -1,0 +1,10 @@
+Replace Part 5V ScrewTerminal_5mm in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ScrewTerminal_5mm from UROV_Aux_Lib.IntLib
+Replace Part 12V ScrewTerminal_5mm in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ScrewTerminal_5mm from UROV_Aux_Lib.IntLib
+Replace Part D6 Diode 1N4001 in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with Diode 1N4001 from Miscellaneous Devices.IntLib
+Replace Part GND_Nano ScrewTerminal_5mm in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ScrewTerminal_5mm from UROV_Aux_Lib.IntLib
+Replace Part Nano_2 ARDUINO_NANO in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ARDUINO_NANO from E14_Arduino_revC.IntLib
+Replace Part P14 Header 15H in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with Header 15H from Miscellaneous Connectors.IntLib
+Replace Part P15 Header 15H in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with Header 15H from Miscellaneous Connectors.IntLib
+Replace Part R11 Res1 in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with Res1 from Miscellaneous Devices.IntLib
+Replace Part Servo (4,5) ScrewTerminal_5mm in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ScrewTerminal_5mm from UROV_Aux_Lib.IntLib
+Replace Part Servo (6,7) ScrewTerminal_5mm in C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\Underwater_ROV_AuxBoard\Underwater_ROV_Servos.SchDoc with ScrewTerminal_5mm from UROV_Aux_Lib.IntLib

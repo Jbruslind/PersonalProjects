@@ -1,0 +1,110 @@
+Added Component: Designator=Nano_Cur?(ARDUINO_NANO)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(HDR1X15)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P?(HDR1X15)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=Current_2-1
+Added Pin To Net: NetName=12V Pin=Current_2-2
+Added Pin To Net: NetName=NetCur_2_+ Pin=Current_2-3
+Added Pin To Net: NetName=NetCur_2_+ Pin=Current_2-4
+Added Pin To Net: NetName=GND Pin=Current_2-5
+Added Pin To Net: NetName=NetCurrent_2_6 Pin=Current_2-6
+Added Pin To Net: NetName=Cur_2 Pin=Current_2-7
+Added Pin To Net: NetName=3_3V Pin=Current_2-8
+Added Pin To Net: NetName=12V Pin=Current_5-1
+Added Pin To Net: NetName=12V Pin=Current_5-2
+Added Pin To Net: NetName=NetCur_5_+ Pin=Current_5-3
+Added Pin To Net: NetName=NetCur_5_+ Pin=Current_5-4
+Added Pin To Net: NetName=GND Pin=Current_5-5
+Added Pin To Net: NetName=NetCurrent_5_6 Pin=Current_5-6
+Added Pin To Net: NetName=Cur_5 Pin=Current_5-7
+Added Pin To Net: NetName=3_3V Pin=Current_5-8
+Added Pin To Net: NetName=Cur_1 Pin=Nano_Cur?-A0
+Added Pin To Net: NetName=Cur_2 Pin=Nano_Cur?-A1
+Added Pin To Net: NetName=Cur_3 Pin=Nano_Cur?-A2
+Added Pin To Net: NetName=Cur_4 Pin=Nano_Cur?-A3
+Added Pin To Net: NetName=SDA Pin=Nano_Cur?-A4
+Added Pin To Net: NetName=SCL Pin=Nano_Cur?-A5
+Added Pin To Net: NetName=Cur_5 Pin=Nano_Cur?-A6
+Added Pin To Net: NetName=Cur_6 Pin=Nano_Cur?-A7
+Added Pin To Net: NetName=GND Pin=Nano_Cur?-GND.
+Added Pin To Net: NetName=12V Pin=Nano_Cur?-VIN
+Added Pin To Net: NetName=12V Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=Cur_6 Pin=P?-5
+Added Pin To Net: NetName=Cur_5 Pin=P?-6
+Added Pin To Net: NetName=SCL Pin=P?-7
+Added Pin To Net: NetName=SDA Pin=P?-8
+Added Pin To Net: NetName=Cur_4 Pin=P?-9
+Added Pin To Net: NetName=Cur_3 Pin=P?-10
+Added Pin To Net: NetName=Cur_2 Pin=P?-11
+Added Pin To Net: NetName=Cur_1 Pin=P?-12
+Added Pin To Net: NetName=NetNano_Cur?_3V3 Pin=Nano_Cur?-3V3
+Added Pin To Net: NetName=NetNano_Cur?_3V3 Pin=P?-14
+Added Net: Name=NetNano_Cur?_3V3
+Added Pin To Net: NetName=NetNano_Cur?_5V Pin=Nano_Cur?-5V
+Added Pin To Net: NetName=NetNano_Cur?_5V Pin=P?-4
+Added Net: Name=NetNano_Cur?_5V
+Added Pin To Net: NetName=NetNano_Cur?_D2 Pin=Nano_Cur?-D2
+Added Pin To Net: NetName=NetNano_Cur?_D2 Pin=P?-11
+Added Net: Name=NetNano_Cur?_D2
+Added Pin To Net: NetName=NetNano_Cur?_D3 Pin=Nano_Cur?-D3
+Added Pin To Net: NetName=NetNano_Cur?_D3 Pin=P?-10
+Added Net: Name=NetNano_Cur?_D3
+Added Pin To Net: NetName=NetNano_Cur?_D4 Pin=Nano_Cur?-D4
+Added Pin To Net: NetName=NetNano_Cur?_D4 Pin=P?-9
+Added Net: Name=NetNano_Cur?_D4
+Added Pin To Net: NetName=NetNano_Cur?_D5 Pin=Nano_Cur?-D5
+Added Pin To Net: NetName=NetNano_Cur?_D5 Pin=P?-8
+Added Net: Name=NetNano_Cur?_D5
+Added Pin To Net: NetName=NetNano_Cur?_D6 Pin=Nano_Cur?-D6
+Added Pin To Net: NetName=NetNano_Cur?_D6 Pin=P?-7
+Added Net: Name=NetNano_Cur?_D6
+Added Pin To Net: NetName=NetNano_Cur?_D7 Pin=Nano_Cur?-D7
+Added Pin To Net: NetName=NetNano_Cur?_D7 Pin=P?-6
+Added Net: Name=NetNano_Cur?_D7
+Added Pin To Net: NetName=NetNano_Cur?_D8 Pin=Nano_Cur?-D8
+Added Pin To Net: NetName=NetNano_Cur?_D8 Pin=P?-5
+Added Net: Name=NetNano_Cur?_D8
+Added Pin To Net: NetName=NetNano_Cur?_D9 Pin=Nano_Cur?-D9
+Added Pin To Net: NetName=NetNano_Cur?_D9 Pin=P?-4
+Added Net: Name=NetNano_Cur?_D9
+Added Pin To Net: NetName=NetNano_Cur?_D10 Pin=Nano_Cur?-D10
+Added Pin To Net: NetName=NetNano_Cur?_D10 Pin=P?-3
+Added Net: Name=NetNano_Cur?_D10
+Added Pin To Net: NetName=NetNano_Cur?_D11 Pin=Nano_Cur?-D11
+Added Pin To Net: NetName=NetNano_Cur?_D11 Pin=P?-2
+Added Net: Name=NetNano_Cur?_D11
+Added Pin To Net: NetName=NetNano_Cur?_D12 Pin=Nano_Cur?-D12
+Added Pin To Net: NetName=NetNano_Cur?_D12 Pin=P?-1
+Added Net: Name=NetNano_Cur?_D12
+Added Pin To Net: NetName=NetNano_Cur?_D13 Pin=Nano_Cur?-D13
+Added Pin To Net: NetName=NetNano_Cur?_D13 Pin=P?-15
+Added Net: Name=NetNano_Cur?_D13
+Added Pin To Net: NetName=NetNano_Cur?_GND Pin=Nano_Cur?-GND
+Added Pin To Net: NetName=NetNano_Cur?_GND Pin=P?-12
+Added Net: Name=NetNano_Cur?_GND
+Added Pin To Net: NetName=NetNano_Cur?_REF Pin=Nano_Cur?-REF
+Added Pin To Net: NetName=NetNano_Cur?_REF Pin=P?-13
+Added Net: Name=NetNano_Cur?_REF
+Added Pin To Net: NetName=NetNano_Cur?_RST. Pin=Nano_Cur?-RST.
+Added Pin To Net: NetName=NetNano_Cur?_RST. Pin=P?-3
+Added Net: Name=NetNano_Cur?_RST.
+Added Pin To Net: NetName=NetNano_Cur?_RST Pin=Nano_Cur?-RST
+Added Pin To Net: NetName=NetNano_Cur?_RST Pin=P?-13
+Added Net: Name=NetNano_Cur?_RST
+Added Pin To Net: NetName=NetNano_Cur?_RX1 Pin=Nano_Cur?-RX1
+Added Pin To Net: NetName=NetNano_Cur?_RX1 Pin=P?-14
+Added Net: Name=NetNano_Cur?_RX1
+Added Pin To Net: NetName=NetNano_Cur?_TX1 Pin=Nano_Cur?-TX1
+Added Pin To Net: NetName=NetNano_Cur?_TX1 Pin=P?-15
+Added Net: Name=NetNano_Cur?_TX1
+Added Class: Name=Underwater_ROV_CurrentSense
+Added Room: Name=Underwater_ROV_CurrentSense

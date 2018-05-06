@@ -1,0 +1,79 @@
+Removed Pin From Net: NetName=NetCurrent_1_3 Pin=ESC1-+
+Removed Pin From Net: NetName=GND Pin=ESC1--
+Removed Pin From Net: NetName=NetCurrent_2_3 Pin=ESC2-+
+Removed Pin From Net: NetName=GND Pin=ESC2--
+Removed Pin From Net: NetName=NetCurrent_3_3 Pin=ESC3-+
+Removed Pin From Net: NetName=GND Pin=ESC3--
+Removed Pin From Net: NetName=NetCurrent_4_3 Pin=ESC4-+
+Removed Pin From Net: NetName=GND Pin=ESC4--
+Removed Pin From Net: NetName=NetCurrent_5_3 Pin=ESC5-+
+Removed Pin From Net: NetName=GND Pin=ESC5--
+Removed Pin From Net: NetName=NetCurrent_6_3 Pin=ESC6-+
+Removed Pin From Net: NetName=GND Pin=ESC6--
+Removed Pin From Net: NetName=NetCurrent_7_3 Pin=ESC7-+
+Removed Pin From Net: NetName=GND Pin=ESC7--
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC1
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC2
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC3
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC4
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC5
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC6
+Removed Member From Class: ClassName=Underwater_ROV_Sensors Member=ESC7
+Added Component: Designator=Cur_1(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_2(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_3(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_4(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_5(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_6(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Cur_7(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetCurrent_1_3 Pin=Cur_1-+
+Added Pin To Net: NetName=GND Pin=Cur_1--
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Cur_2-+
+Added Pin To Net: NetName=GND Pin=Cur_2--
+Added Pin To Net: NetName=NetCurrent_3_3 Pin=Cur_3-+
+Added Pin To Net: NetName=GND Pin=Cur_3--
+Added Pin To Net: NetName=NetCurrent_4_3 Pin=Cur_4-+
+Added Pin To Net: NetName=GND Pin=Cur_4--
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Cur_5-+
+Added Pin To Net: NetName=GND Pin=Cur_5--
+Added Pin To Net: NetName=NetCurrent_6_3 Pin=Cur_6-+
+Added Pin To Net: NetName=GND Pin=Cur_6--
+Added Pin To Net: NetName=NetCurrent_7_3 Pin=Cur_7-+
+Added Pin To Net: NetName=GND Pin=Cur_7--
+Added Pin To Net: NetName=12V Pin=Current_2-1
+Added Pin To Net: NetName=12V Pin=Current_2-2
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-3
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-4
+Added Pin To Net: NetName=GND Pin=Current_2-5
+Added Pin To Net: NetName=NetCurrent_2_6 Pin=Current_2-6
+Added Pin To Net: NetName=NetC2_2 Pin=Current_2-7
+Added Pin To Net: NetName=3_3V Pin=Current_2-8
+Added Pin To Net: NetName=12V Pin=Current_5-1
+Added Pin To Net: NetName=12V Pin=Current_5-2
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-3
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-4
+Added Pin To Net: NetName=GND Pin=Current_5-5
+Added Pin To Net: NetName=NetCurrent_5_6 Pin=Current_5-6
+Added Pin To Net: NetName=NetC5_2 Pin=Current_5-7
+Added Pin To Net: NetName=3_3V Pin=Current_5-8
+Change Net Name : Old Net Name=NetCurrent_1_3 New Net Name=NetCur_1_+
+Change Net Name : Old Net Name=NetCurrent_2_3 New Net Name=NetCur_2_+
+Change Net Name : Old Net Name=NetCurrent_3_3 New Net Name=NetCur_3_+
+Change Net Name : Old Net Name=NetCurrent_4_3 New Net Name=NetCur_4_+
+Change Net Name : Old Net Name=NetCurrent_5_3 New Net Name=NetCur_5_+
+Change Net Name : Old Net Name=NetCurrent_6_3 New Net Name=NetCur_6_+
+Change Net Name : Old Net Name=NetCurrent_7_3 New Net Name=NetCur_7_+
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_1 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_2 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_3 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_4 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_5 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_6 XT30_2pin
+Added Member To Class: ClassName=Underwater_ROV_Sensors Member=Component Cur_7 XT30_2pin

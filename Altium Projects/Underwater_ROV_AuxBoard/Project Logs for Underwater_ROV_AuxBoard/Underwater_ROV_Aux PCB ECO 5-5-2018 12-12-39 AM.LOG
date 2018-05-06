@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=12V Pin=12V-1
+Removed Pin From Net: NetName=12V Pin=12V-2
+Removed Pin From Net: NetName=GND Pin=GND_Nano-1
+Removed Pin From Net: NetName=GND Pin=GND_Nano-2
+Removed Pin From Net: NetName=GND Pin=Nano_servos-GND.
+Removed Pin From Net: NetName=GND Pin=P15-2
+Removed Member From Class: ClassName=Underwater_ROV_Servos Member=12V
+Removed Member From Class: ClassName=Underwater_ROV_Servos Member=GND_Nano
+Change Component Designator: OldDesignator=Nano_Cur NewDesignator=Nano_Cur?
+Change Component Designator: OldDesignator=Servo (7,6) NewDesignator=Servo (6,7)
+Change Component Designator: OldDesignator=Servo (9,8) NewDesignator=Servo (4,5)
+Added Pin To Net: NetName=12V Pin=Current_2-1
+Added Pin To Net: NetName=12V Pin=Current_2-2
+Added Pin To Net: NetName=NetCur_2_+ Pin=Current_2-3
+Added Pin To Net: NetName=NetCur_2_+ Pin=Current_2-4
+Added Pin To Net: NetName=GND Pin=Current_2-5
+Added Pin To Net: NetName=NetCurrent_2_6 Pin=Current_2-6
+Added Pin To Net: NetName=Cur_2 Pin=Current_2-7
+Added Pin To Net: NetName=3_3V Pin=Current_2-8
+Added Pin To Net: NetName=12V Pin=Current_5-1
+Added Pin To Net: NetName=12V Pin=Current_5-2
+Added Pin To Net: NetName=NetCur_5_+ Pin=Current_5-3
+Added Pin To Net: NetName=NetCur_5_+ Pin=Current_5-4
+Added Pin To Net: NetName=GND Pin=Current_5-5
+Added Pin To Net: NetName=NetCurrent_5_6 Pin=Current_5-6
+Added Pin To Net: NetName=Cur_5 Pin=Current_5-7
+Added Pin To Net: NetName=3_3V Pin=Current_5-8
+Added Pin To Net: NetName=NetNano_servos_GND. Pin=Nano_servos-GND.
+Added Pin To Net: NetName=NetNano_servos_GND. Pin=P15-2
+Added Net: Name=NetNano_servos_GND.
+Added Member To Class: ClassName=Underwater_ROV_CurrentSense Member=Component P? Header 15

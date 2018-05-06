@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=12V Pin=Current_2-1
+Added Pin To Net: NetName=12V Pin=Current_2-2
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-3
+Added Pin To Net: NetName=NetCurrent_2_3 Pin=Current_2-4
+Added Pin To Net: NetName=GND Pin=Current_2-5
+Added Pin To Net: NetName=NetCurrent_2_6 Pin=Current_2-6
+Added Pin To Net: NetName=NetC2_2 Pin=Current_2-7
+Added Pin To Net: NetName=3_3V Pin=Current_2-8
+Added Pin To Net: NetName=12V Pin=Current_5-1
+Added Pin To Net: NetName=12V Pin=Current_5-2
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-3
+Added Pin To Net: NetName=NetCurrent_5_3 Pin=Current_5-4
+Added Pin To Net: NetName=GND Pin=Current_5-5
+Added Pin To Net: NetName=NetCurrent_5_6 Pin=Current_5-6
+Added Pin To Net: NetName=NetC5_2 Pin=Current_5-7
+Added Pin To Net: NetName=3_3V Pin=Current_5-8

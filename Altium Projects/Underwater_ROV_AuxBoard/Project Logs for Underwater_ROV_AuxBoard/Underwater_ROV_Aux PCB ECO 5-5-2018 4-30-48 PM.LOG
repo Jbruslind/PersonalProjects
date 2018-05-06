@@ -1,0 +1,24 @@
+Change Component Designator: OldDesignator=Nano_Cur? NewDesignator=Nano_Cur1
+Change Component Designator: OldDesignator=P? NewDesignator=P8
+Change Component Designator: OldDesignator=P? NewDesignator=P9
+Change Net Name : Old Net Name=NetNano_Cur?_3V3 New Net Name=NetNano_Cur1_3V3
+Change Net Name : Old Net Name=NetNano_Cur?_5V New Net Name=NetNano_Cur1_5V
+Change Net Name : Old Net Name=NetNano_Cur?_D2 New Net Name=NetNano_Cur1_D2
+Change Net Name : Old Net Name=NetNano_Cur?_D3 New Net Name=NetNano_Cur1_D3
+Change Net Name : Old Net Name=NetNano_Cur?_D4 New Net Name=NetNano_Cur1_D4
+Change Net Name : Old Net Name=NetNano_Cur?_D5 New Net Name=NetNano_Cur1_D5
+Change Net Name : Old Net Name=NetNano_Cur?_D6 New Net Name=NetNano_Cur1_D6
+Change Net Name : Old Net Name=NetNano_Cur?_D7 New Net Name=NetNano_Cur1_D7
+Change Net Name : Old Net Name=NetNano_Cur?_D8 New Net Name=NetNano_Cur1_D8
+Change Net Name : Old Net Name=NetNano_Cur?_D9 New Net Name=NetNano_Cur1_D9
+Change Net Name : Old Net Name=NetNano_Cur?_D10 New Net Name=NetNano_Cur1_D10
+Change Net Name : Old Net Name=NetNano_Cur?_D11 New Net Name=NetNano_Cur1_D11
+Change Net Name : Old Net Name=NetNano_Cur?_D12 New Net Name=NetNano_Cur1_D12
+Change Net Name : Old Net Name=NetNano_Cur?_D13 New Net Name=NetNano_Cur1_D13
+Change Net Name : Old Net Name=NetNano_Cur?_GND New Net Name=NetNano_Cur1_GND
+Change Net Name : Old Net Name=NetNano_Cur?_REF New Net Name=NetNano_Cur1_REF
+Change Net Name : Old Net Name=NetNano_Cur?_RST New Net Name=NetNano_Cur1_RST
+Change Net Name : Old Net Name=NetNano_Cur?_RST. New Net Name=NetNano_Cur1_RST.
+Change Net Name : Old Net Name=NetNano_Cur?_RX1 New Net Name=NetNano_Cur1_RX1
+Change Net Name : Old Net Name=NetNano_Cur?_TX1 New Net Name=NetNano_Cur1_TX1
+Added Member To Class: ClassName=Underwater_ROV_CurrentSense Member=Component P9 Header 15

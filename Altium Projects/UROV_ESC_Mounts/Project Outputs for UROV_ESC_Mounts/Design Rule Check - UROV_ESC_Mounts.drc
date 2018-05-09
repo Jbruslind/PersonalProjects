@@ -1,0 +1,100 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Jorian Brusind\Documents\GitHub\PersonalProjects\Altium Projects\UROV_ESC_Mounts\UROV_ESC_Mounts.PcbDoc
+Date     : 5/9/2018
+Time     : 1:20:37 PM
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=1mm) (Max=3mm) (Preferred=1.57mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+   Violation between Hole Size Constraint: (3.4mm > 2.54mm) Pad Free-48(30mm,120mm) on Multi-Layer Actual Hole Size = 3.4mm
+   Violation between Hole Size Constraint: (3.4mm > 2.54mm) Pad Free-48(30mm,30mm) on Multi-Layer Actual Hole Size = 3.4mm
+   Violation between Hole Size Constraint: (3.4mm > 2.54mm) Pad Free-48(120mm,30mm) on Multi-Layer Actual Hole Size = 3.4mm
+   Violation between Hole Size Constraint: (3.4mm > 2.54mm) Pad Free-48(120mm,120mm) on Multi-Layer Actual Hole Size = 3.4mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_8-1(111mm,34mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_8-3(108.25mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_8-2(113.75mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_7-1(110mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_7-2(100mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_5-1(78mm,32mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_5-3(75.25mm,36.763mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_5-2(80.75mm,36.763mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_4-1(66mm,34mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_4-3(63.25mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_4-2(68.75mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_4-1(56mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_4-2(66mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_2-1(46mm,34mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_2-3(43.25mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_2-2(48.75mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_2-1(32mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_2-2(42mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_5-1(88mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_5-2(78mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_7-1(100mm,32mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_7-3(97.25mm,36.763mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_7-2(102.75mm,36.763mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_6-1(89mm,34mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_6-3(86.25mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_6-2(91.75mm,29.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_3-1(55.75mm,33.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_3-3(53mm,38mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_3-2(58.5mm,38mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_1-1(35.75mm,33.237mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_1-3(33mm,38mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (3.8mm > 2.54mm) Pad MT30_1-2(38.5mm,38mm) on Multi-Layer Actual Hole Size = 3.8mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_8-1(100mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_8-2(110mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_6-1(78mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_6-2(88mm,96mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_3-1(66mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_3-2(56mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_1-1(42mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+   Violation between Hole Size Constraint: (4mm > 2.54mm) Pad ESC_1-2(32mm,86mm) on Multi-Layer Actual Hole Size = 4mm
+Rule Violations :44
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Track (118.75mm,27.237mm)(118.75mm,30.737mm) on Bottom Overlay And Pad Free-48(120mm,30mm) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Text "2" (120.35mm,27.537mm) on Bottom Overlay And Pad Free-48(120mm,30mm) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.254mm) Between Track (111.75mm,37.737mm)(118.75mm,30.737mm) on Bottom Overlay And Pad Free-48(120mm,30mm) on Multi-Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.237mm < 0.254mm) Between Text "MT30_3" (46.472mm,42.138mm) on Top Overlay And Pad ESC_3-5(54mm,46mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0.237mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.218mm < 0.254mm) Between Text "MT30_1" (26.489mm,42.131mm) on Top Overlay And Pad ESC_1-5(30mm,46mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0.218mm]
+Rule Violations :5
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Room UROV_ESC_Mounts (Bounding Region = (25mm, 25mm, 124mm, 124mm) (InComponentClass('UROV_ESC_Mounts'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 49
+Waived Violations : 0
+Time Elapsed        : 00:00:02

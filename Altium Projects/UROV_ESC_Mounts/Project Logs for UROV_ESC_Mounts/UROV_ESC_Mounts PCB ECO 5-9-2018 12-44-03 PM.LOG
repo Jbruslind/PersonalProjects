@@ -1,0 +1,153 @@
+Added Component: Designator=ESC_1(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_2(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_3(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_4(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_5(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_6(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_7(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ESC_8(ESC_mounts)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_1(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_2(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_3(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_4(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_5(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_6(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_7(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MT30_8(MT60_3pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_1(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_2(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_3(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_4(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_5(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_6(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_7(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=XT30_8(XT30_2pin)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetESC_1_1 Pin=ESC_1-1
+Added Pin To Net: NetName=NetESC_1_2 Pin=ESC_1-2
+Added Pin To Net: NetName=NetESC_1_3 Pin=ESC_1-3
+Added Pin To Net: NetName=NetESC_1_4 Pin=ESC_1-4
+Added Pin To Net: NetName=NetESC_1_5 Pin=ESC_1-5
+Added Pin To Net: NetName=NetESC_2_1 Pin=ESC_2-1
+Added Pin To Net: NetName=NetESC_2_2 Pin=ESC_2-2
+Added Pin To Net: NetName=NetESC_2_3 Pin=ESC_2-3
+Added Pin To Net: NetName=NetESC_2_4 Pin=ESC_2-4
+Added Pin To Net: NetName=NetESC_2_5 Pin=ESC_2-5
+Added Pin To Net: NetName=NetESC_3_1 Pin=ESC_3-1
+Added Pin To Net: NetName=NetESC_3_2 Pin=ESC_3-2
+Added Pin To Net: NetName=NetESC_3_3 Pin=ESC_3-3
+Added Pin To Net: NetName=NetESC_3_4 Pin=ESC_3-4
+Added Pin To Net: NetName=NetESC_3_5 Pin=ESC_3-5
+Added Pin To Net: NetName=NetESC_4_1 Pin=ESC_4-1
+Added Pin To Net: NetName=NetESC_4_2 Pin=ESC_4-2
+Added Pin To Net: NetName=NetESC_4_3 Pin=ESC_4-3
+Added Pin To Net: NetName=NetESC_4_4 Pin=ESC_4-4
+Added Pin To Net: NetName=NetESC_4_5 Pin=ESC_4-5
+Added Pin To Net: NetName=NetESC_5_1 Pin=ESC_5-1
+Added Pin To Net: NetName=NetESC_5_2 Pin=ESC_5-2
+Added Pin To Net: NetName=NetESC_5_3 Pin=ESC_5-3
+Added Pin To Net: NetName=NetESC_5_4 Pin=ESC_5-4
+Added Pin To Net: NetName=NetESC_5_5 Pin=ESC_5-5
+Added Pin To Net: NetName=NetESC_6_1 Pin=ESC_6-1
+Added Pin To Net: NetName=NetESC_6_2 Pin=ESC_6-2
+Added Pin To Net: NetName=NetESC_6_3 Pin=ESC_6-3
+Added Pin To Net: NetName=NetESC_6_4 Pin=ESC_6-4
+Added Pin To Net: NetName=NetESC_6_5 Pin=ESC_6-5
+Added Pin To Net: NetName=NetESC_7_1 Pin=ESC_7-1
+Added Pin To Net: NetName=NetESC_7_2 Pin=ESC_7-2
+Added Pin To Net: NetName=NetESC_7_3 Pin=ESC_7-3
+Added Pin To Net: NetName=NetESC_7_4 Pin=ESC_7-4
+Added Pin To Net: NetName=NetESC_7_5 Pin=ESC_7-5
+Added Pin To Net: NetName=NetESC_8_1 Pin=ESC_8-1
+Added Pin To Net: NetName=NetESC_8_2 Pin=ESC_8-2
+Added Pin To Net: NetName=NetESC_8_3 Pin=ESC_8-3
+Added Pin To Net: NetName=NetESC_8_4 Pin=ESC_8-4
+Added Pin To Net: NetName=NetESC_8_5 Pin=ESC_8-5
+Added Pin To Net: NetName=NetESC_1_5 Pin=MT30_1-1
+Added Pin To Net: NetName=NetESC_1_4 Pin=MT30_1-2
+Added Pin To Net: NetName=NetESC_1_3 Pin=MT30_1-3
+Added Pin To Net: NetName=NetESC_2_5 Pin=MT30_2-1
+Added Pin To Net: NetName=NetESC_2_4 Pin=MT30_2-2
+Added Pin To Net: NetName=NetESC_2_3 Pin=MT30_2-3
+Added Pin To Net: NetName=NetESC_3_5 Pin=MT30_3-1
+Added Pin To Net: NetName=NetESC_3_4 Pin=MT30_3-2
+Added Pin To Net: NetName=NetESC_3_3 Pin=MT30_3-3
+Added Pin To Net: NetName=NetESC_4_5 Pin=MT30_4-1
+Added Pin To Net: NetName=NetESC_4_4 Pin=MT30_4-2
+Added Pin To Net: NetName=NetESC_4_3 Pin=MT30_4-3
+Added Pin To Net: NetName=NetESC_5_5 Pin=MT30_5-1
+Added Pin To Net: NetName=NetESC_5_4 Pin=MT30_5-2
+Added Pin To Net: NetName=NetESC_5_3 Pin=MT30_5-3
+Added Pin To Net: NetName=NetESC_6_5 Pin=MT30_6-1
+Added Pin To Net: NetName=NetESC_6_4 Pin=MT30_6-2
+Added Pin To Net: NetName=NetESC_6_3 Pin=MT30_6-3
+Added Pin To Net: NetName=NetESC_7_5 Pin=MT30_7-1
+Added Pin To Net: NetName=NetESC_7_4 Pin=MT30_7-2
+Added Pin To Net: NetName=NetESC_7_3 Pin=MT30_7-3
+Added Pin To Net: NetName=NetESC_8_5 Pin=MT30_8-1
+Added Pin To Net: NetName=NetESC_8_4 Pin=MT30_8-2
+Added Pin To Net: NetName=NetESC_8_3 Pin=MT30_8-3
+Added Pin To Net: NetName=NetESC_1_2 Pin=XT30_1-+
+Added Pin To Net: NetName=NetESC_1_1 Pin=XT30_1--
+Added Pin To Net: NetName=NetESC_2_2 Pin=XT30_2-+
+Added Pin To Net: NetName=NetESC_2_1 Pin=XT30_2--
+Added Pin To Net: NetName=NetESC_3_2 Pin=XT30_3-+
+Added Pin To Net: NetName=NetESC_3_1 Pin=XT30_3--
+Added Pin To Net: NetName=NetESC_4_2 Pin=XT30_4-+
+Added Pin To Net: NetName=NetESC_4_1 Pin=XT30_4--
+Added Pin To Net: NetName=NetESC_5_2 Pin=XT30_5-+
+Added Pin To Net: NetName=NetESC_5_1 Pin=XT30_5--
+Added Pin To Net: NetName=NetESC_6_2 Pin=XT30_6-+
+Added Pin To Net: NetName=NetESC_6_1 Pin=XT30_6--
+Added Pin To Net: NetName=NetESC_7_2 Pin=XT30_7-+
+Added Pin To Net: NetName=NetESC_7_1 Pin=XT30_7--
+Added Pin To Net: NetName=NetESC_8_2 Pin=XT30_8-+
+Added Pin To Net: NetName=NetESC_8_1 Pin=XT30_8--
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_1 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_2 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_3 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_4 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_5 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_6 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_7 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component ESC_8 ESC_Template
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_1 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_2 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_3 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_4 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_5 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_6 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_7 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component MT30_8 MT60_3pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_1 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_2 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_3 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_4 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_5 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_6 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_7 XT30_2pin
+Added Member To Class: ClassName=UROV_ESC_Mounts Member=Component XT30_8 XT30_2pin
+Added Room: Name=UROV_ESC_Mounts

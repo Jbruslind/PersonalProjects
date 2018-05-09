@@ -2,11 +2,12 @@ Output: NC Drill Files
 Type  : NC Drill
 From  : Project [Underwater_ROV_AuxBoard.PrjPcb]
    Generated File[Underwater_ROV_Aux.TXT]
+   Generated File[Underwater_ROV_Aux-BoardEdgeRout.TXT]
    Generated File[Underwater_ROV_Aux.LDP]
    Generated File[Underwater_ROV_Aux.DRR]
 
 
-Files Generated   : 3
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 6:28:51 PM On 4/11/2018
+Finished Output Generation At 11:45:48 AM On 5/9/2018

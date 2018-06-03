@@ -1,0 +1,37 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: OSU_Robotics_Kids.PcbDoc   6/3/2018  1:40:28 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : OSU_Robotics_Kids.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      13mil (0.32mm)                                            Round             1         PTH        0.00inch (0.00mm)
+T2      14mil (0.361mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T3      16mil (0.404mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T4      18mil (0.455mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T5      20mil (0.511mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T6      23mil (0.574mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T7      25mil (0.645mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T8      29mil (0.724mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T9      32mil (0.813mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T10     35mil (0.899mm)                                           Round             2         PTH        0.30inch (7.62mm)
+T11     36mil (0.912mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T12     40mil (1.024mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T13     45mil (1.151mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T14     51mil (1.29mm)                                            Round             1         PTH        0.00inch (0.00mm)
+T15     57mil (1.45mm)                                            Round             1         PTH        0.00inch (0.00mm)
+T16     64mil (1.628mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T17     72mil (1.829mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T18     81mil (2.052mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T19     91mil (2.304mm)                                           Round             1         PTH        0.00inch (0.00mm)
+T20     102mil (2.588mm)                                          Round             1         PTH        0.00inch (0.00mm)
+T21     114mil (2.906mm)                                          Round             1         PTH        0.00inch (0.00mm)
+T22     129mil (3.264mm)                                          Round             1         PTH        0.00inch (0.00mm)
+T23     144mil (3.665mm)                                          Round             1         PTH        0.00inch (0.00mm)
+T24     162mil (4.115mm)                                          Round             1         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              25
+
+Total Processing Time (hh:mm:ss) : 00:00:00

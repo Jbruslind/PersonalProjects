@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=SSOP 16 NewDesignator=R25
+Added Member To Class: ClassName=OSU_Robotics_Kids_lights Member=Component SMC Diode

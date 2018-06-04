@@ -1,0 +1,4 @@
+Added Component: Designator=ATmega(SPARKFUN-DIGITALIC_TQFP44)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "IC-11161"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=OSU_Robotics_Kids_lights Member=Component ATmega

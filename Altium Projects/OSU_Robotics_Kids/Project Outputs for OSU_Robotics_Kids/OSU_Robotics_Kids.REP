@@ -124,7 +124,7 @@ Generating : Top Overlay
 
 Used DCodes :
     D30
-    D35
+    D34
     D37
     D38
     D39
@@ -188,11 +188,11 @@ Used DCodes :
     D31
     D32
     D33
-    D35
+    D34
     D36
     D37
     D38
-    D40
+    D41
     D55
     D56
     D57
@@ -315,7 +315,7 @@ Generating : Mechanical 8
 
 
 Used DCodes :
-    D89
+    D88
     D90
 *************************************************************
 

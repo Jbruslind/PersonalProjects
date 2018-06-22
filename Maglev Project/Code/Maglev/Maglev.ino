@@ -1,6 +1,6 @@
 int Halleffect = A0; // Hall Effect Sensor Pin
 int pwmPin = 3; // Pin being used to switch the transistor circuit
-int levitPoint = 625; // Value to have our magnet levitate around, after a couple tuning sessions 590-630 are pretty good ranges for the setpoint
+int levitPoint = 590; // Value to have our magnet levitate around, after a couple tuning sessions 590-630 are pretty good ranges for the setpoint
 int outputsig = A1;  
 
 #define Filter_setting 4
@@ -15,9 +15,9 @@ int induction = 0; //initially set our PWM duty cycle to be 0 (off)
 
 void setup() {
   
-
+  //Serial.begin(9600);
   TCCR2A = _BV(COM2A1) | _BV(COM2B1) | _BV(WGM20); //PWM direct controller commands for AVR chips (_BV sets the value as a binary value, COM2An and COM2Bn set inverter to TRUE or FALSE, WGM sets the PWM waveform setting to things such as FAST PWM, Phase Correct PWM, etc) 
-  TCCR2B = _BV(CS20); //CS = Clock select, sets the prescaler value for the internal hardware clock for the 3 and 11 digital pins. 20 means SYS_CLK/8 = 16Mhz /8 = ~2 MHz) 
+  //TCCR2B = _BV(CS20); //CS = Clock select, sets the prescaler value for the internal hardware clock for the 3 and 11 digital pins. 20 means SYS_CLK/8 = 16Mhz /8 = ~2 MHz) 
 
   Max_levitation = levitPoint - Changeinset; //Set the maximum leviation point we will tolerate (so our setpoint - value = lowest point we want our magnet to go to
   Minimum_levitation = levitPoint + Changeinset;
@@ -41,7 +41,7 @@ void loop() {
     // This bascically ensures if we're between our max/min points, we want the eltromagnet to be proactive and try to attract the magnet some of the time and as it gets closer to our max point, we want it to start turning off
     //Effectivly we are controlling the strength of our electromagnet
   }
-
+  //Serial.println(filter_input);
   OCR2B = induction; //Set the PWM pin 3 to be the duty cycle we specified (0 - 255, 0% - 100% on) 
   analogWrite(outputsig, filter_input); //Output value as an analog value for the ADC/FPGA system to measure. 
 }

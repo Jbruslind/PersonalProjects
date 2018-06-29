@@ -1,6 +1,6 @@
 int Halleffect = A0; // Hall Effect Sensor Pin
 int pwmPin = 3; // Pin being used to switch the transistor circuit
-int levitPoint = 585; // Value to have our magnet levitate around, after a couple tuning sessions 590-630 are pretty good ranges for the setpoint
+int levitPoint = 587; // Value to have our magnet levitate around, after a couple tuning sessions 590-630 are pretty good ranges for the setpoint
 int outputsig = A1;  
 
 #define Filter_setting 4

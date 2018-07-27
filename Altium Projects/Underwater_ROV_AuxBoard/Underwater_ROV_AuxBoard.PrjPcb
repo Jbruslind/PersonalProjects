@@ -107,7 +107,7 @@ GenerateClassCluster=0
 DocumentUniqueId=OHNPDFXA
 
 [Document5]
-DocumentPath=Underwater_ROV_ESCS.SchDoc
+DocumentPath=Underwater_ROV_ESCS_asc.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -124,7 +124,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HRGYUEOU
 
 [Document6]
-DocumentPath=Underwater_ROV_Aux.PcbDoc
+DocumentPath=Underwater_ROV_Aux.pcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0

@@ -16,7 +16,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 int analogpin = A0;
 int ledR = 3;
 int ledG = 5;
-const int sampleWindow = 50; // Sample window width in mS (50 mS = 20Hz)
+const int sampleWindow = 40; // Sample window width in mS (50 mS = 20Hz)
 unsigned int sample;
 
 Time t;

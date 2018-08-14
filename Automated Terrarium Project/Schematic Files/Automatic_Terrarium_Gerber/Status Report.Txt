@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Automatic Terrarium.PrjPcb]
+   Generated File[AutoTerrarium.GTL]
+   Generated File[AutoTerrarium.GBL]
+   Generated File[AutoTerrarium.GPB]
+   Generated File[AutoTerrarium.GPT]
+   Generated File[AutoTerrarium.GTO]
+   Generated File[AutoTerrarium.GTS]
+   Generated File[AutoTerrarium.GBS]
+   Generated File[AutoTerrarium.GBO]
+   Generated File[AutoTerrarium.GKO]
+   Generated File[AutoTerrarium.Outline]
+   Generated File[AutoTerrarium.Assembly Text Top]
+   Generated File[AutoTerrarium.Assembly Top]
+   Generated File[AutoTerrarium.3D Top]
+   Generated File[AutoTerrarium.3D Bottom]
+   Generated File[AutoTerrarium.Courtyard Top]
+   Generated File[AutoTerrarium.Courtyard Bottom]
+   Generated File[AutoTerrarium.RUL]
+   Generated File[AutoTerrarium.EXTREP]
+   Generated File[AutoTerrarium.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 9:16:32 AM On 8/14/2018

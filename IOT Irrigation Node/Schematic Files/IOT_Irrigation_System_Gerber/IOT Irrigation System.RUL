@@ -1,5 +1,5 @@
 DRC Rules Export File for PCB: C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\ccf6edb1-4ae4-42fc-9c89-acd2426399c5\IOT Irrigation System.CMPcbDoc
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
-RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

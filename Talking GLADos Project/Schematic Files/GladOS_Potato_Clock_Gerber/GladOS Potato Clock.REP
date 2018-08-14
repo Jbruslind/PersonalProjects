@@ -1,0 +1,247 @@
+*************************************************************
+FileName = GladOS Potato Clock.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : GladOS Potato Clock.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : GladOS Potato Clock.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : GladOS Potato Clock.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : GladOS Potato Clock.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : GladOS Potato Clock.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : GladOS Potato Clock.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : GladOS Potato Clock.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : GladOS Potato Clock.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : GladOS Potato Clock.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D26
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Assembly Top
+      File : GladOS Potato Clock.Assembly Top
+
+    Adding Layer      : Assembly Top
+
+
+Used DCodes :
+    D27
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : GladOS Potato Clock.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : GladOS Potato Clock.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D26
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 27
+      File : GladOS Potato Clock.GM27
+
+    Adding Layer      : Mechanical 27
+
+
+Used DCodes :
+    D46
+*************************************************************
+

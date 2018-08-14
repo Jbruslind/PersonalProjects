@@ -1,0 +1,23 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: IOT Irrigation System.CMPcbDoc   8/13/2018  7:00:26 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : IOT Irrigation System.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        30mil (0.762mm)          Round          2                0.40 Inch (10.16 mm)
+T2        31.5mil (0.8001mm)       Round          30               5.33 Inch (135.38 mm)
+T3        35.4mil (0.89916mm)      Round          16               2.30 Inch (58.42 mm)
+T4        36.2mil (0.91948mm)      Round          4                0.26 Inch (6.50 mm)
+T5        39mil (0.9906mm)         Round          30               4.79 Inch (121.74 mm)
+T6        39.4mil (1.00076mm)      Round          2                0.10 Inch (2.54 mm)
+T7        59.1mil (1.50114mm)      Round          4                3.50 Inch (89.00 mm)
+T8        90.6mil (2.30124mm)      Round          2                0.47 Inch (12.04 mm)
+T9        124mil (3.1496mm)        Round          4                8.20 Inch (208.22 mm)
+T10       137.8mil (3.50012mm)     Round          2                1.52 Inch (38.48 mm)
+---------------------------------------------------------------------------
+Totals                                            96               26.87 Inch (682.49 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

@@ -1,0 +1,25 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Circuits for Kids - 7 Segment Display.PrjPcb]
+   Generated File[RGB.GTL]
+   Generated File[RGB.GBL]
+   Generated File[RGB.GPB]
+   Generated File[RGB.GPT]
+   Generated File[RGB.GTO]
+   Generated File[RGB.GTS]
+   Generated File[RGB.GBS]
+   Generated File[RGB.GBO]
+   Generated File[RGB.GKO]
+   Generated File[RGB.Outline]
+   Generated File[RGB.Assembly Top]
+   Generated File[RGB.3D Top]
+   Generated File[RGB.Courtyard Top]
+   Generated File[RGB.RUL]
+   Generated File[RGB.EXTREP]
+   Generated File[RGB.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 5:24:52 PM On 8/18/2018

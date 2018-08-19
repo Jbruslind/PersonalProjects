@@ -1,0 +1,381 @@
+*************************************************************
+FileName = Business Cards.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : Business Cards.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Business Cards.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Business Cards.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Business Cards.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Business Cards.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D13
+    D49
+    D50
+    D51
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Business Cards.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Business Cards.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Business Cards.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D47
+    D54
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Business Cards.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Business Cards.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D13
+    D41
+    D44
+    D45
+    D46
+    D49
+    D50
+    D51
+    D81
+    D82
+    D83
+    D84
+    D85
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : Business Cards.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : Business Cards.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Dimensions
+      File : Business Cards.Dimensions
+
+    Adding Layer      : Dimensions
+
+
+Used DCodes :
+    D86
+    D87
+*************************************************************
+
+*************************************************************
+Generating : Assembly Bottom
+      File : Business Cards.Assembly Bottom
+
+    Adding Layer      : Assembly Bottom
+
+
+Used DCodes :
+    D87
+    D88
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : Business Cards.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : 3D Bottom
+      File : Business Cards.3D Bottom
+
+    Adding Layer      : 3D Bottom
+
+
+Used DCodes :
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : Business Cards.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D45
+    D89
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Bottom
+      File : Business Cards.Courtyard Bottom
+
+    Adding Layer      : Courtyard Bottom
+
+
+Used DCodes :
+    D45
+    D89
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 34
+      File : Business Cards.GM34
+
+    Adding Layer      : Mechanical 34
+
+
+Used DCodes :
+    D90
+*************************************************************
+

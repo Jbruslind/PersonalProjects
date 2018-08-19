@@ -1,0 +1,215 @@
+*************************************************************
+FileName = RGB.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : RGB.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : RGB.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : RGB.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : RGB.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : RGB.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : RGB.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : RGB.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : RGB.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : RGB.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D10
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Assembly Top
+      File : RGB.Assembly Top
+
+    Adding Layer      : Assembly Top
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : RGB.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+    D10
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : RGB.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D10
+    D22
+*************************************************************
+

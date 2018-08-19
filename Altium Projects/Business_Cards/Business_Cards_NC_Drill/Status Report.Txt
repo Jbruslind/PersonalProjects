@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Business Cards.PrjPcb]
+   Generated File[Business Cards.TXT]
+   Generated File[Business Cards-BoardEdgeRout.TXT]
+   Generated File[Business Cards.LDP]
+   Generated File[Business Cards.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 9:45:01 AM On 8/17/2018

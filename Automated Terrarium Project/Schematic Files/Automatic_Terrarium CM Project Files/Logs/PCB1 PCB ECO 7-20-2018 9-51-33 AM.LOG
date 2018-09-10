@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Change Component Designator: OldDesignator=P? NewDesignator=P3
+Change Component Designator: OldDesignator=P? NewDesignator=P4
+Added Member To Class: ClassName=LEDS Member=Component P2 Molex 047053 1000
+Added Member To Class: ClassName=LEDS Member=Component P3 Molex 047053 1000
+Added Member To Class: ClassName=LEDS Member=Component P4 Molex 047053 1000

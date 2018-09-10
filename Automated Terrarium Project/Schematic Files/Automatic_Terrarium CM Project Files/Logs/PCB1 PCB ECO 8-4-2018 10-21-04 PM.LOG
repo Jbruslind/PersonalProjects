@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=GND Pin=5V-2
+Added Pin To Net: NetName=5V Pin=ESP12F-1
+Added Pin To Net: NetName=GND Pin=Power_In-1

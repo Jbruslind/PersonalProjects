@@ -1,0 +1,543 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #FAEFE7;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\CircuitMaker\Templates\CircuitMaker_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">8/14/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:14:23 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc" class="file"><acronym title="C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc">PCB1.CMPcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Errors:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">48</td></tr>
+</table>
+</td>
+</table><a name="IDYB4OGMIMS3S4HGN1PSYAE2X44BPFHST2UMFYE0BZFBSABGAUQTIK"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Errors</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEWNLHPELAAESNELOEVNWN5GRQOBN5DAJ3ZETZSJDFVCLPFUUTFRK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOYOCIRAYQ50EFH1GGG1ZCATHZHR3JIKIYROYSGKFZOP2FKNWJDEN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKEUFSYZNLBPME4TRNFQ0F1WQPKWD3QK3T22LJGMWEIK2N2F0G4HO">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJQM5M3RUC2ZYJELJTDSPI21PBFVC2PAGLSG5UXHTRNH3KZ0GV13G">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVA4A5QZX1TBZJDW1LVXP05H4IDKQTG1TSR5HGUMCA1JFFEDUIL2D">Width Constraint (Min=0.1mm) (Max=4mm) (Preferred=0.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJXNW4K0QSUQQH5ZOEV5GGHEIXPAEY1LG003TJNE2YILR2PKXJTG">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV1PUBSGDSZHTBNAOL1P153SJRO5BOTDOEVMTFYGFFZNSJZKQBJQI">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID30GLOAPURJSLIXPWJ2FYN20NCLIYBQ2GSBWSPTMVO2F2NSZOAKLK">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZXGPGHX1J4I3GTGQYQ1A0TPVJBYL5Z2PWRICGOMM3OAHDFTMYEE">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">7</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1YDDQ5D2G3ZZBAZKGFLCFJFBQGVPNZ22NHTXOUKPRMSBHMVEL5CH">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR0HDWBP5HY3BBUDZUAVUHFT34IY3TAGHD3FDFSXV2FVVPAVQ5KJ">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTO34MUYGUA4BKBVIBLXALBQPXBHF5MNZUME3JOCOYENKOJECRBME">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4ULZ0CGZSXKLMWUISJTR2FIMRGKHNNGYEJZFW3GP2GS554IELXZ">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAT0HOHZDHVSXI1TZNTF2NQM54OUBZ50NM4NXQSCWX4JGWWI5CWCO">Unpoured Polygon (Allow unpoured: False)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">48</td>
+</tr>
+</table><br><a name="IDV1PUBSGDSZHTBNAOL1P153SJRO5BOTDOEVMTFYGFFZNSJZKQBJQI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.091mil|Location2.X=3124.641mil|Location1.Y=4158.824mil|Location2.Y=4266.373mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.091mil|Location2.X=3124.641mil|Location1.Y=4158.824mil|Location2.Y=4266.373mil|Absolute=True">Hole Size Constraint (2.7mm &gt; 2.54mm) : Pad Free-1(78mm,107mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.217mil|Location2.X=1116.767mil|Location1.Y=4158.824mil|Location2.Y=4266.373mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.217mil|Location2.X=1116.767mil|Location1.Y=4158.824mil|Location2.Y=4266.373mil|Absolute=True">Hole Size Constraint (2.7mm &gt; 2.54mm) : Pad Free-1(27mm,107mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.217mil|Location2.X=1116.767mil|Location1.Y=1009.217mil|Location2.Y=1116.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.217mil|Location2.X=1116.767mil|Location1.Y=1009.217mil|Location2.Y=1116.767mil|Absolute=True">Hole Size Constraint (2.7mm &gt; 2.54mm) : Pad Free-1(27mm,27mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.091mil|Location2.X=3124.641mil|Location1.Y=1009.217mil|Location2.Y=1116.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3017.091mil|Location2.X=3124.641mil|Location1.Y=1009.217mil|Location2.Y=1116.767mil|Absolute=True">Hole Size Constraint (2.7mm &gt; 2.54mm) : Pad Free-1(78mm,27mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.296mil|Location2.X=1232.908mil|Location1.Y=4019.06mil|Location2.Y=4122.672mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1129.296mil|Location2.X=1232.908mil|Location1.Y=4019.06mil|Location2.Y=4122.672mil|Absolute=True">Hole Size Constraint (2.6mm &gt; 2.54mm) : Pad Motor-1(30mm,103.4mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1326.146mil|Location2.X=1429.758mil|Location1.Y=4019.06mil|Location2.Y=4122.672mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1326.146mil|Location2.X=1429.758mil|Location1.Y=4019.06mil|Location2.Y=4122.672mil|Absolute=True">Hole Size Constraint (2.6mm &gt; 2.54mm) : Pad Motor-2(35mm,103.4mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1778.902mil|Location2.X=1882.514mil|Location1.Y=4011.186mil|Location2.Y=4114.798mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1778.902mil|Location2.X=1882.514mil|Location1.Y=4011.186mil|Location2.Y=4114.798mil|Absolute=True">Hole Size Constraint (2.6mm &gt; 2.54mm) : Pad Power_In-1(46.5mm,103.2mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1582.052mil|Location2.X=1685.664mil|Location1.Y=4011.186mil|Location2.Y=4114.798mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1582.052mil|Location2.X=1685.664mil|Location1.Y=4011.186mil|Location2.Y=4114.798mil|Absolute=True">Hole Size Constraint (2.6mm &gt; 2.54mm) : Pad Power_In-2(41.5mm,103.2mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1263.154mil|Location2.X=1382.514mil|Location1.Y=3715.91mil|Location2.Y=3835.27mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1263.154mil|Location2.X=1382.514mil|Location1.Y=3715.91mil|Location2.Y=3835.27mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad 5V-0(33.6mm,95.9mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2463.942mil|Location2.X=2583.302mil|Location1.Y=3085.988mil|Location2.Y=3205.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2463.942mil|Location2.X=2583.302mil|Location1.Y=3085.988mil|Location2.Y=3205.348mil|Absolute=True">Hole Size Constraint (3mm &gt; 2.54mm) : Pad 5V-0(64.1mm,79.9mm)  Multi-Layer</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID30GLOAPURJSLIXPWJ2FYN20NCLIYBQ2GSBWSPTMVO2F2NSZOAKLK"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1708mil|Location2.X=1766mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1708mil|Location2.X=1766mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True">Via (44.12mm,42.342mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1707mil|Location2.X=1765mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1707mil|Location2.X=1765mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True">Via (44.094mm,42.342mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZXGPGHX1J4I3GTGQYQ1A0TPVJBYL5Z2PWRICGOMM3OAHDFTMYEE"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2975mil|Location2.X=3033mil|Location1.Y=1724mil|Location2.Y=1782mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2975mil|Location2.X=3033mil|Location1.Y=1724mil|Location2.Y=1782mil|Absolute=True">Via (76.302mm,44.526mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2993.504mil|Location2.X=3042.716mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2993.504mil|Location2.X=3042.716mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True">Pad RGB4-(76.66mm,43mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2251mil|Location2.X=2309mil|Location1.Y=2695mil|Location2.Y=2753mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2251mil|Location2.X=2309mil|Location1.Y=2695mil|Location2.Y=2753mil|Absolute=True">Via (57.912mm,69.19mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2311.394mil|Location2.X=2379.394mil|Location1.Y=2699.464mil|Location2.Y=2767.464mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2311.394mil|Location2.X=2379.394mil|Location1.Y=2699.464mil|Location2.Y=2767.464mil|Absolute=True">Pad Light-1(59.573mm,69.43mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2236mil|Location2.X=2294mil|Location1.Y=3098mil|Location2.Y=3156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2236mil|Location2.X=2294mil|Location1.Y=3098mil|Location2.Y=3156mil|Absolute=True">Via (57.531mm,79.426mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2222mil|Location2.X=2280mil|Location1.Y=3033mil|Location2.Y=3091mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2222mil|Location2.X=2280mil|Location1.Y=3033mil|Location2.Y=3091mil|Absolute=True">Via (57.175mm,77.775mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1510mil|Location2.X=1568mil|Location1.Y=1338mil|Location2.Y=1396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1510mil|Location2.X=1568mil|Location1.Y=1338mil|Location2.Y=1396mil|Absolute=True">Via (39.091mm,34.722mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.485mil|Location2.X=1623.485mil|Location1.Y=1368.635mil|Location2.Y=1426.635mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1565.485mil|Location2.X=1623.485mil|Location1.Y=1368.635mil|Location2.Y=1426.635mil|Absolute=True">Via (40.5mm,35.5mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1708mil|Location2.X=1766mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1708mil|Location2.X=1766mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True">Via (44.12mm,42.342mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1649mil|Location2.X=1707mil|Location1.Y=1617mil|Location2.Y=1675mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1649mil|Location2.X=1707mil|Location1.Y=1617mil|Location2.Y=1675mil|Absolute=True">Via (42.621mm,41.808mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1707mil|Location2.X=1765mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1707mil|Location2.X=1765mil|Location1.Y=1638mil|Location2.Y=1696mil|Absolute=True">Via (44.094mm,42.342mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1649mil|Location2.X=1707mil|Location1.Y=1617mil|Location2.Y=1675mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1649mil|Location2.X=1707mil|Location1.Y=1617mil|Location2.Y=1675mil|Absolute=True">Via (42.621mm,41.808mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1819mil|Location2.X=1877mil|Location1.Y=2320mil|Location2.Y=2378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1819mil|Location2.X=1877mil|Location1.Y=2320mil|Location2.Y=2378mil|Absolute=True">Via (46.939mm,59.665mm) Top Layer to Bottom Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1858mil|Location2.X=1916mil|Location1.Y=2372mil|Location2.Y=2430mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1858mil|Location2.X=1916mil|Location1.Y=2372mil|Location2.Y=2430mil|Absolute=True">Via (47.93mm,60.985mm) Top Layer to Bottom Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1YDDQ5D2G3ZZBAZKGFLCFJFBQGVPNZ22NHTXOUKPRMSBHMVEL5CH"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1056.102mil|Location2.X=1066.102mil|Location1.Y=4065.866mil|Location2.Y=4170.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1056.102mil|Location2.X=1066.102mil|Location1.Y=4065.866mil|Location2.Y=4170.866mil|Absolute=True">Track (26.952mm,103.4mm)(26.952mm,105.813mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.842mil|Location2.X=1116.142mil|Location1.Y=4159.449mil|Location2.Y=4265.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.842mil|Location2.X=1116.142mil|Location1.Y=4159.449mil|Location2.Y=4265.748mil|Absolute=True">Pad Free-1(27mm,107mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1056.102mil|Location2.X=1191.102mil|Location1.Y=4160.866mil|Location2.Y=4170.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1056.102mil|Location2.X=1191.102mil|Location1.Y=4160.866mil|Location2.Y=4170.866mil|Absolute=True">Track (26.952mm,105.813mm)(30.127mm,105.813mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.842mil|Location2.X=1116.142mil|Location1.Y=4159.449mil|Location2.Y=4265.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1009.842mil|Location2.X=1116.142mil|Location1.Y=4159.449mil|Location2.Y=4265.748mil|Absolute=True">Pad Free-1(27mm,107mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3031.497mil|Location2.X=3039.371mil|Location1.Y=1535.433mil|Location2.Y=1952.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3031.497mil|Location2.X=3039.371mil|Location1.Y=1535.433mil|Location2.Y=1952.757mil|Absolute=True">Track (77.1mm,39.1mm)(77.1mm,49.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2993.504mil|Location2.X=3042.716mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2993.504mil|Location2.X=3042.716mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True">Pad RGB4-(76.66mm,43mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.409mil|Location2.X=2732.283mil|Location1.Y=2082.677mil|Location2.Y=2500.001mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.409mil|Location2.X=2732.283mil|Location1.Y=2082.677mil|Location2.Y=2500.001mil|Absolute=True">Track (69.3mm,53mm)(69.3mm,63.4mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2686.418mil|Location2.X=2735.63mil|Location1.Y=2215.552mil|Location2.Y=2264.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2686.418mil|Location2.X=2735.63mil|Location1.Y=2215.552mil|Location2.Y=2264.764mil|Absolute=True">Pad RGB1-(68.86mm,56.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.409mil|Location2.X=2732.283mil|Location1.Y=1535.433mil|Location2.Y=1952.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2724.409mil|Location2.X=2732.283mil|Location1.Y=1535.433mil|Location2.Y=1952.757mil|Absolute=True">Track (69.3mm,39.1mm)(69.3mm,49.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2686.418mil|Location2.X=2735.63mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2686.418mil|Location2.X=2735.63mil|Location1.Y=1668.308mil|Location2.Y=1717.52mil|Absolute=True">Pad RGB3-(68.86mm,43mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.433mil|Location2.X=3043.307mil|Location1.Y=2082.677mil|Location2.Y=2500.001mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3035.433mil|Location2.X=3043.307mil|Location1.Y=2082.677mil|Location2.Y=2500.001mil|Absolute=True">Track (77.2mm,53mm)(77.2mm,63.4mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2997.442mil|Location2.X=3046.654mil|Location1.Y=2215.552mil|Location2.Y=2264.764mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2997.442mil|Location2.X=3046.654mil|Location1.Y=2215.552mil|Location2.Y=2264.764mil|Absolute=True">Pad RGB2-(76.76mm,56.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True">Track (26.695mm,98.678mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.929mil|Location2.X=1189.039mil|Location1.Y=3751.905mil|Location2.Y=3878.015mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.929mil|Location2.X=1189.039mil|Location1.Y=3751.905mil|Location2.Y=3878.015mil|Absolute=True">Pad 5V-1(28.6mm,96.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True">Track (26.695mm,98.678mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2657.417mil|Location2.X=2783.527mil|Location1.Y=3751.905mil|Location2.Y=3878.015mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2657.417mil|Location2.X=2783.527mil|Location1.Y=3751.905mil|Location2.Y=3878.015mil|Absolute=True">Pad 5V-3(69.1mm,96.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True">Track (26.822mm,77.088mm)(71.78mm,77.088mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2657.417mil|Location2.X=2783.527mil|Location1.Y=3043.243mil|Location2.Y=3169.353mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2657.417mil|Location2.X=2783.527mil|Location1.Y=3043.243mil|Location2.Y=3169.353mil|Absolute=True">Pad 5V-4(69.1mm,78.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True">Track (26.822mm,77.088mm)(71.78mm,77.088mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.929mil|Location2.X=1189.039mil|Location1.Y=3043.243mil|Location2.Y=3169.353mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1062.929mil|Location2.X=1189.039mil|Location1.Y=3043.243mil|Location2.Y=3169.353mil|Absolute=True">Pad 5V-2(28.6mm,78.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=2830.984mil|Location1.Y=3879.96mil|Location2.Y=3889.96mil|Absolute=True">Track (26.695mm,98.678mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1220.409mil|Location2.X=1425.259mil|Location1.Y=3673.165mil|Location2.Y=3878.015mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1220.409mil|Location2.X=1425.259mil|Location1.Y=3673.165mil|Location2.Y=3878.015mil|Absolute=True">Pad 5V-0(33.6mm,95.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1050.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3039.96mil|Absolute=True">Track (26.822mm,77.088mm)(71.78mm,77.088mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.197mil|Location2.X=2626.047mil|Location1.Y=3043.243mil|Location2.Y=3248.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.197mil|Location2.X=2626.047mil|Location1.Y=3043.243mil|Location2.Y=3248.093mil|Absolute=True">Pad 5V-0(64.1mm,79.9mm)  Multi-Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDR0HDWBP5HY3BBUDZUAVUHFT34IY3TAGHD3FDFSXV2FVVPAVQ5KJ"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Silk to Silk (Clearance=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1671.102mil|Location2.X=1841.054mil|Location1.Y=2804.961mil|Location2.Y=2884.941mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1671.102mil|Location2.X=1841.054mil|Location1.Y=2804.961mil|Location2.Y=2884.941mil|Absolute=True">Text "R10" (42.7mm,71.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1618.818mil|Location2.X=1883.818mil|Location1.Y=2887.52mil|Location2.Y=2897.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1618.818mil|Location2.X=1883.818mil|Location1.Y=2887.52mil|Location2.Y=2897.52mil|Absolute=True">Track (41.245mm,73.47mm)(47.722mm,73.47mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2183.963mil|Location2.X=2263.944mil|Location1.Y=1738.96mil|Location2.Y=1858.928mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2183.963mil|Location2.X=2263.944mil|Location1.Y=1738.96mil|Location2.Y=1858.928mil|Absolute=True">Text "R2" (57.25mm,44.424mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2169.41mil|Location2.X=2179.41mil|Location1.Y=1659.488mil|Location2.Y=1924.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2169.41mil|Location2.X=2179.41mil|Location1.Y=1659.488mil|Location2.Y=1924.488mil|Absolute=True">Track (55.23mm,42.278mm)(55.23mm,48.755mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2339.468mil|Location2.X=2419.449mil|Location1.Y=1745.906mil|Location2.Y=1845.88mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2339.468mil|Location2.X=2419.449mil|Location1.Y=1745.906mil|Location2.Y=1845.88mil|Absolute=True">Text "R1" (61.2mm,44.6mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2326.89mil|Location2.X=2336.89mil|Location1.Y=1659.488mil|Location2.Y=1924.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2326.89mil|Location2.X=2336.89mil|Location1.Y=1659.488mil|Location2.Y=1924.488mil|Absolute=True">Track (59.23mm,42.278mm)(59.23mm,48.755mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1348.267mil|Location2.X=1428.248mil|Location1.Y=1917.591mil|Location2.Y=2037.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1348.267mil|Location2.X=1428.248mil|Location1.Y=1917.591mil|Location2.Y=2037.559mil|Absolute=True">Text "R6" (34.5mm,51.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1430.827mil|Location2.X=1440.827mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1430.827mil|Location2.X=1440.827mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True">Track (36.47mm,46.578mm)(36.47mm,53.055mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1843.405mil|Location2.X=1923.386mil|Location1.Y=1899.449mil|Location2.Y=2019.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1843.405mil|Location2.X=1923.386mil|Location1.Y=1899.449mil|Location2.Y=2019.417mil|Absolute=True">Text "R3" (48.6mm,48.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1922.952mil|Location2.X=1932.952mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1922.952mil|Location2.X=1932.952mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True">Track (48.97mm,46.578mm)(48.97mm,53.055mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1681.988mil|Location2.X=1761.968mil|Location1.Y=1903.386mil|Location2.Y=2023.353mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1681.988mil|Location2.X=1761.968mil|Location1.Y=1903.386mil|Location2.Y=2023.353mil|Absolute=True">Text "R4" (44.5mm,48.6mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1765.472mil|Location2.X=1775.472mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1765.472mil|Location2.X=1775.472mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True">Track (44.97mm,46.578mm)(44.97mm,53.055mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1504.822mil|Location2.X=1584.803mil|Location1.Y=1899.449mil|Location2.Y=2019.417mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1504.822mil|Location2.X=1584.803mil|Location1.Y=1899.449mil|Location2.Y=2019.417mil|Absolute=True">Text "R5" (40mm,48.5mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.308mil|Location2.X=1598.308mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1588.308mil|Location2.X=1598.308mil|Location1.Y=1828.78mil|Location2.Y=2093.78mil|Absolute=True">Track (40.47mm,46.578mm)(40.47mm,53.055mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.405mil|Location2.X=1423.386mil|Location1.Y=1316.772mil|Location2.Y=1436.739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.405mil|Location2.X=1423.386mil|Location1.Y=1316.772mil|Location2.Y=1436.739mil|Absolute=True">Text "R9" (35.9mm,33.7mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1426.89mil|Location2.X=1436.89mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1426.89mil|Location2.X=1436.89mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True">Track (36.37mm,31.545mm)(36.37mm,38.022mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True">Text "R7" (38mm,31.7mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1484.37mil|Location2.X=1494.37mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1484.37mil|Location2.X=1494.37mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True">Track (37.83mm,31.545mm)(37.83mm,38.022mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True">Text "R7" (38mm,31.7mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1484.37mil|Location2.X=1594.37mil|Location1.Y=1236.93mil|Location2.Y=1246.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1484.37mil|Location2.X=1594.37mil|Location1.Y=1236.93mil|Location2.Y=1246.93mil|Absolute=True">Track (37.83mm,31.545mm)(40.37mm,31.545mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1486.063mil|Location2.X=1606.031mil|Location1.Y=1238.032mil|Location2.Y=1318.012mil|Absolute=True">Text "R7" (38mm,31.7mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1584.37mil|Location2.X=1594.37mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1584.37mil|Location2.X=1594.37mil|Location1.Y=1236.93mil|Location2.Y=1501.93mil|Absolute=True">Track (40.37mm,31.545mm)(40.37mm,38.022mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1835.531mil|Location2.X=1915.512mil|Location1.Y=1289.213mil|Location2.Y=1439.17mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1835.531mil|Location2.X=1915.512mil|Location1.Y=1289.213mil|Location2.Y=1439.17mil|Absolute=True">Text "R11" (48.4mm,33mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1919.016mil|Location2.X=1929.016mil|Location1.Y=1240.866mil|Location2.Y=1505.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1919.016mil|Location2.X=1929.016mil|Location1.Y=1240.866mil|Location2.Y=1505.866mil|Absolute=True">Track (48.87mm,31.645mm)(48.87mm,38.122mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1681.988mil|Location2.X=1761.969mil|Location1.Y=1316.772mil|Location2.Y=1436.739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1681.988mil|Location2.X=1761.969mil|Location1.Y=1316.772mil|Location2.Y=1436.739mil|Absolute=True">Text "R8" (44.5mm,33.7mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1765.472mil|Location2.X=1775.472mil|Location1.Y=1240.866mil|Location2.Y=1505.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1765.472mil|Location2.X=1775.472mil|Location1.Y=1240.866mil|Location2.Y=1505.866mil|Absolute=True">Track (44.97mm,31.645mm)(44.97mm,38.122mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.019mil|Location2.X=3010mil|Location1.Y=1155.354mil|Location2.Y=1325.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2930.019mil|Location2.X=3010mil|Location1.Y=1155.354mil|Location2.Y=1325.306mil|Absolute=True">Text "R12" (76.2mm,29.6mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.504mil|Location2.X=3023.504mil|Location1.Y=1110.944mil|Location2.Y=1375.944mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3013.504mil|Location2.X=3023.504mil|Location1.Y=1110.944mil|Location2.Y=1375.944mil|Absolute=True">Track (76.67mm,28.345mm)(76.67mm,34.822mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1060.079mil|Location2.X=1209.64mil|Location1.Y=3179.055mil|Location2.Y=3230.223mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1060.079mil|Location2.X=1209.64mil|Location1.Y=3179.055mil|Location2.Y=3230.223mil|Absolute=True">Text "VIN-" (27.076mm,80.898mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=1055.984mil|Location1.Y=3034.96mil|Location2.Y=3769.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1045.984mil|Location2.X=1055.984mil|Location1.Y=3034.96mil|Location2.Y=3769.96mil|Absolute=True">Track (26.695mm,77.215mm)(26.695mm,95.63mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2836.614mil|Location2.X=2877.943mil|Location1.Y=3826.788mil|Location2.Y=3887.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2836.614mil|Location2.X=2877.943mil|Location1.Y=3826.788mil|Location2.Y=3887.795mil|Absolute=True">Text "5V" (72.2mm,98.6mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True">Track (71.78mm,77.088mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.079mil|Location2.X=2830.557mil|Location1.Y=3689.055mil|Location2.Y=3740.223mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.079mil|Location2.X=2830.557mil|Location1.Y=3689.055mil|Location2.Y=3740.223mil|Absolute=True">Text "VOUT+" (67.081mm,93.852mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True">Track (71.78mm,77.088mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.079mil|Location2.X=2830.557mil|Location1.Y=3174.055mil|Location2.Y=3225.223mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.079mil|Location2.X=2830.557mil|Location1.Y=3174.055mil|Location2.Y=3225.223mil|Absolute=True">Text "VOUT-" (67.081mm,80.771mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\ProgramData\Altium\CircuitMaker {A28E044B-CA10-4864-9606-FFF38CE8C13A}\Projects\458FBD85-B2B4-CE53-90DE-A200A0C1CFFF\d7a937e6-913a-44fa-80bd-a382467e4e7f\PCB1.CMPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2820.984mil|Location2.X=2830.984mil|Location1.Y=3029.96mil|Location2.Y=3889.96mil|Absolute=True">Track (71.78mm,77.088mm)(71.78mm,98.678mm)  Top Overlay</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

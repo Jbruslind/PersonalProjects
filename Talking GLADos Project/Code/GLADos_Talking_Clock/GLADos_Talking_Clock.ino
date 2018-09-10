@@ -85,7 +85,6 @@ else{
     value = 0; 
     analogWrite(ledR, 0);
     analogWrite(ledG, 0);
-    Serial.println("What");
     
   }
   if(t.sec == 0)
@@ -98,7 +97,7 @@ else{
   }
   else
   {
-    delay(100);
+    delay(250);
   }
 }
 

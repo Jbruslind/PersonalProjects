@@ -1,0 +1,180 @@
+*************************************************************
+FileName = UROV_PWR_BREAK.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : UROV_PWR_BREAK.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : UROV_PWR_BREAK.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : UROV_PWR_BREAK.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : UROV_PWR_BREAK.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : UROV_PWR_BREAK.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : UROV_PWR_BREAK.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D26
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : UROV_PWR_BREAK.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D23
+    D24
+    D25
+    D26
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : UROV_PWR_BREAK.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D22
+    D28
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : UROV_PWR_BREAK.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : UROV_PWR_BREAK.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Dimensions Top
+      File : UROV_PWR_BREAK.Dimensions Top
+
+    Adding Layer      : Dimensions Top
+
+
+Used DCodes :
+    D21
+    D30
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : UROV_PWR_BREAK.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+*************************************************************
+

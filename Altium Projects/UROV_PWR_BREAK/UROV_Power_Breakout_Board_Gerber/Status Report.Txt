@@ -1,0 +1,24 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [UROV Power Breakout Board.PrjPcb]
+   Generated File[UROV_PWR_BREAK.GTL]
+   Generated File[UROV_PWR_BREAK.GBL]
+   Generated File[UROV_PWR_BREAK.GPB]
+   Generated File[UROV_PWR_BREAK.GPT]
+   Generated File[UROV_PWR_BREAK.GTO]
+   Generated File[UROV_PWR_BREAK.GTS]
+   Generated File[UROV_PWR_BREAK.GBS]
+   Generated File[UROV_PWR_BREAK.GBO]
+   Generated File[UROV_PWR_BREAK.GKO]
+   Generated File[UROV_PWR_BREAK.Outline]
+   Generated File[UROV_PWR_BREAK.Dimensions Top]
+   Generated File[UROV_PWR_BREAK.3D Top]
+   Generated File[UROV_PWR_BREAK.RUL]
+   Generated File[UROV_PWR_BREAK.EXTREP]
+   Generated File[UROV_PWR_BREAK.REP]
+
+
+Files Generated   : 15
+Documents Printed : 0
+
+Finished Output Generation At 3:42:44 PM On 9/12/2018

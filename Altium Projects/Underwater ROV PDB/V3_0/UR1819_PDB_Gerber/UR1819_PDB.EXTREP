@@ -1,0 +1,27 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: UR1819_PDB.GBR   9/12/2018  2:32:28 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBO                Bottom Overlay                          
+.GKO                Keep-Out Layer                          
+.Outline            Outline                                 
+.Dimensions         Dimensions                              
+.GM4                Mechanical 4                            
+.Assembly Text Top  Assembly Text Top                       
+.Assembly Top       Assembly Top                            
+.3D Top             3D Top                                  
+.Courtyard Top      Courtyard Top                           
+.Courtyard Bottom   Courtyard Bottom                        
+------------------------------------------------------------------------------------------

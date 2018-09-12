@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: UROV_PWR_BREAK.GBR   9/12/2018  3:42:41 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBO                Bottom Overlay                          
+.GKO                Keep-Out Layer                          
+.Outline            Outline                                 
+.Dimensions Top     Dimensions Top                          
+.3D Top             3D Top                                  
+------------------------------------------------------------------------------------------

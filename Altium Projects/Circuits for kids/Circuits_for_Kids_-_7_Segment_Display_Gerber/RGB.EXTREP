@@ -1,0 +1,22 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: RGB.GBR   8/18/2018  5:24:49 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBO                Bottom Overlay                          
+.GKO                Keep-Out Layer                          
+.Outline            Outline                                 
+.Assembly Top       Assembly Top                            
+.3D Top             3D Top                                  
+.Courtyard Top      Courtyard Top                           
+------------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [GladOS Potato Clock.PrjPcb]
+   Generated File[GladOS Potato Clock.GTL]
+   Generated File[GladOS Potato Clock.GBL]
+   Generated File[GladOS Potato Clock.GPB]
+   Generated File[GladOS Potato Clock.GPT]
+   Generated File[GladOS Potato Clock.GTO]
+   Generated File[GladOS Potato Clock.GTS]
+   Generated File[GladOS Potato Clock.GBS]
+   Generated File[GladOS Potato Clock.GKO]
+   Generated File[GladOS Potato Clock.Outline]
+   Generated File[GladOS Potato Clock.Assembly Top]
+   Generated File[GladOS Potato Clock.3D Top]
+   Generated File[GladOS Potato Clock.Courtyard Top]
+   Generated File[GladOS Potato Clock.GM27]
+   Generated File[GladOS Potato Clock.RUL]
+   Generated File[GladOS Potato Clock.EXTREP]
+   Generated File[GladOS Potato Clock.REP]
+
+
+Files Generated   : 16
+Documents Printed : 0
+
+Finished Output Generation At 5:38:42 PM On 8/18/2018

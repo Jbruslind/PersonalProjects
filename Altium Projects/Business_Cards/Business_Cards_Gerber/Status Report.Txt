@@ -1,0 +1,31 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Business Cards.PrjPcb]
+   Generated File[Business Cards.GTL]
+   Generated File[Business Cards.GBL]
+   Generated File[Business Cards.GPB]
+   Generated File[Business Cards.GPT]
+   Generated File[Business Cards.GTO]
+   Generated File[Business Cards.GTP]
+   Generated File[Business Cards.GTS]
+   Generated File[Business Cards.GBS]
+   Generated File[Business Cards.GBP]
+   Generated File[Business Cards.GBO]
+   Generated File[Business Cards.GKO]
+   Generated File[Business Cards.Outline]
+   Generated File[Business Cards.Dimensions]
+   Generated File[Business Cards.Assembly Bottom]
+   Generated File[Business Cards.3D Top]
+   Generated File[Business Cards.3D Bottom]
+   Generated File[Business Cards.Courtyard Top]
+   Generated File[Business Cards.Courtyard Bottom]
+   Generated File[Business Cards.GM34]
+   Generated File[Business Cards.RUL]
+   Generated File[Business Cards.EXTREP]
+   Generated File[Business Cards.REP]
+
+
+Files Generated   : 22
+Documents Printed : 0
+
+Finished Output Generation At 9:44:15 AM On 8/17/2018

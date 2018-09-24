@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Automatic Terrarium.PrjPcb]
+   Generated File[AutoTerrarium.TXT]
+   Generated File[AutoTerrarium-BoardEdgeRout.TXT]
+   Generated File[AutoTerrarium.LDP]
+   Generated File[AutoTerrarium.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 9:17:04 AM On 8/14/2018

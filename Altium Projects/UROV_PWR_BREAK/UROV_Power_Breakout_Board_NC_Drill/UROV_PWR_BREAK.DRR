@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: UROV_PWR_BREAK.CMPcbDoc   9/12/2018  3:43:20 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : UROV_PWR_BREAK.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        39.4mil (1.00076mm)      Round          12               3.50 Inch (88.83 mm)
+T2        59.1mil (1.50114mm)      Round          4                3.50 Inch (89.00 mm)
+T3        118.1mil (2.99974mm)     Round          30               16.12 Inch (409.54 mm)
+T4        137.8mil (3.50012mm)     Round          2                1.52 Inch (38.48 mm)
+T5        47.2mil (1.19888mm)      Round          6         NPTH   3.21 Inch (81.66 mm)
+---------------------------------------------------------------------------
+Totals                                            54               27.86 Inch (707.52 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

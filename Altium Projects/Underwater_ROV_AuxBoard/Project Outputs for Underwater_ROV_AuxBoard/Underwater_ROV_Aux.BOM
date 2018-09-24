@@ -1,0 +1,29 @@
+Bill of Material for 
+On 6/23/2018 at 10:28:14 PM
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ ACS711              SOIC127P600X175-8N    7    Current_1, Current_2                              
+                                           Current_3, Current_4
+                                           Current_5, Current_6
+                                           Current_7
+ Cap2                CAPR5-4X5        7    C1, C2, C3, C4, C5, C6, C7   Capacitor            
+ Device for representing an Arduino Nano board with a footprint in an EAGLE design. Created by Dave Young for Element14. More EAGLE documentation at: http://www.element14.com/community/community/knode/cadsoft_eagle ARDUINO_NANO     4    Nano_Cur1, Nano_ESC                               
+                                           Nano_sens, Nano_servos
+ Diode 11DQ03        DO-204AL         2    D2, D4                       Schottky Rectifier   
+ Diode 1N4001        DO-41            3    D1, D5, D6                   1 Amp General Purpose Rectifier 
+ Header 10           HDR1X10          1    9DOF                         Header, 10-Pin       
+ Header 11X2         HDR2X11          1    P1                           Header, 11-Pin, Dual row 
+ Header 15           HDR1X15          4    P7, P8, P9, P13              Header, 15-Pin       
+ Header 15H          HDR1X15H         2    P14, P15                     Header, 15-Pin, Right Angle 
+ Header 20X2         HDR2X20          1    P6                           Header, 20-Pin, Dual row 
+ Header 2H           HDR1X2H          1    Light                        Header, 2-Pin, Right Angle 
+ Header 3H           HDR1X3H          1    Water                        Header, 3-Pin, Right Angle 
+ Header 3X2          HDR2X3           4    P2, P3, P4, P5               Header, 3-Pin, Dual row 
+ Header 4            HDR1X4           1    Pressure                     Header, 4-Pin        
+ Raspberry_Pi_GPIO   HDR2X20          1    RPI_GPIO*1                                        
+ Res1                AXIAL-0.3       11    R1, R2, R3, R4, R5, R6, R7   Resistor             
+                                           R8, R9, R10, R11
+ ScrewTerminal_5mm   Screw_Terminal_5mm    2    Servo (4,5), Servo (6,7)                          
+ XT30_2pin           XT30_2pin        8    Cur_1, Cur_2, Cur_3, Cur_4                        
+                                           Cur_5, Cur_6, Cur_7, POWER

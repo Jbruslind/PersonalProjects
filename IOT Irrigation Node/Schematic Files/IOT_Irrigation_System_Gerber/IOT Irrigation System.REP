@@ -1,0 +1,263 @@
+*************************************************************
+FileName = IOT Irrigation System.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : IOT Irrigation System.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : IOT Irrigation System.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : IOT Irrigation System.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : IOT Irrigation System.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : IOT Irrigation System.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : IOT Irrigation System.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : IOT Irrigation System.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : IOT Irrigation System.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D26
+    D27
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : IOT Irrigation System.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D44
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : IOT Irrigation System.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D44
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Assembly Text Top
+      File : IOT Irrigation System.Assembly Text Top
+
+    Adding Layer      : Assembly Text Top
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : IOT Irrigation System.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : 3D Bottom
+      File : IOT Irrigation System.3D Bottom
+
+    Adding Layer      : 3D Bottom
+
+
+Used DCodes :
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : IOT Irrigation System.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D25
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Bottom
+      File : IOT Irrigation System.Courtyard Bottom
+
+    Adding Layer      : Courtyard Bottom
+
+
+Used DCodes :
+    D44
+    D46
+*************************************************************
+

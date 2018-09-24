@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [IOT Irrigation System.PrjPcb]
+   Generated File[IOT Irrigation System.TXT]
+   Generated File[IOT Irrigation System-BoardEdgeRout.TXT]
+   Generated File[IOT Irrigation System.LDP]
+   Generated File[IOT Irrigation System.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 11:35:32 AM On 8/14/2018

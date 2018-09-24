@@ -1,0 +1,27 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [IOT Irrigation System.PrjPcb]
+   Generated File[IOT Irrigation System.GTL]
+   Generated File[IOT Irrigation System.GBL]
+   Generated File[IOT Irrigation System.GPB]
+   Generated File[IOT Irrigation System.GPT]
+   Generated File[IOT Irrigation System.GTO]
+   Generated File[IOT Irrigation System.GTS]
+   Generated File[IOT Irrigation System.GBS]
+   Generated File[IOT Irrigation System.GBO]
+   Generated File[IOT Irrigation System.GKO]
+   Generated File[IOT Irrigation System.Outline]
+   Generated File[IOT Irrigation System.Assembly Text Top]
+   Generated File[IOT Irrigation System.3D Top]
+   Generated File[IOT Irrigation System.3D Bottom]
+   Generated File[IOT Irrigation System.Courtyard Top]
+   Generated File[IOT Irrigation System.Courtyard Bottom]
+   Generated File[IOT Irrigation System.RUL]
+   Generated File[IOT Irrigation System.EXTREP]
+   Generated File[IOT Irrigation System.REP]
+
+
+Files Generated   : 18
+Documents Printed : 0
+
+Finished Output Generation At 11:34:42 AM On 8/14/2018

@@ -1,26 +1,51 @@
 #include <idDHT11.h>
-#include <DS3232RTC.h>
 #include <Time.h>
 #include <Wire.h>
 #include <TimeLib.h>
+#include <WiFiUdp.h>
+#include <NTPClient.h>
+#include <ESP8266WiFi.h>
+
+const char *ssid     = "CasaDeJJ";
+const char *password = "1104NW32ST";
+
+
+WiFiUDP ntpUDP;
+NTPClient timeClient(ntpUDP, "192.168.0.17", 0 ,60000);
 
 //SCL = 5, SDA = 4
 //Variables to store data
-int idDHTT11pin = 2;
-int idDHTT11intNumber = 0; 
 float Humidity = 0; 
 float Temp = 0;
 int lightval = 0;
-int motorstate = 0;
+bool motorstate = false;
+bool daily_water = false;
+bool motor_to_do = false;
+int day_ = 0; //Sunday starts at 0
+unsigned long previousMillis = 0;
+int water_interval = 4000;
 //Pin Values/Numbers
 int motor = 7;
 int B_light = 8;
 int R_light = 5;
 int G_light = 6;
 int light_sens = A0;
-// Instatiate the dht11 library/package
-void dht11_wrapper();
+// Instantiate the dht11 library/package
+
+int idDHT11pin = 2; //Digital pin for comunications
+int idDHT11intNumber = 0; //interrupt number (must be the one that use the previus defined pin (see table above)
+
+//declaration
+void dht11_wrapper(); // must be declared before the lib initialization
+
+// Lib instantiate
 idDHT11 DHT11(idDHT11pin,idDHT11intNumber,dht11_wrapper);
+
+
+String status_msg = "";
+
+
+
 void setup() {
 //Light pins are outputs
 pinMode(R_light, OUTPUT);
@@ -31,11 +56,36 @@ pinMode(motor, OUTPUT);
 //Light sensor (photo resistor) is an input
 pinMode(light_sens, INPUT);
 
+WiFi.begin(ssid, password);
+timeClient.begin();
+
 }
 
 void loop() {
-
-  
+  if(timeClient.update())
+  {
+      if(day_ != timeClient.getDay()) //Change of day
+    {
+      daily_water = false; // reset the water flag
+    }
+    DHT11.acquire();
+    while (DHT11.acquiring());
+    int result = DHT11.getStatus();
+    if(result == IDDHTLIB_OK);
+    {
+      Humidity = DHT11.getHumidity();
+      Temp = DHT11.getFahrenheit();
+    }
+    day_ = timeClient.getDay();
+    if((day_ == 3 || day_ == 6) && (timeClient.getHours() == 9) || (Temp >= 90 && Humidity <= 90)) //If the day is Wed or Sat AND it's 9 in the morning or it's too hot or not humid, then we'll water the plant
+    {
+      run_motor();  
+    }
+    light_adjust(); //Change the lights to be reflective of the current light
+    status_msg = "ALL NORMAL";
+    //update_status();
+  }
+status_msg = "CANNOT TALK TO TIME SERVER";
 
 }
 
@@ -48,16 +98,52 @@ void loop() {
  * flag until 24 hours have passed. 
  */
 void run_motor(){
+  if(motorstate == true) //check if motor is running
+  {
+    unsigned long currentMillis = millis();
+    if (currentMillis - previousMillis >= water_interval) {  //check if the motor has exceeded or met it's timer
+        digitalWrite(motor, LOW);     
+    }
+  }
+  else
+  {
+    if(motor_to_do && !daily_water) //check if the motor is supposed to run AND it hasn't been watered today 
+    {
+      motorstate = true; //set motor flag
+      daily_water = true; //set daily water flag 
+      previousMillis = millis(); //start timer
+      digitalWrite(motor, HIGH); //start motor
+    }
+  }
   
+}
+
+void light_adjust()
+{
+  lightval = analogRead(light_sens) + 100;
+  if(timeClient.getHours() == 7)
+  {
+    set_lights(.6*lightval, lightval, .6*lightval);
+  }
+  if(timeClient.getHours() == 7)
+  {
+    set_lights(lightval, lightval, lightval);
+  }
+  if(timeClient.getHours() == 7)
+  {
+    set_lights(lightval, .5*lightval, lightval);
+  }
 }
 
 //Set the various light values to specific colors
-void set_lights(int R, int G, int B){
-
+void set_lights(int R, int G, int B){  
+  analogWrite(R_light, R);
+  analogWrite(B_light, B);
+  analogWrite(G_light, G);
 }
 
 /*Send a slew of MQTT messages with various topics (sensors, states) to the broker*/
-void update_status(){
+//void update_status(){
   
-}
+//}
 

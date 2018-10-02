@@ -1,10 +1,12 @@
-#include <idDHT11.h>
+//#include <idDHT11.h> Uses math functions that the ESP8266 12E board doesn't support
 #include <Time.h>
 #include <Wire.h>
 #include <TimeLib.h>
 #include <WiFiUdp.h>
 #include <NTPClient.h>
 #include <ESP8266WiFi.h>
+
+#include "DHTesp.h"
 
 const char *ssid     = "CasaDeJJ";
 const char *password = "1104NW32ST";
@@ -25,21 +27,22 @@ int day_ = 0; //Sunday starts at 0
 unsigned long previousMillis = 0;
 int water_interval = 4000;
 //Pin Values/Numbers
-int motor = 7;
-int B_light = 8;
-int R_light = 5;
-int G_light = 6;
+int motor = D7;
+int B_light = D8;
+int R_light = D5;
+int G_light = D6;
 int light_sens = A0;
 // Instantiate the dht11 library/package
 
-int idDHT11pin = 2; //Digital pin for comunications
+int idDHT11pin = D2; //Digital pin for comunications
 int idDHT11intNumber = 0; //interrupt number (must be the one that use the previus defined pin (see table above)
 
 //declaration
-void dht11_wrapper(); // must be declared before the lib initialization
+//void dht11_wrapper(); // must be declared before the lib initialization
 
 // Lib instantiate
-idDHT11 DHT11(idDHT11pin,idDHT11intNumber,dht11_wrapper);
+//idDHT11 DHT11(idDHT11pin,idDHT11intNumber,dht11_wrapper);
+DHTesp dht;
 
 
 String status_msg = "";
@@ -59,33 +62,31 @@ pinMode(light_sens, INPUT);
 WiFi.begin(ssid, password);
 timeClient.begin();
 
+dht.setup(idDHT11pin, DHTesp::DHT22); // Connect DHT sensor to GPIO 2
+
 }
 
 void loop() {
-  if(timeClient.update())
+  if(timeClient.update()) //If we can reach the time server, go ahead and go with the rest of the code
   {
       if(day_ != timeClient.getDay()) //Change of day
     {
       daily_water = false; // reset the water flag
     }
-    DHT11.acquire();
-    while (DHT11.acquiring());
-    int result = DHT11.getStatus();
-    if(result == IDDHTLIB_OK);
-    {
-      Humidity = DHT11.getHumidity();
-      Temp = DHT11.getFahrenheit();
-    }
+    delay(dht.getMinimumSamplingPeriod());
+    Humidity = dht.getHumidity();
+    Temp = dht.getTemperature();
     day_ = timeClient.getDay();
-    if((day_ == 3 || day_ == 6) && (timeClient.getHours() == 9) || (Temp >= 90 && Humidity <= 90)) //If the day is Wed or Sat AND it's 9 in the morning or it's too hot or not humid, then we'll water the plant
+    if((day_ == 3 || day_ == 6) && (timeClient.getHours() == 9) || (dht.toFahrenheit(Temp) >= 90 && Humidity <= 90)) //If the day is Wed or Sat AND it's 9 in the morning or it's too hot or not humid, then we'll water the plant
     {
       run_motor();  
     }
     light_adjust(); //Change the lights to be reflective of the current light
     status_msg = "ALL NORMAL";
-    //update_status();
+    update_status();
   }
 status_msg = "CANNOT TALK TO TIME SERVER";
+update_status();
 
 }
 
@@ -143,7 +144,7 @@ void set_lights(int R, int G, int B){
 }
 
 /*Send a slew of MQTT messages with various topics (sensors, states) to the broker*/
-//void update_status(){
+void update_status(){
   
-//}
+}
 

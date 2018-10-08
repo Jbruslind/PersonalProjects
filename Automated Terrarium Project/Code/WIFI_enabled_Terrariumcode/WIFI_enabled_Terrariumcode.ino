@@ -121,7 +121,7 @@ void run_motor(){
 
 void light_adjust()
 {
-  lightval = analogRead(light_sens) + 100;
+  lightval = analogRead(light_sens) + 100; //This should probably be changed to something a little more adaptive (read: smarter), but for right now it works
   if(timeClient.getHours() == 7)
   {
     set_lights(.6*lightval, lightval, .6*lightval);

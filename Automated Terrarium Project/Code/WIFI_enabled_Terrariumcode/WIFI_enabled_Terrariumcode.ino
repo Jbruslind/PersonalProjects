@@ -5,15 +5,26 @@
 #include <WiFiUdp.h>
 #include <NTPClient.h>
 #include <ESP8266WiFi.h>
+#include <PubSubClient.h>
 
 #include "DHTesp.h"
 
 const char *ssid     = "CasaDeJJ";
 const char *password = "1104NW32ST";
+const char* mqtt_server = "192.168.0.17";
+
 
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "192.168.0.17", 0 ,60000);
+
+WiFiClient espClient; //Create an instance of the WifiClient Class
+PubSubClient client(espClient); //Create an instance of the PUBSUBClient class
+
+long lastMsg = 0; //store the last message number
+char msg[50]; //Store the current message
+String msg_out;
+char* msg_out_char;
 
 //SCL = 5, SDA = 4
 //Variables to store data
@@ -25,6 +36,8 @@ bool daily_water = false;
 bool motor_to_do = false;
 int day_ = 0; //Sunday starts at 0
 unsigned long previousMillis = 0;
+unsigned long status_timer = 0;
+int interval = 5000;
 int water_interval = 4000;
 //Pin Values/Numbers
 int motor = D7;
@@ -34,7 +47,7 @@ int G_light = D6;
 int light_sens = A0;
 // Instantiate the dht11 library/package
 
-int idDHT11pin = D2; //Digital pin for comunications
+int idDHT11pin = 2; //Digital pin for comunications
 int idDHT11intNumber = 0; //interrupt number (must be the one that use the previus defined pin (see table above)
 
 //declaration
@@ -58,15 +71,27 @@ pinMode(B_light, OUTPUT);
 pinMode(motor, OUTPUT);
 //Light sensor (photo resistor) is an input
 pinMode(light_sens, INPUT);
-
 WiFi.begin(ssid, password);
 timeClient.begin();
+client.setServer(mqtt_server, 1883);
+client.setCallback(callback);
 
-dht.setup(idDHT11pin, DHTesp::DHT22); // Connect DHT sensor to GPIO 2
+dht.setup(idDHT11pin, DHTesp::DHT11); // Connect DHT sensor to GPIO 2
 
 }
 
 void loop() {
+  unsigned long currentMillis = millis();
+  if((unsigned long)(millis() - status_timer) >= interval)
+  {
+    update_status();
+    status_timer = currentMillis;
+  }
+  if(!client.connected())
+  {
+    reconnect();
+  }
+  client.loop();
   if(timeClient.update()) //If we can reach the time server, go ahead and go with the rest of the code
   {
       if(day_ != timeClient.getDay()) //Change of day
@@ -77,16 +102,18 @@ void loop() {
     Humidity = dht.getHumidity();
     Temp = dht.getTemperature();
     day_ = timeClient.getDay();
-    if((day_ == 3 || day_ == 6) && (timeClient.getHours() == 9) || (dht.toFahrenheit(Temp) >= 90 && Humidity <= 90)) //If the day is Wed or Sat AND it's 9 in the morning or it's too hot or not humid, then we'll water the plant
+    if((day_ == 3 || day_ == 6) && (timeClient.getHours() == 9) || (dht.toFahrenheit(Temp) >= 90 && Humidity <= 90)) //If the day is Wed or Sat AND it's 9 in the morning OR it's too hot AND not humid, then we'll water the plant
     {
+      motor_to_do = true;
       run_motor();  
     }
     light_adjust(); //Change the lights to be reflective of the current light
     status_msg = "ALL NORMAL";
-    update_status();
   }
-status_msg = "CANNOT TALK TO TIME SERVER";
-update_status();
+  else
+  {
+    status_msg = "CANNOT TALK TO TIME SERVER";
+  }
 
 }
 
@@ -126,13 +153,17 @@ void light_adjust()
   {
     set_lights(.6*lightval, lightval, .6*lightval);
   }
-  if(timeClient.getHours() == 7)
+  if(timeClient.getHours() == 13)
   {
     set_lights(lightval, lightval, lightval);
   }
-  if(timeClient.getHours() == 7)
+  if(timeClient.getHours() == 18)
   {
     set_lights(lightval, .5*lightval, lightval);
+  }
+  if(timeClient.getHours() > 18)
+  {
+    set_lights(0,0,0);
   }
 }
 
@@ -144,7 +175,47 @@ void set_lights(int R, int G, int B){
 }
 
 /*Send a slew of MQTT messages with various topics (sensors, states) to the broker*/
-void update_status(){
+void update_status()
+{
+  msg_out = Temp;
+  client.publish("home/terrarium/temp", msg_out.c_str());
+  msg_out = Humidity;
+  client.publish("home/terrarium/humidity", msg_out.c_str());
+  msg_out = lightval;
+  client.publish("home/terrarium/lightval", msg_out.c_str());
+  msg_out = motorstate; 
+  client.publish("home/terrarium/motorstate", msg_out.c_str());
+  msg_out = daily_water;
+  client.publish("home/terrarium/daily_water", msg_out.c_str());
+  msg_out = motor_to_do;
+  client.publish("home/terrarium/motor_to_do", msg_out.c_str());
+}
+
+void callback(char* topic, byte* payload, unsigned int length)
+{
   
 }
 
+void reconnect() {
+  // Loop until we're reconnected
+  while (!client.connected()) {
+    //Serial.print("Attempting MQTT connection...");
+    // Create a random client ID
+    String clientId = "ESP-Terrarium";
+    // Attempt to connect
+    if (client.connect(clientId.c_str())) {
+      //Serial.println("connected");
+      // Once connected, publish an announcement...
+      client.publish("wakeup", "Terrarium - Online");
+      // ... and resubscribe
+      //client.subscribe("outTopic/2");
+      //client.subscribe("ESP1/R");
+    } else {
+      //Serial.print("failed, rc=");
+      //Serial.print(client.state());
+      //Serial.println(" try again in 5 seconds");
+      // Wait 5 seconds before retrying
+      delay(5000);
+    }
+  }
+}

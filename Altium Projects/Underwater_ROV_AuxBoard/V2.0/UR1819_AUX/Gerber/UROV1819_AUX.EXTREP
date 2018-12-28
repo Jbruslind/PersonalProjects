@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: UROV1819_AUX.GBR   12/28/2018  1:24:56 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBO                Bottom Overlay                          
+.Outline            Outline                                 
+.Assembly Top       Assembly Top                            
+.Dimensions Top     Dimensions Top                          
+.3D Top             3D Top                                  
+.Courtyard Top      Courtyard Top                           
+.Courtyard Bottom   Courtyard Bottom                        
+------------------------------------------------------------------------------------------

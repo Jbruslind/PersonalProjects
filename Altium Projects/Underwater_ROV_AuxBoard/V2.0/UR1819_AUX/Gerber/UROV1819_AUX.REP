@@ -1,0 +1,299 @@
+*************************************************************
+FileName = UROV1819_AUX.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : UROV1819_AUX.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : UROV1819_AUX.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : UROV1819_AUX.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : UROV1819_AUX.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : UROV1819_AUX.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D14
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : UROV1819_AUX.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : UROV1819_AUX.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : UROV1819_AUX.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : UROV1819_AUX.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D14
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : UROV1819_AUX.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D14
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Assembly Top
+      File : UROV1819_AUX.Assembly Top
+
+    Adding Layer      : Assembly Top
+
+
+Used DCodes :
+    D14
+    D54
+*************************************************************
+
+*************************************************************
+Generating : Dimensions Top
+      File : UROV1819_AUX.Dimensions Top
+
+    Adding Layer      : Dimensions Top
+
+
+Used DCodes :
+    D14
+    D55
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : UROV1819_AUX.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : UROV1819_AUX.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D14
+    D31
+    D34
+    D54
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Bottom
+      File : UROV1819_AUX.Courtyard Bottom
+
+    Adding Layer      : Courtyard Bottom
+
+
+Used DCodes :
+    D54
+*************************************************************
+

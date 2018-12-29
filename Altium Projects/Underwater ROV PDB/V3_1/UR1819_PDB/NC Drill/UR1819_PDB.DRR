@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: UR1819_PDB.CMPcbDoc   12/28/2018  4:39:55 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : UR1819_PDB.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        12.2mil (0.30988mm)      Round          12               0.46 Inch (11.73 mm)
+T2        16.2mil (0.41148mm)      Round          59               13.18 Inch (334.75 mm)
+T3        19.7mil (0.50038mm)      Round          4                0.31 Inch (7.98 mm)
+T4        28mil (0.7112mm)         Round          17               5.91 Inch (150.21 mm)
+T5        30mil (0.762mm)          Round          6                1.51 Inch (38.46 mm)
+T6        31.5mil (0.8001mm)       Round          12               5.64 Inch (143.19 mm)
+T7        32mil (0.8128mm)         Round          6                1.21 Inch (30.71 mm)
+T8        39.4mil (1.00076mm)      Round          12               5.22 Inch (132.66 mm)
+T9        80mil (2.032mm)          Round          2                0.56 Inch (14.22 mm)
+T10       102.4mil (2.60096mm)     Round          10               2.16 Inch (54.92 mm)
+T11       137.8mil (3.50012mm)     Round          4                8.63 Inch (219.22 mm)
+T12       177.2mil (4.50088mm)     Round          2                0.30 Inch (7.50 mm)
+---------------------------------------------------------------------------
+Totals                                            146              45.10 Inch (1145.56 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

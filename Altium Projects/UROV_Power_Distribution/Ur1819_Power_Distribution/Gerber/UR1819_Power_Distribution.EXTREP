@@ -1,0 +1,28 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: UR1819_Power_Distribution.GBR   12/28/2018  4:31:43 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.Outline            Outline                                 
+.Assembly Text Top  Assembly Text Top                       
+.Assembly Top       Assembly Top                            
+.Assembly Bottom    Assembly Bottom                         
+.Dimensions Top     Dimensions Top                          
+.3D Top             3D Top                                  
+.3D Bottom          3D Bottom                               
+.Courtyard Top      Courtyard Top                           
+.Courtyard Bottom   Courtyard Bottom                        
+------------------------------------------------------------------------------------------

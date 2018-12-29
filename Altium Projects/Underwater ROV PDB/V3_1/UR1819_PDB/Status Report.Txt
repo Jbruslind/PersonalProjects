@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 4:39:55 PM On 12/28/2018
+
+Output: ExportSTEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [UR1819_PDB.CMPcbDoc]
+   Generated File[UR1819_PDB.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 4:40:00 PM On 12/28/2018

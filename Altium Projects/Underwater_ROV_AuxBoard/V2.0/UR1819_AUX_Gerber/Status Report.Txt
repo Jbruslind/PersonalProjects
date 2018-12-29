@@ -1,0 +1,32 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:35:31 PM On 12/28/2018
+
+Output: Gerber
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [UROV1819_AUX.CMPcbDoc]
+   Generated File[UROV1819_AUX.GTL]
+   Generated File[UROV1819_AUX.GBL]
+   Generated File[UROV1819_AUX.GPB]
+   Generated File[UROV1819_AUX.GPT]
+   Generated File[UROV1819_AUX.GTO]
+   Generated File[UROV1819_AUX.GTP]
+   Generated File[UROV1819_AUX.GTS]
+   Generated File[UROV1819_AUX.GBS]
+   Generated File[UROV1819_AUX.GBO]
+   Generated File[UROV1819_AUX.GKO]
+   Generated File[UROV1819_AUX.Outline]
+   Generated File[UROV1819_AUX.Assembly Top]
+   Generated File[UROV1819_AUX.Dimensions Top]
+   Generated File[UROV1819_AUX.3D Top]
+   Generated File[UROV1819_AUX.Courtyard Top]
+   Generated File[UROV1819_AUX.Courtyard Bottom]
+   Generated File[UROV1819_AUX.RUL]
+   Generated File[UROV1819_AUX.EXTREP]
+   Generated File[UROV1819_AUX.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 1:35:33 PM On 12/28/2018

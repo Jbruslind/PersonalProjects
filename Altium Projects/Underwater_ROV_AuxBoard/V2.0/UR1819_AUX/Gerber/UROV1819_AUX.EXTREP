@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: UROV1819_AUX.GBR   12/28/2018  1:24:56 PM
+Gerber File Extension Report For: UROV1819_AUX.GBR   12/28/2018  1:35:31 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -15,6 +15,7 @@ Layer Extension     Layer Description
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
 .GBO                Bottom Overlay                          
+.GKO                Keep-Out Layer                          
 .Outline            Outline                                 
 .Assembly Top       Assembly Top                            
 .Dimensions Top     Dimensions Top                          

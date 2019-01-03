@@ -283,6 +283,17 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Keep-Out Layer
+      File : UR1819_Power_Distribution.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D27
+*************************************************************
+
+*************************************************************
 Generating : Outline
       File : UR1819_Power_Distribution.Outline
 

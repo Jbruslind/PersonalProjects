@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: UROV1819_AUX.CMPcbDoc   12/28/2018  1:24:59 PM
+NCDrill File Report For: UROV1819_AUX.CMPcbDoc   1/2/2019  6:51:46 PM
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,20 +7,20 @@ ASCII RoundHoles File : UROV1819_AUX.TXT
 
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
-T1        25mil (0.635mm)          Round          16               11.04 Inch (280.34 mm)
-T2        27.6mil (0.70104mm)      Round          20               3.31 Inch (84.09 mm)
-T3        28mil (0.7112mm)         Round          61               16.78 Inch (426.30 mm)
+T1        15.7mil (0.39878mm)      Round          42               15.79 Inch (400.97 mm)
+T2        25mil (0.635mm)          Round          16               11.04 Inch (280.34 mm)
+T3        27.6mil (0.70104mm)      Round          20               3.31 Inch (84.09 mm)
 T4        30mil (0.762mm)          Round          48               12.47 Inch (316.75 mm)
 T5        35mil (0.889mm)          Round          32               6.92 Inch (175.84 mm)
 T6        38mil (0.9652mm)         Round          51               5.84 Inch (148.45 mm)
 T7        39mil (0.9906mm)         Round          5                0.60 Inch (15.24 mm)
 T8        39.4mil (1.00076mm)      Round          28               4.75 Inch (120.60 mm)
 T9        40mil (1.016mm)          Round          18               1.70 Inch (43.18 mm)
-T10       66.9mil (1.69926mm)      Round          4                0.47 Inch (11.88 mm)
+T10       40.2mil (1.02108mm)      Round          4                0.30 Inch (7.62 mm)
 T11       100mil (2.54mm)          Round          8                5.09 Inch (129.28 mm)
 T12       102.4mil (2.60096mm)     Round          4                0.68 Inch (17.30 mm)
 T13       137.8mil (3.50012mm)     Round          4                8.63 Inch (219.22 mm)
 ---------------------------------------------------------------------------
-Totals                                            299              78.29 Inch (1988.47 mm)
+Totals                                            280              77.12 Inch (1958.88 mm)
 
-Total Processing Time (hh:mm:ss) : 00:00:01
+Total Processing Time (hh:mm:ss) : 00:00:00

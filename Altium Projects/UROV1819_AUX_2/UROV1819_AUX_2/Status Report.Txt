@@ -1,0 +1,17 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 3:34:18 PM On 1/2/2019
+
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [UROV1819_AUX_2.CMPcbDoc]
+   Generated File[UROV1819_AUX_2.TXT]
+   Generated File[UROV1819_AUX_2-BoardEdgeRout.TXT]
+   Generated File[UROV1819_AUX_2.LDP]
+   Generated File[UROV1819_AUX_2.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 3:34:18 PM On 1/2/2019

@@ -7,7 +7,7 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-//#include "DHTesp.h"
+#include "DHTesp.h"
 
 const char *ssid     = "CasaDeJJ";
 const char *password = "1104NW32ST";
@@ -47,15 +47,15 @@ int G_light = D6;
 int light_sens = A0;
 // Instantiate the dht11 library/package
 
-//int idDHT11pin = 2; //Digital pin for comunications
-//int idDHT11intNumber = 0; //interrupt number (must be the one that use the previus defined pin (see table above)
+int idDHT11pin = 2; //Digital pin for comunications
+int idDHT11intNumber = 0; //interrupt number (must be the one that use the previus defined pin (see table above)
 
 //declaration
 //void dht11_wrapper(); // must be declared before the lib initialization
 
 // Lib instantiate
 //idDHT11 DHT11(idDHT11pin,idDHT11intNumber,dht11_wrapper);
-//DHTesp dht;
+DHTesp dht;
 
 
 String status_msg = "";
@@ -76,7 +76,7 @@ timeClient.begin();
 client.setServer(mqtt_server, 1883);
 client.setCallback(callback);
 
-//dht.setup(idDHT11pin, DHTesp::DHT11); // Connect DHT sensor to GPIO 2
+dht.setup(idDHT11pin, DHTesp::DHT11); // Connect DHT sensor to GPIO 2
 
 }
 
@@ -158,7 +158,7 @@ void light_adjust()
   {
     set_lights(lightval, .5*lightval, lightval);
   }
-  if(timeClient.getHours() > 18)
+  if(timeClient.getHours() > 21)
   {
     set_lights(0,0,0);
   }

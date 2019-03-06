@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: LM5085.CMPcbDoc   3/6/2019  12:42:11 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : LM5085-RoundHoles.TXT
+ASCII SlotHoles File : LM5085-SlotHoles.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        7.9mil (0.20066mm)       Round          4                0.12 Inch (3.00 mm)
+T2        12.2mil (0.30988mm)      Round          10               1.41 Inch (35.78 mm)
+T3        15.7mil (0.39878mm)      Round          8                1.94 Inch (49.39 mm)
+T4        28mil (0.7112mm)         Round          15               6.08 Inch (154.46 mm)
+T5        30mil (0.762mm)          Round          12               5.06 Inch (128.48 mm)
+T6        31.5mil (0.8001mm)       Round          10               3.94 Inch (100.06 mm)
+T7        39.4mil (1.00076mm)      Round          7                2.60 Inch (66.17 mm)
+T8        44mil (1.1176mm)         Round          3                0.20 Inch (5.01 mm)
+T9        59.1mil (1.50114mm)      Slot           2                288.49 Inch (7327.54 mm)
+T10       70.9mil (1.80086mm)      Round          2                1.18 Inch (30.00 mm)
+T11       102.4mil (2.60096mm)     Round          10               3.36 Inch (85.33 mm)
+T12       137.8mil (3.50012mm)     Round          4                7.60 Inch (193.00 mm)
+T13       177.2mil (4.50088mm)     Round          2                0.30 Inch (7.50 mm)
+---------------------------------------------------------------------------
+Totals                                            89               322.27 Inch (8185.71 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

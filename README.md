@@ -1,10 +1,10 @@
-#Personal projects
+#	Personal projects
 
 This section contains all the personal projects I'm currently working on or have worked on/finished 
 (who am I kidding they're never finished). Each directory should have it's own README with details about 
 what the project is and the steps I took to do it. Some of my personal favorites are: 
 
-##Infinity Stone Pendants 
+##	Infinity Stone Pendants 
 This project was inspired by Marvel's blockbuster hits (Avengers and their derivatives) and because of a 
 gift I had made previously for an old high school friend. There isn't any functional point to this, mostly
 just for sentimental value and because I can. 
@@ -19,6 +19,6 @@ Here's a picture of the full assembly. The metal colors are pretty off due to In
 ![All 6 pendants with metal coloring](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Infinity_Assembly.png)
  
 
-##Automatic Terrarium 
+##	Automatic Terrarium 
 
-##UWROV19
+##	UWROV19

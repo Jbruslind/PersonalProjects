@@ -1,0 +1,16 @@
+Comment,Description,Designator,Footprint,LibRef,Quantity,Case/Package,Resistance
+
+"Vishay TLHO4400","LED; Red; 4mcd; 3mmDia.; T-1; 30mA; 2.4V; 605nm; +/-30deg; GaAsP on GaP; 15V; 100mW","3.3V, 5V, D_SCL, D_SDA","PCB-13611427-1","CMP-522e98692a768de9-3","4","",""
+"XT30","Very similar to the XT60 models, but smaller and made for 30A","5V input, 3 3V input","PCB-8h6goupi0sbkduz6cbnu-1","CMP-nlx8yci0umf6n9sk0ty3-3","2","",""
+"Adafruit NXP Precision 9DoF breakout","Adafruit board breakout of the The FXOS8700 3-Axis accelerometer and magnetometer, and the FXAS21002 3-axis gyroscope.","9DOF_1, 9DOF_2","PCB-qycbgvnmg1jf60fg22jb-1","CMP-4rmpjjg8h9uj8rll3hj9-1","2","",""
+"TE Connectivity / AMP 5103308-3","Wire-To-Board Connector, AMP-LATCH Series, Through Hole, Header, 16, 2.54 mm, Gold Plated Contacts","ESC PPM, Teensy_Output","PCB-ez7c9rqqhu21cqzcwvs2-1","CMP-697ba22bb0a4b6bc-2","2","",""
+"SYM-e94421bb99c43683-14","Board-To-Board Connector, Vertical, Wr-Phd Series, Through Hole, Header, 5, 2.54 Mm","HDR1","PCB-0f2d16zq38ebt9jgapf2-1","CMP-e94421bb99c43683-16","1","",""
+"Semtech RCLAMP0582BQTCT","Diode TVS Dual Uni-Directional 5V 300W 3-Pin SOT-523 T/R","I2C_Protection","SOP3","CMP-0f6bc71064c9d0ac-1","1","",""
+"SYM-f47a3d4c33a92bbd-1","Socket, wire-board, male, XH, 2.5mm, PIN: 4, THT, 250V 3A, -25ºC to +85ºC","J1","PCBComponent_1","CMP-f47a3d4c33a92bbd-2","1","",""
+"Samtec TSW-109-07-L-D","Conn Unshrouded Header HDR 18 POS 2.54mm Solder ST Thru-Hole","J2","PCB-e7pjnkntgxce9rgxtjlg-1","CMP-3dcff4c13fd7e208-2","1","",""
+"Orbitty Carrier","Orbitty Carrier for NVIDIA® Jetson","Orbitty breakout, Orbitty input","PCB-xe8wxk2czp6dvao0bk5e-1","CMP-066mcevbinch933dgmz7-2","2","",""
+"Molex 90120-0134","2.54mm Pitch C-Grid III™ Header, Single Row, Vertical, 14 Circuits, Tin (Sn) Plating","P1, P2","SIP14","CMP-9dc954c8769c420e-2","2","",""
+"Rohm RK7002BMT116","N-Channel 60 V 0.2 W Surface Mount 2.5 V Drive Silicon Power Mosfet - SOT-23","Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10","PCB-lhick5qix2l1q5xknwuk-1","CMP-c6120e73f56f19d5-3","10","",""
+"10K","Surface Mount Chip Resistor, Thick Film, RC Series, 33 ohm, 50 mW, 1%, 0201 [0603 Metric]","R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16","R0201","CMP-8c48478736f5538f-2","16","0603 (SI)",""
+"SYM-fea435dd441a2163-1","R Series Axial Through Hole Fixed Resistor 10Ohms +/-0.1% 0.25W +/-15ppm/degC","R17, R18, R19, R20, R21, R22, R23, R24","PCB-xnm56hls5we6bt40qwox-1","CMP-fea435dd441a2163-1","8","","10 O"
+"Teensy 3.2 without internal connections","Dev Teensy 3.2 13736","Teensy 3.2","PCB-dl28a5nrukx0ua7dr6az-1","CMP-cc4306b2fccc1384-40","1","",""

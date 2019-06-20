@@ -41,3 +41,6 @@ But it was a fun project to work on and I think the recent revision looks pretty
 
 
 ##	UWROV19
+
+This project is the Underwater ROV team 2018-2019 circuit board files. All of these were custom designed to fit with 
+the ROV. 

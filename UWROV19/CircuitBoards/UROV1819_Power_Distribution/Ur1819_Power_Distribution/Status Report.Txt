@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:29:58 PM On 1/2/2019
+
+Output: ExportSTEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [UR1819_Power_Distribution.CMPcbDoc]
+   Generated File[UR1819_Power_Distribution.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 8:30:04 PM On 1/2/2019

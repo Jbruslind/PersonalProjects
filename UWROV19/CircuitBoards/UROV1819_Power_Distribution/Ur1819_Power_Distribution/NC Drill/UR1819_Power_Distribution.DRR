@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: UR1819_Power_Distribution.CMPcbDoc   1/2/2019  8:29:57 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : UR1819_Power_Distribution.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        12.6mil (0.32004mm)      Round          7                3.35 Inch (85.08 mm)
+T2        19.7mil (0.50038mm)      Round          7                5.07 Inch (128.79 mm)
+T3        29.5mil (0.7493mm)       Round          4                0.73 Inch (18.56 mm)
+T4        30mil (0.762mm)          Round          20               6.52 Inch (165.64 mm)
+T5        39.4mil (1.00076mm)      Round          48               7.02 Inch (178.18 mm)
+T6        102.4mil (2.60096mm)     Round          38               11.95 Inch (303.46 mm)
+T7        137.8mil (3.50012mm)     Round          4                8.63 Inch (219.22 mm)
+---------------------------------------------------------------------------
+Totals                                            128              43.26 Inch (1098.93 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

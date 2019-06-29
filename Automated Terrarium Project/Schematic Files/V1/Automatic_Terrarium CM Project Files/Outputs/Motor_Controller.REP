@@ -1,0 +1,9 @@
+------------------------------------------------------------
+Single Pin Net Report for Motor_Controller.SchDoc
+-- 7/19/2018
+-- 7:59:09 PM
+------------------------------------------------------------
+
+Net 12V has only one pin (Pin Q4-2)
+Net GND has only one pin (Pin *-2)
+Net Net10K_1 has only one pin (Pin 10K-1)

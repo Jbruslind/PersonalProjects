@@ -1,0 +1,82 @@
+Added Component: Designator=*(PCB-8h6goupi0sbkduz6cbnu-1)
+Added Component: Designator=3_3V(PCB-au5pcc3dbfiberwxa7uf-1)
+Added Component: Designator=5V(PCB-au5pcc3dbfiberwxa7uf-1)
+Added Component: Designator=10K(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=10K(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=10K(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=10K(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=10K(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=20(PCB-mctr3h3tvednl0z90ud0-1)
+Added Component: Designator=D1(PCB-z73ilz2zi6klaqka9exw-1)
+Added Component: Designator=D2(PCB-z73ilz2zi6klaqka9exw-1)
+Added Component: Designator=D3(PCB-z73ilz2zi6klaqka9exw-1)
+Added Component: Designator=D4(PCB-z73ilz2zi6klaqka9exw-1)
+Added Component: Designator=DHT11(DHT11)
+Added Component: Designator=ESP12F(PCB-z8aaw0yugxv87lcq77q0-1)
+Added Component: Designator=Power_In(PCB-8h6goupi0sbkduz6cbnu-1)
+Added Component: Designator=Q1(PCB-18787308-1)
+Added Component: Designator=Q2(PCB-18787308-1)
+Added Component: Designator=Q3(PCB-18787308-1)
+Added Component: Designator=Q4(PCB-18787308-1)
+Added Component: Designator=U1(PCB-y0s4izvblyw4j4eze3nd-1)
+Added Pin To Net: NetName=+5 Pin=10K-2
+Added Pin To Net: NetName=+5 Pin=DHT11-1
+Added Net: Name=+5
+Added Net: Name=3_3V
+Added Pin To Net: NetName=5V Pin=Q1-2
+Added Pin To Net: NetName=5V Pin=Q2-2
+Added Pin To Net: NetName=5V Pin=Q3-2
+Added Pin To Net: NetName=5V Pin=U1-4
+Added Net: Name=5V
+Added Pin To Net: NetName=12V Pin=Q4-2
+Added Net: Name=12V
+Added Pin To Net: NetName=GND Pin=*-2
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=GND Pin=DHT11-4
+Added Pin To Net: NetName=GND Pin=ESP12F-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Net: Name=GND
+Added Pin To Net: NetName=Net3_3V_1 Pin=Power_In-2
+Added Net: Name=Net3_3V_1
+Added Pin To Net: NetName=Net3_3V_2 Pin=Power_In-1
+Added Net: Name=Net3_3V_2
+Added Net: Name=Net5V_3
+Added Pin To Net: NetName=Net10K_1 Pin=10K-1
+Added Pin To Net: NetName=Net10K_1 Pin=ESP12F-25
+Added Net: Name=Net10K_1
+Added Pin To Net: NetName=Net10K_2 Pin=10K-2
+Added Pin To Net: NetName=Net10K_2 Pin=Q4-1
+Added Net: Name=Net10K_2
+Added Pin To Net: NetName=Net20_1 Pin=20-1
+Added Pin To Net: NetName=Net20_1 Pin=20-1
+Added Pin To Net: NetName=Net20_1 Pin=Q3-3
+Added Net: Name=Net20_1
+Added Pin To Net: NetName=Net20_2 Pin=20-2
+Added Pin To Net: NetName=Net20_2 Pin=20-2
+Added Pin To Net: NetName=Net20_2 Pin=D1-1
+Added Pin To Net: NetName=Net20_2 Pin=D2-1
+Added Pin To Net: NetName=Net20_2 Pin=D3-1
+Added Pin To Net: NetName=Net20_2 Pin=D4-1
+Added Net: Name=Net20_2
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_1 Pin=Q4-3
+Added Net: Name=Net*_1
+Added Pin To Net: NetName=NetESP12F_18 Pin=ESP12F-18
+Added Pin To Net: NetName=NetESP12F_18 Pin=U1-6
+Added Net: Name=NetESP12F_18
+Added Pin To Net: NetName=NetESP12F_19 Pin=ESP12F-19
+Added Pin To Net: NetName=NetESP12F_19 Pin=U1-1
+Added Net: Name=NetESP12F_19
+Added Class: Name=Controller
+Added Class: Name=LEDS
+Added Class: Name=Motor_Controller
+Added Class: Name=Power
+Added Class: Name=Sensors

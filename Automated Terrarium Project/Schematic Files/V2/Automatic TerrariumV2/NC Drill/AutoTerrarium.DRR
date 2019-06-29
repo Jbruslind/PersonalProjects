@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: AutoTerrarium.CMPcbDoc   6/20/2019  9:13:24 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : AutoTerrarium.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        11.8mil (0.29972mm)      Round          6                1.15 Inch (29.11 mm)
+T2        28mil (0.7112mm)         Round          20               6.70 Inch (170.27 mm)
+T3        35mil (0.889mm)          Round          4                0.50 Inch (12.70 mm)
+T4        36.2mil (0.91948mm)      Round          4                0.26 Inch (6.50 mm)
+T5        39mil (0.9906mm)         Round          30               3.65 Inch (92.62 mm)
+T6        43.3mil (1.09982mm)      Round          3                0.20 Inch (5.08 mm)
+T7        59.1mil (1.50114mm)      Round          2                0.39 Inch (9.90 mm)
+T8        90.6mil (2.30124mm)      Round          2                0.47 Inch (12.04 mm)
+T9        102.4mil (2.60096mm)     Round          2                0.20 Inch (5.00 mm)
+T10       122mil (3.0988mm)        Round          4                8.98 Inch (228.00 mm)
+T11       78.7mil (1.99898mm)      Round          3         NPTH   0.65 Inch (16.40 mm)
+---------------------------------------------------------------------------
+Totals                                            80               23.13 Inch (587.62 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

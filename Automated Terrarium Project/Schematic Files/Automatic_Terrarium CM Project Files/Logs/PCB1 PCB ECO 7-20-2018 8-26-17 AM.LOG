@@ -1,3 +1,0 @@
-Change Component Designator: OldDesignator=* NewDesignator=Motor
-Change Component Library : Designator=Motor Old Library=FavoritesLibrary New Library=CommunityVault
-Change Net Name : Old Net Name=Net*_1 New Net Name=NetMotor_1

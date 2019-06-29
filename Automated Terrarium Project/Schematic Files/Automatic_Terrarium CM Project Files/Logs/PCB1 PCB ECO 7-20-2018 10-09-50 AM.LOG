@@ -1,9 +1,0 @@
-Added Component: Designator=J1(PCB-uaeje0c37wq92n4bv9j3-1)
-Added Component: Designator=R12(PCB-mctr3h3tvednl0z90ud0-1)
-Added Pin To Net: NetName=GND Pin=J1-2
-Added Pin To Net: NetName=5V Pin=R12-2
-Added Pin To Net: NetName=LIGHT Pin=J1-1
-Added Pin To Net: NetName=LIGHT Pin=R12-1
-Added Net: Name=LIGHT
-Added Member To Class: ClassName=Sensors Member=Component J1 TE Connectivity 5-103634-1
-Added Member To Class: ClassName=Sensors Member=Component R12 Res2

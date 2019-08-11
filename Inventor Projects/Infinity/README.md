@@ -22,18 +22,14 @@ The time stone was also pretty easy to design since it had a very distinct shape
 and used the socercer's symbol to extrude a pattern on the pendant. The material for this pendant was Brass as it had the closest color to the metal in the movies. The tritium 
 vial color was Green. 
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_dark.jpg)
-
-![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_light_none.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_dark.jpg" width="400"> <img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_light_none.jpg" width="400">
 
 ## Mind 
 The mind stone was a little diffcult to design as I didn't know what shape would properly emulate the stone in the movies. I settled on the stone holder used in Vision's head first seen 
 in Age of Ultron. I took a little creative liberties to make sure the shape was able to fit the vial properly. The material for this pendant was stainless steel since it seemed to most 
 closely match the metal holder in the movies. The tritium vial color was Yellow. 
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_dark.jpg)
-
-![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_light_none.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_dark.jpg" width="400"> <img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_light_none.jpg" width="400">
 
 ## Power 
 The only symbol I could think of for the power stone was the orb seen in Guardians of the Galaxy that contained it. Unfortunatly I'm not talented enough to create all the intricate shapes/symbols
@@ -42,9 +38,7 @@ that had extruded hexagons cut into it. Credit for the dodecahedron shape goes t
 [here](https://www.thingiverse.com/thing:1344625). The material chosen for this pendant was Brass. This goes against the actual color seen in the movie but I thought that having a 
 gold-ish color contrasted with the purple vial would create a nice effect. The tritium vial color was Purple. 
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_dark.jpg)
-
-![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_light_none.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_dark.jpg" width="400"> <img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_light_none.jpg" width="400">
 
 ## Reality 
 Personally this one is my favorite, mostly because of how cool it looks and the fact that it almost killed my computer trying to render. 
@@ -52,9 +46,7 @@ The reality stone was hard to design for since its symbol in the movies was lite
 that captured exactly what I was looking for. You can check out the original files [here](https://www.3dizingof.com/shop/free-designs/borromean-vase/). I took this model and extruded the center piece 
 to be a holder for the vial and then added some effects to make it a little easier to see. The material for this pendant was Brass. The tritium vial color was Red. 
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_dark.jpg)
-
-![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_light_none.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_dark.jpg" width="400"> <img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_light_none.jpg" width="400">
 
 ## Soul
 This one was actually the hardest to design for since it had no concrete symbol in the entire movie. Some ideas I had come up with some friends were the Spires seen on Voromir, a stick figure with 
@@ -63,6 +55,4 @@ supposed to be for DND/Tabletop RPG type stuff, but worked great for my uses. I 
 in the movie the stone could only be obtained by "Giving up something you love"). The material chosen was steel since using either brass/bronze didn't really fit well with the color theme. The 
 tritium vial color was Orange.  
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_dark.jpg)
-
-![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_light_none.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_dark.jpg" width="400"> <img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_light_none.jpg" width="400">

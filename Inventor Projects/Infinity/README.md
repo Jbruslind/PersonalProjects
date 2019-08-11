@@ -3,7 +3,7 @@ After designing each of the pendants I used Shapeways to 3D print each one in a 
 Brass having a minumum price/part of $12.50 and Steel being $15. The tritium vials were bought online from [MixGlo](https://www.mixglo.com/) in the 3x11mm vials ($9.50/unit). The chain
 for each one I just found on Amazon. Feel free to steal any of the designs or make your own. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_dark_full.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_dark_full.jpg)
 
 ![Cases](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_light_none.jpg)
 
@@ -13,7 +13,7 @@ for the tritum vial to sit. The Tessaract was a core icon in the Marvel movies (
 emulate the Space stone than a tesseract. The material was chosen to be stainless steel since none of the other available metals really fit the color theme. 
 The tritum vial color was Ice Blue. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_light_none.jpg)
 
@@ -22,7 +22,7 @@ The time stone was also pretty easy to design since it had a very distinct shape
 and used the socercer's symbol to extrude a pattern on the pendant. The material for this pendant was Brass as it had the closest color to the metal in the movies. The tritium 
 vial color was Green. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Time_light_none.jpg)
 
@@ -31,7 +31,7 @@ The mind stone was a little diffcult to design as I didn't know what shape would
 in Age of Ultron. I took a little creative liberties to make sure the shape was able to fit the vial properly. The material for this pendant was stainless steel since it seemed to most 
 closely match the metal holder in the movies. The tritium vial color was Yellow. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Mind_light_none.jpg)
 
@@ -39,10 +39,10 @@ closely match the metal holder in the movies. The tritium vial color was Yellow.
 The only symbol I could think of for the power stone was the orb seen in Guardians of the Galaxy that contained it. Unfortunatly I'm not talented enough to create all the intricate shapes/symbols
 as seen on the orb and even so my computer wouldn't be able to render all those facets. Instead I opted for a geometrical shape that was similar to the orb (dodecahedron) and combined it with a center holder
 that had extruded hexagons cut into it. Credit for the dodecahedron shape goes to Thingiverse user [nevitdilmen](https://www.thingiverse.com/nevitdilmen/about), be sure to check it out on Thingiverse
-[here](https://www.thingiverse.com/thing:1344625) The material chosen for this pendant was Brass. This goes against the actual color seen in the movie but I thought that having a 
+[here](https://www.thingiverse.com/thing:1344625). The material chosen for this pendant was Brass. This goes against the actual color seen in the movie but I thought that having a 
 gold-ish color contrasted with the purple vial would create a nice effect. The tritium vial color was Purple. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Power_light_none.jpg)
 
@@ -52,7 +52,7 @@ The reality stone was hard to design for since its symbol in the movies was lite
 that captured exactly what I was looking for. You can check out the original files [here](https://www.3dizingof.com/shop/free-designs/borromean-vase/). I took this model and extruded the center piece 
 to be a holder for the vial and then added some effects to make it a little easier to see. The material for this pendant was Brass. The tritium vial color was Red. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Reality_light_none.jpg)
 
@@ -63,6 +63,6 @@ supposed to be for DND/Tabletop RPG type stuff, but worked great for my uses. I 
 in the movie the stone could only be obtained by "Giving up something you love"). The material chosen was steel since using either brass/bronze didn't really fit well with the color theme. The 
 tritium vial color was Orange.  
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_dark.jpg)
+![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_dark.jpg)
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Soul_light_none.jpg)

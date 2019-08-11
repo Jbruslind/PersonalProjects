@@ -13,7 +13,7 @@ for the tritum vial to sit. The Tessaract was a core icon in the Marvel movies (
 emulate the Space stone than a tesseract. The material was chosen to be stainless steel since none of the other available metals really fit the color theme. 
 The tritum vial color was Ice Blue. 
 
-![In the dark after ~1s long exposure](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_dark.jpg)
+<img src= "https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_dark.jpg" width="100">
 
 ![Case](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Space_light_none.jpg)
 

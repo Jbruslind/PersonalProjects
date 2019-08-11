@@ -3,9 +3,9 @@ After designing each of the pendants I used Shapeways to 3D print each one in a 
 Brass having a minumum price/part of $12.50 and Steel being $15. The tritium vials were bought online from [MixGlo](https://www.mixglo.com/) in the 3x11mm vials ($9.50/unit). The chain
 for each one I just found on Amazon. Feel free to steal any of the designs or make your own. 
 
-![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_dark_full.png)
+![In the dark after ~1s long exposure]](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_dark_full.jpg)
 
-![Cases](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_light_none.png)
+![Cases](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Pics/Infinity_light_none.jpg)
 
 ## Space
 This one was the first pendant I designed, mostly because it was the easiest to think of. The design is the 3D representation of a tessaract, with a core in the center

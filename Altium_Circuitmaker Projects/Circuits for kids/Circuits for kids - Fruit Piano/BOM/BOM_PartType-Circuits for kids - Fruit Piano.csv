@@ -1,0 +1,9 @@
+Comment,Description,Designator,Footprint,LibRef,Quantity
+
+"Samsung CL10A105KP8NNNC","CL10 Series 1 uF 10 V ±10 % Tolerance X5R SMT Multilayer Ceramic Capacitor","C1, C2, C3, C4, C5, C6, C7, C8","PCB-lkmleyt60a11wkc2qm7q-1","CMP-1956d172a695c691-3","8"
+"Würth Elektronik 61300211021","Board-To-Board Connector, Right Angle, WR-PHD Series, Through Hole, Header, 2, 2.54 mm","J1","PCB-t2j72m1yraok0w090vy8-1","CMP-7939b1c60980a6fe-3","1"
+"SparkFun COM-11821","Led - Smd Rgb (Ws2812)","L1, L2, L3, L4, L5, L6, L7, L8","PCB-1ur4ffa4apwrigk38oa4-1","CMP-ba0777713b8065c0-3","8"
+"Vishay Dale CRCW08053K90FKEA","Res Thick Film 0805 3.9K Ohm 1% 0.125W(1/8W) ±100ppm/C Molded SMD Automotive Paper T/R","R1, R2, R3, R4, R5, R6, R7, R8","RESC2013X50X30ML20T20","CMP-1857812-2","8"
+"0608","Res, Auto, Thick Film, 220R, 5%, 0603","R9","PCB-i9f5vo4hvu8q9ebidz15-1","CMP-6721ab479138b8e6-1","1"
+"SYM-d65b1e1746cb099c-7","Raychem; SMT Circuit probe pad, 0603, 0R0 RCU","TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8","PCB-05qrves7qt31i6rf73jz-1","CMP-d65b1e1746cb099c-20","8"
+"Arduino NANO","arduino nano","U1","PCB-kcq4ssidua0wf3ce18dn-1","CMP-40a988ff651f9f6e-14","1"

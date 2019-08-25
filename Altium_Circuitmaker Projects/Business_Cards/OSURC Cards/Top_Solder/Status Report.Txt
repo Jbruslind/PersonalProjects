@@ -1,0 +1,17 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:22:58 PM On 8/24/2019
+
+Output: Gerber
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [Business Cards.CMPcbDoc]
+   Generated File[Business Cards.GTS]
+   Generated File[Business Cards.RUL]
+   Generated File[Business Cards.EXTREP]
+   Generated File[Business Cards.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 8:22:59 PM On 8/24/2019

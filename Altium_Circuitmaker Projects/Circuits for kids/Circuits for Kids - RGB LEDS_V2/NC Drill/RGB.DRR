@@ -1,0 +1,32 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: RGB.CMPcbDoc   8/21/2019  9:48:09 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : RGB.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        11.8mil (0.29972mm)      Round          2                0.72 Inch (18.25 mm)
+T2        27.6mil (0.70104mm)      Round          5                0.23 Inch (5.77 mm)
+T3        28mil (0.7112mm)         Round          9                2.84 Inch (72.23 mm)
+T4        36mil (0.9144mm)         Round          9                3.33 Inch (84.70 mm)
+T5        36.2mil (0.91948mm)      Round          4                0.26 Inch (6.50 mm)
+T6        40.2mil (1.02108mm)      Round          30               3.28 Inch (83.37 mm)
+T7        47.2mil (1.19888mm)      Round          6                0.72 Inch (18.26 mm)
+T8        74.8mil (1.89992mm)      Round          1                0.00 Inch (0.00 mm)
+T9        75.6mil (1.92024mm)      Round          1                0.00 Inch (0.00 mm)
+T10       90.6mil (2.30124mm)      Round          2                0.47 Inch (12.04 mm)
+---------------------------------------------------------------------------
+Totals                                            69               11.86 Inch (301.12 mm)
+
+Two holes at same point : 6
+-----------------------
+2264,2008
+2364,2008
+2559,2008
+2659,2008
+2882,2018
+2982,2018
+
+Total Processing Time (hh:mm:ss) : 00:00:01

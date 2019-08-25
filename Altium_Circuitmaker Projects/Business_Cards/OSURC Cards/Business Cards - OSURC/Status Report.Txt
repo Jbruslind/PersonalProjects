@@ -1,0 +1,17 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:19:13 PM On 8/24/2019
+
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [Business Cards.CMPcbDoc]
+   Generated File[Business Cards.TXT]
+   Generated File[Business Cards-BoardEdgeRout.TXT]
+   Generated File[Business Cards.LDP]
+   Generated File[Business Cards.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 8:19:13 PM On 8/24/2019

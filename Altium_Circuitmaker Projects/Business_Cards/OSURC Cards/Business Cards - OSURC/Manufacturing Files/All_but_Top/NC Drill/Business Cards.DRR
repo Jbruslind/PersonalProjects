@@ -1,0 +1,37 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Business Cards.CMPcbDoc   8/27/2019  9:33:12 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Business Cards.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        12.6mil (0.32004mm)      Round          1                0.00 Inch (0.00 mm)
+T2        14.2mil (0.36068mm)      Round          1                0.00 Inch (0.00 mm)
+T3        15.9mil (0.40386mm)      Round          1                0.00 Inch (0.00 mm)
+T4        17.9mil (0.45466mm)      Round          1                0.00 Inch (0.00 mm)
+T5        20.1mil (0.51054mm)      Round          1                0.00 Inch (0.00 mm)
+T6        22.6mil (0.57404mm)      Round          2                0.01 Inch (0.14 mm)
+T7        25.4mil (0.64516mm)      Round          1                0.00 Inch (0.00 mm)
+T8        28.5mil (0.7239mm)       Round          1                0.00 Inch (0.00 mm)
+T9        32mil (0.8128mm)         Round          1                0.00 Inch (0.00 mm)
+T10       35.4mil (0.89916mm)      Round          2                0.30 Inch (7.62 mm)
+T11       35.9mil (0.91186mm)      Round          1                0.00 Inch (0.00 mm)
+T12       40.3mil (1.02362mm)      Round          1                0.00 Inch (0.00 mm)
+T13       45.3mil (1.15062mm)      Round          1                0.00 Inch (0.00 mm)
+T14       50.8mil (1.29032mm)      Round          1                0.00 Inch (0.00 mm)
+T15       57.1mil (1.45034mm)      Round          1                0.00 Inch (0.00 mm)
+T16       64.1mil (1.62814mm)      Round          1                0.00 Inch (0.00 mm)
+T17       72mil (1.8288mm)         Round          1                0.00 Inch (0.00 mm)
+T18       80.8mil (2.05232mm)      Round          1                0.00 Inch (0.00 mm)
+T19       90.7mil (2.30378mm)      Round          1                0.00 Inch (0.00 mm)
+T20       101.9mil (2.58826mm)     Round          1                0.00 Inch (0.00 mm)
+T21       114.4mil (2.90576mm)     Round          1                0.00 Inch (0.00 mm)
+T22       128.5mil (3.2639mm)      Round          1                0.00 Inch (0.00 mm)
+T23       144.3mil (3.66522mm)     Round          1                0.00 Inch (0.00 mm)
+T24       162mil (4.1148mm)        Round          1                0.00 Inch (0.00 mm)
+---------------------------------------------------------------------------
+Totals                                            26               0.31 Inch (7.76 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

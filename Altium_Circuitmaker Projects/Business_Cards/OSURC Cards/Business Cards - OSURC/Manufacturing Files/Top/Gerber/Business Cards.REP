@@ -1,0 +1,21 @@
+*************************************************************
+FileName = Business Cards.GBR
+AutoAperture = False
+*************************************************************
+Generating : Top Overlay
+      File : Business Cards.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D65
+    D68
+    D73
+    D76
+    D81
+    D84
+    D95
+    D100
+*************************************************************
+

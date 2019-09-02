@@ -1,0 +1,5 @@
+Delta Robot Controller
+Y_axis	Y axis value , left stick, up/down (-1,1)	3	SLIDER	Y Axis	0	1.0	0.0
+X_axis	X axis value, left stick, left/right (-1,1)	3	SLIDER	X Axis	0	1.0	0.0
+Y_rot	Y rotation value, right stick, up/down (-1,1)	3	SLIDER	Y Rotation	0	1.0	0.0
+X_rot	X rotation value, right stick, left/right (-1,1)	3	SLIDER	X Rotation	0	1.0	0.0

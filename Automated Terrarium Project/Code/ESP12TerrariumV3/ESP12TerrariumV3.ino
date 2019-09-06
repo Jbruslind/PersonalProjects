@@ -22,7 +22,7 @@ DS3231 Clock;
  * WS2812 RGB LED setup
  */
 Adafruit_NeoPixel Array(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
-#define LED_PIN    6
+#define LED_PIN    0
 #define LED_COUNT 4
 /************************************************
  * Wifi Control Stuff
@@ -49,13 +49,74 @@ int Motor = D7
 void setup() {
   Wire.begin();
   opt3001.begin(OPT3001_ADDRESS);
+  Serial.print("OPT3001 Manufacturer ID");
+  Serial.println(opt3001.readManufacturerID());
+  Serial.print("OPT3001 Device ID");
+  Serial.println(opt3001.readDeviceID());
   configureSensor();
+  printResult("High-Limit", opt3001.readHighLimit());
+  printResult("Low-Limit", opt3001.readLowLimit());
 
 }
 
 void loop() {
   OPT3001 result = opt3001.readResult(); //To get the lux value, call result.lux 
   //To get the error code (if any) call result.error. Check this before checking
+  println(result)
   
 
+}
+
+void configureSensor() {
+  OPT3001_Config newConfig;
+  
+  newConfig.RangeNumber = B1100;  
+  newConfig.ConvertionTime = B0;
+  newConfig.Latch = B1;
+  newConfig.ModeOfConversionOperation = B11;
+
+  OPT3001_ErrorCode errorConfig = opt3001.writeConfig(newConfig);
+  if (errorConfig != NO_ERROR)
+    printError("OPT3001 configuration", errorConfig);
+  else {
+    OPT3001_Config sensorConfig = opt3001.readConfig();
+    Serial.println("OPT3001 Current Config:");
+    Serial.println("------------------------------");
+    
+    Serial.print("Conversion ready (R):");
+    Serial.println(sensorConfig.ConversionReady,HEX);
+
+    Serial.print("Conversion time (R/W):");
+    Serial.println(sensorConfig.ConvertionTime, HEX);
+
+    Serial.print("Fault count field (R/W):");
+    Serial.println(sensorConfig.FaultCount, HEX);
+
+    Serial.print("Flag high field (R-only):");
+    Serial.println(sensorConfig.FlagHigh, HEX);
+
+    Serial.print("Flag low field (R-only):");
+    Serial.println(sensorConfig.FlagLow, HEX);
+
+    Serial.print("Latch field (R/W):");
+    Serial.println(sensorConfig.Latch, HEX);
+
+    Serial.print("Mask exponent field (R/W):");
+    Serial.println(sensorConfig.MaskExponent, HEX);
+
+    Serial.print("Mode of conversion operation (R/W):");
+    Serial.println(sensorConfig.ModeOfConversionOperation, HEX);
+
+    Serial.print("Polarity field (R/W):");
+    Serial.println(sensorConfig.Polarity, HEX);
+
+    Serial.print("Overflow flag (R-only):");
+    Serial.println(sensorConfig.OverflowFlag, HEX);
+
+    Serial.print("Range number (R/W):");
+    Serial.println(sensorConfig.RangeNumber, HEX);
+
+    Serial.println("------------------------------");
+  }
+  
 }

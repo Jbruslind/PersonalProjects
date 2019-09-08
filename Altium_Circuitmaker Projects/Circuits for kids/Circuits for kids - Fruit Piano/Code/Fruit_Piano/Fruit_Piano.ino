@@ -8,6 +8,7 @@
 
 float notes[] = {440,494,523,587,659,698,784,880};
 
+float past_note = 0;
 
 int r_arr[] = {255,255,255,0,0,0,127,255};
 int g_arr[] = {0,128,255,255,255,0,0,105};
@@ -31,7 +32,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  float note_ = 0;
+  float note_ = 20000;
   pixels.clear();
 
   for(int i = 2; i < 10; i++)
@@ -47,8 +48,12 @@ void loop() {
     }
 
   }
-  Serial.println(note_);
-  tone(12, int(note_));
+  Serial.println(note_ - 20000);
+  if(past_note != note_)
+  {
+    tone(12, int(note_ - 20000));
+  }
+  past_note = note_;
   pixels.show();
   delay(30);
 }

@@ -10,15 +10,14 @@ ControlIO control;
 Arduino arduino;
 float x_axis;
 float y_axis;
-float x_rot;
-float y_rot;
+float z_axis;
 
 // robot geometry
  // (look at pics above for explanation)
-float e = 45;     // end effector
-float f = 60;     // base
-float re = 215;
-float rf = 90;
+float e = 30;     // end effector
+float f = 65;     // base
+float re = 135;
+float rf = 100;
  //Trig stuff
 float sqrt3 = sqrt(3.0);
 float pi = 3.141592653;    // PI
@@ -38,20 +37,30 @@ void setup() {
     System.exit(-1);
   }
   // println(Arduino.list());
-  arduino = new Arduino(this, Arduino.list()[2], 57600);
+  arduino = new Arduino(this, Arduino.list()[1], 57600);
   arduino.pinMode(2, Arduino.SERVO);
   arduino.pinMode(3, Arduino.SERVO);
   arduino.pinMode(4, Arduino.SERVO);
 }
 
 public void getUserInput() {
-  thumb = map(cont.getSlider("servoPos").getValue(), -1, 1, 0, 180);
+  x_axis = map(cont.getSlider("X_axis").getValue() , -1, 1, -64.664, 64.664);
+  y_axis = map(cont.getSlider("Y_axis").getValue() , -1, 1, -64.664, 64.664);
+  z_axis = map(cont.getSlider("Y_rot").getValue(), -1, 1, -198.809, -69.481);
 }
 
 void draw() {
   getUserInput();
-  background(thumb,100,255);
-  arduino.servoWrite(10, (int)thumb);
+  float[] serv_array = delta_calcInverse(x_axis, y_axis, z_axis);
+  float theta1 = map(serv_array[0], -25.85, 95.81, 0, 180);
+  float theta2 = map(serv_array[1], -39.36, 95.85, 0, 180);
+  float theta3 = map(serv_array[2], -39.36, 95.85, 0, 180);
+  background(170,100,255);
+  arduino.servoWrite(2, int(theta2) + 50);
+  arduino.servoWrite(3, int(theta1) + 50);
+  arduino.servoWrite(4, int(theta3) + 50);
+  print(theta1 + "" + theta2 + "" + theta3);
+  println();
 }
 
 
@@ -59,9 +68,9 @@ void draw() {
  // returned status: 0=OK, -1=non-existing position
 float[] delta_calcForward(float theta1, float theta2, float theta3) {
   
-     float x0; 
-     float y0; 
-     float z0;
+     float x0 = -1.0;
+     float y0 = -1.0; 
+     float z0 = -1.0;
      
      float t = (f-e)*tan30/2;
      float dtr = pi/(float)180.0;
@@ -102,7 +111,7 @@ float[] delta_calcForward(float theta1, float theta2, float theta3) {
   
      // discriminant
      float d = b*b - (float)4.0*a*c;
-     if (d < 0) return -1; // non-existing point
+     if (d < 0) return new float[]{x0,y0,z0}; // non-existing point
  
      z0 = -(float)0.5*(b+sqrt(d))/a;
      x0 = (a1*z0 + b1)/dnm;
@@ -131,13 +140,14 @@ float[] delta_calcForward(float theta1, float theta2, float theta3) {
  
  // inverse kinematics: (x0, y0, z0) -> (theta1, theta2, theta3)
  // returned status: 0=OK, -1=non-existing position
- int delta_calcInverse(float x0, float y0, float z0) {
+ float[] delta_calcInverse(float x0, float y0, float z0) {
      float theta1; 
      float theta2; 
      float theta3;
-     theta1 = theta2 = theta3 = 0;
+     theta1 = theta2 = theta3 = -1.0;
      theta1 = delta_calcAngleYZ(x0, y0, z0);
      if (theta1 != -1.0) theta2 = delta_calcAngleYZ(x0*cos120 + y0*sin120, y0*cos120-x0*sin120, z0);  // rotate coords to +120 deg
      if (theta2 != -1.0) theta3 = delta_calcAngleYZ(x0*cos120 - y0*sin120, y0*cos120+x0*sin120, z0);  // rotate coords to -120 deg
-     return status;
+     float[] theta_arr = new float[] { theta1, theta2, theta3 };
+     return theta_arr;
  }

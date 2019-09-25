@@ -128,6 +128,16 @@ void change_light(int val[]) //Expects a 4 value array of hex color values
   pixels.clear()
   for (int i = 0; i < 4; i++)
   {
-    pixels.setPixelColor(i , pixels.Color(val[i] && 0x0000FF, val[i] && 0x00FF00, val[i] && 0xFF0000));
+    pixels.setPixelColor(i , pixels.Color(val[i] & 0x0000FF, val[i] & 0x00FF00, val[i] & 0xFF0000));
   }
+}
+
+void activate_pump()
+{
+  int Ts = millis(); 
+  while(analogRead(moisture) > 550 && millis() - Ts =< 6000)
+  {
+    digitalWrite(motor, HIGH);
+  }
+  digitalWrite(motor, LOW);
 }

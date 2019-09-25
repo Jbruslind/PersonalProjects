@@ -13,7 +13,7 @@
  * Light Sensor Setup
  */
 ClosedCube_OPT3001 opt3001;
-#define OPT3001_ADDRESS 0x45
+#define OPT3001_ADDRESS 0x45 //Address changed to 0x45 from 0x44 (ADDR tied to GND rather than VCC)
 /************************************************
  * DS3231 Real Time clock (RTC) setup 
  */
@@ -21,9 +21,9 @@ DS3231 Clock;
 /************************************************
  * WS2812 RGB LED setup
  */
-Adafruit_NeoPixel Array(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
-#define LED_PIN    0
+#define LED_PIN 4
 #define LED_COUNT 4
+Adafruit_NeoPixel pixels(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 /************************************************
  * Wifi Control Stuff
  */
@@ -44,7 +44,7 @@ long lastReconnectAttempt = 0;
  * General Control
  */
 int moisture = A0;
-int Motor = D7
+int Motor = D7;
 
 void setup() {
   Wire.begin();
@@ -57,12 +57,14 @@ void setup() {
   printResult("High-Limit", opt3001.readHighLimit());
   printResult("Low-Limit", opt3001.readLowLimit());
 
+  pinMode(Motor, OUTPUT); 
+
 }
 
 void loop() {
   OPT3001 result = opt3001.readResult(); //To get the lux value, call result.lux 
   //To get the error code (if any) call result.error. Check this before checking
-  println(result)
+  
   
 
 }
@@ -119,4 +121,13 @@ void configureSensor() {
     Serial.println("------------------------------");
   }
   
+}
+
+void change_light(int val[]) //Expects a 4 value array of hex color values
+{
+  pixels.clear()
+  for (int i = 0; i < 4; i++)
+  {
+    pixels.setPixelColor(i , pixels.Color(val[i] && 0x0000FF, val[i] && 0x00FF00, val[i] && 0xFF0000));
+  }
 }

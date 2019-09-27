@@ -7,23 +7,25 @@
 
 #include <Adafruit_NeoPixel.h>
 
-#include <DS3231.h>
+#include "DS3231.h"
 
 /************************************************
  * Light Sensor Setup
  */
 ClosedCube_OPT3001 opt3001;
-#define OPT3001_ADDRESS 0x45
+#define OPT3001_ADDRESS 0x44
 /************************************************
  * DS3231 Real Time clock (RTC) setup 
  */
-DS3231 Clock;
+ //I2C Comms are on SDA: GPIO2, SCL: GPIO14
+ //CHANGE ON ALL I2C LIBRARIES
+RTClib RTC;
 /************************************************
  * WS2812 RGB LED setup
  */
-Adafruit_NeoPixel Array(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
-#define LED_PIN    0
+ #define LED_PIN    16
 #define LED_COUNT 4
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 /************************************************
  * Wifi Control Stuff
  */
@@ -44,10 +46,11 @@ long lastReconnectAttempt = 0;
  * General Control
  */
 int moisture = A0;
-int Motor = D7
+int Motor = D7;
 
 void setup() {
-  Wire.begin();
+  Wire.begin(14, 2);
+  Serial.begin(9600);
   opt3001.begin(OPT3001_ADDRESS);
   Serial.print("OPT3001 Manufacturer ID");
   Serial.println(opt3001.readManufacturerID());
@@ -56,14 +59,16 @@ void setup() {
   configureSensor();
   printResult("High-Limit", opt3001.readHighLimit());
   printResult("Low-Limit", opt3001.readLowLimit());
-
+  strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+  strip.show();            // Turn OFF all pixels ASAP
+  strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
 }
 
 void loop() {
   OPT3001 result = opt3001.readResult(); //To get the lux value, call result.lux 
   //To get the error code (if any) call result.error. Check this before checking
-  println(result)
-  
+  Serial.println(result.lux);
+  theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
 
 }
 
@@ -119,4 +124,43 @@ void configureSensor() {
     Serial.println("------------------------------");
   }
   
+}
+
+void printResult(String text, OPT3001 result) {
+  if (result.error == NO_ERROR) {
+    Serial.print(text);
+    Serial.print(": ");
+    Serial.print(result.lux);
+    Serial.println(" lux");
+  }
+  else {
+    printError(text,result.error);
+  }
+}
+
+void printError(String text, OPT3001_ErrorCode error) {
+  Serial.print(text);
+  Serial.print(": [ERROR] Code #");
+  Serial.println(error);
+}
+
+void theaterChaseRainbow(int wait) {
+  int firstPixelHue = 0;     // First pixel starts at red (hue 0)
+  for(int a=0; a<30; a++) {  // Repeat 30 times...
+    for(int b=0; b<3; b++) { //  'b' counts from 0 to 2...
+      strip.clear();         //   Set all pixels in RAM to 0 (off)
+      // 'c' counts up from 'b' to end of strip in increments of 3...
+      for(int c=b; c<strip.numPixels(); c += 3) {
+        // hue of pixel 'c' is offset by an amount to make one full
+        // revolution of the color wheel (range 65536) along the length
+        // of the strip (strip.numPixels() steps):
+        int      hue   = firstPixelHue + c * 65536L / strip.numPixels();
+        uint32_t color = strip.gamma32(strip.ColorHSV(hue)); // hue -> RGB
+        strip.setPixelColor(c, color); // Set pixel 'c' to value 'color'
+      }
+      strip.show();                // Update strip with new contents
+      delay(wait);                 // Pause for a moment
+      firstPixelHue += 65536 / 90; // One cycle of color wheel over 90 frames
+    }
+  }
 }

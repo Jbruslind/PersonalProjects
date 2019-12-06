@@ -7,11 +7,11 @@ I thought they would be a good way to highlight my skills in making PCBs. So thi
 
 
 
-![LM5117 Render](Personal_Cards.png)
+![Personal Business Cards (Blank Template)](Personal_Cards.png)
 
 
 
 ##	OSURC Cards
 
 
-![LM5117 Render](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/Business_Cards\OSURC_Cards.png)
+![OSURC Business Cards](OSURC_Cards.png)

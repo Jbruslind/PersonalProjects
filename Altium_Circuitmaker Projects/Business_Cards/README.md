@@ -7,7 +7,7 @@ I thought they would be a good way to highlight my skills in making PCBs. So thi
 
 
 
-![LM5117 Render](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/Business_Cards\Personal_Cards.png)
+![LM5117 Render](Personal_Cards.png)
 
 
 

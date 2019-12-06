@@ -29,9 +29,9 @@ Buck controller IC made by Texas Instruments and employ it towards reducing our 
 48V input to our system standard 12V. The same statement in the LM5117 applies to this design in that 
 in was designed with power planes and heat sinks in order to dissipate the thermal power gneerated by the MOSFETs. 
 
-![LM5085 Render](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819-Backup_LM5085/LM5085_render.png)
+![LM5085 Render](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819-Backup_LM5085/LM5085_render.png){:height="50%" width="50%"}
 
-![LM5085 Traces](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819-Backup_LM5085/LM5085_Traces.png)
+![LM5085 Traces](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819-Backup_LM5085/LM5085_Traces.png){:height="50%" width="50%"}
  
 
 ##	AUX

@@ -1,0 +1,17 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:09:50 AM On 1/25/2020
+
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [OSURCUW_PWRSupply.CMPcbDoc]
+   Generated File[OSURCUW_PWRSupply.TXT]
+   Generated File[OSURCUW_PWRSupply-BoardEdgeRout.TXT]
+   Generated File[OSURCUW_PWRSupply.LDP]
+   Generated File[OSURCUW_PWRSupply.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 1:09:51 AM On 1/25/2020

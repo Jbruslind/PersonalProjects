@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:17:16 AM On 1/25/2020
+
+Output: ExportSTEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [UROV1920_TEMPLATE.CMPcbDoc]
+   Generated File[UROV1920_TEMPLATE.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 1:17:49 AM On 1/25/2020

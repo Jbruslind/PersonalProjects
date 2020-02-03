@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: UROV1920_AUX3.CMPcbDoc   2/2/2020  2:12:53 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : UROV1920_AUX3.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        19.7mil (0.50038mm)      Round          8                2.38 Inch (60.55 mm)
+T2        28mil (0.7112mm)         Round          48               16.40 Inch (416.47 mm)
+T3        40.2mil (1.02108mm)      Round          80               16.42 Inch (417.14 mm)
+T4        43.3mil (1.09982mm)      Round          30               3.40 Inch (86.36 mm)
+T5        45mil (1.143mm)          Round          24               5.23 Inch (132.75 mm)
+T6        137.8mil (3.50012mm)     Round          4                8.07 Inch (204.85 mm)
+---------------------------------------------------------------------------
+Totals                                            194              51.89 Inch (1318.12 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

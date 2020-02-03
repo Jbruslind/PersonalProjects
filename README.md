@@ -44,3 +44,5 @@ But it was a fun project to work on and I think the recent revision looks pretty
 
 This project is the Underwater ROV team 2018-2019 circuit board files. All of these were custom designed to fit with 
 the ROV. 
+
+![More information here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Altium_Circuitmaker%20Projects/UROV1819)

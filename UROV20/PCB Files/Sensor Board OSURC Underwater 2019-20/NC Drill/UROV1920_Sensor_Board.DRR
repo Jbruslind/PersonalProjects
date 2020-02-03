@@ -1,0 +1,27 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: UROV1920_Sensor_Board.CMPcbDoc   2/2/2020  2:09:53 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : UROV1920_Sensor_Board.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          14               5.52 Inch (140.33 mm)
+T2        31.5mil (0.8001mm)       Round          7                0.47 Inch (12.00 mm)
+T3        32mil (0.8128mm)         Round          26               8.79 Inch (223.35 mm)
+T4        35.4mil (0.89916mm)      Round          21               3.77 Inch (95.76 mm)
+T5        36.6mil (0.92964mm)      Round          8                1.48 Inch (37.50 mm)
+T6        39.4mil (1.00076mm)      Round          30               4.47 Inch (113.43 mm)
+T7        40mil (1.016mm)          Round          9                0.80 Inch (20.32 mm)
+T8        40.2mil (1.02108mm)      Round          80               16.12 Inch (409.52 mm)
+T9        42mil (1.0668mm)         Round          5                0.40 Inch (10.16 mm)
+T10       43.3mil (1.09982mm)      Round          30               3.40 Inch (86.36 mm)
+T11       59.1mil (1.50114mm)      Round          3                0.20 Inch (5.08 mm)
+T12       137.8mil (3.50012mm)     Round          4                8.07 Inch (204.85 mm)
+T13       150mil (3.81mm)          Round          4                2.30 Inch (58.42 mm)
+T14       94.5mil (2.4003mm)       Round          4         NPTH   1.72 Inch (43.64 mm)
+---------------------------------------------------------------------------
+Totals                                            245              57.51 Inch (1460.72 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

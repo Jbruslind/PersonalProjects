@@ -1,14 +1,17 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 1:17:16 AM On 1/25/2020
+Start Output Generation At 2:12:53 PM On 2/2/2020
 
-Output: ExportSTEP
-Type  : ExportSTEP
-From  : Variant [[No Variations]] of PCB Document [UROV1920_TEMPLATE.CMPcbDoc]
-   Generated File[UROV1920_TEMPLATE.step]
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [UROV1920_AUX3.CMPcbDoc]
+   Generated File[UROV1920_AUX3.TXT]
+   Generated File[UROV1920_AUX3-BoardEdgeRout.TXT]
+   Generated File[UROV1920_AUX3.LDP]
+   Generated File[UROV1920_AUX3.DRR]
 
 
-Files Generated   : 1
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 1:17:49 AM On 1/25/2020
+Finished Output Generation At 2:12:53 PM On 2/2/2020

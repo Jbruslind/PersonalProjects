@@ -1,0 +1,299 @@
+*************************************************************
+FileName = Valentines.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : Valentines.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Valentines.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Valentines.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Valentines.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Valentines.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D13
+    D30
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Valentines.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Valentines.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Valentines.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Valentines.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Valentines.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D13
+    D30
+    D31
+    D51
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : Valentines.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D31
+*************************************************************
+
+*************************************************************
+Generating : Outline
+      File : Valentines.Outline
+
+    Adding Layer      : Outline
+
+
+Used DCodes :
+    D31
+*************************************************************
+
+*************************************************************
+Generating : 3D Top
+      File : Valentines.3D Top
+
+    Adding Layer      : 3D Top
+
+
+Used DCodes :
+    D13
+    D31
+*************************************************************
+
+*************************************************************
+Generating : 3D Bottom
+      File : Valentines.3D Bottom
+
+    Adding Layer      : 3D Bottom
+
+
+Used DCodes :
+    D13
+    D31
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : Valentines.Courtyard Top
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D13
+    D31
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Bottom
+      File : Valentines.Courtyard Bottom
+
+    Adding Layer      : Courtyard Bottom
+
+
+Used DCodes :
+    D13
+    D31
+    D53
+*************************************************************
+

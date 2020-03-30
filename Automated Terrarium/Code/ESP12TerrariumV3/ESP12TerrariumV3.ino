@@ -44,29 +44,24 @@
   #define LED_COUNT 4
   Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
-  uint32_t* CCT_RGB = [0 , 0, 0, 0, 0, 0, 0];
-  CCT_RGB[0] = strip.Color(255, 147, 41); //Candle
-  CCT_RGB[1] = strip.Color(255, 197, 143); //40W Tungsten
-  CCT_RGB[2] = strip.Color(255, 214, 170); //100W Tungsten
-  CCT_RGB[3] = strip.Color(255, 241, 224); //Halogen
-  CCT_RGB[4] = strip.Color(255, 250, 244); //Carbon Arc
-  CCT_RGB[5] = strip.Color(255, 255, 251); //High Noon Sun
-  CCT_RGB[6] = strip.Color(255, 255, 255); //Direct Sunlight
+  uint32_t CCT_RGB [7] = {0,0,0,0,0,0,0};
+  
 /************************************************
  * Wifi Control Stuff
  */
  
-const char* ssid = "CasaDeJJ";
-const char* password = "1104NW32ST";
+char* ssid = "CasaDeJJ";
+char* password = "1104NW32ST";
 
 const char* mqtt_server = "192.168.0.25"; //Set ip of MQTT broker 
 
 WiFiClient espClient;  //Initalize Wifi object
 PubSubClient client(espClient); //Use wifi object to setup MQTT client
 long lastMsg = 0; //Store flag about last message recieved
-char msg[50]; //array to store message received
+char msg[50]; //array to store message to be sent
 String Data; 
 long lastReconnectAttempt = 0;
+
 void callback(char* topic, byte* payload, unsigned int length) {
   // handle message arrived
 }
@@ -82,6 +77,14 @@ float temp;
 float humidity; 
 
 void setup() {
+  CCT_RGB[0] = strip.Color(255, 147, 41); //Candle
+  CCT_RGB[1] = strip.Color(255, 197, 143); //40W Tungsten
+  CCT_RGB[2] = strip.Color(255, 214, 170); //100W Tungsten
+  CCT_RGB[3] = strip.Color(255, 241, 224); //Halogen
+  CCT_RGB[4] = strip.Color(255, 250, 244); //Carbon Arc
+  CCT_RGB[5] = strip.Color(255, 255, 251); //High Noon Sun
+  CCT_RGB[6] = strip.Color(255, 255, 255); //Direct Sunlight
+  
   Wire.begin(14, 2);
  
   Serial.begin(9600);
@@ -101,13 +104,13 @@ void setup() {
   strip.show();            // Turn OFF all pixels ASAP
   strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
 
-  dht.setup(17, DHTesp::DHT22); // Connect DHT sensor to GPIO 17
+  dht.setup(17, DHTesp::DHT11); // Connect DHT sensor to GPIO 17
   
   WiFi.begin(ssid, password);
 }
 
 void loop() {
-  Serial.println(result.lux);
+
   theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
   
   check_light(); //Control lighting and light detection

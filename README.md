@@ -30,13 +30,13 @@ for a generic plant in a pot. This is supposed to be like a simple arduino proje
 But it was a fun project to work on and I think the recent revision looks pretty cool. 
 ### V1 -> ~2016
 
-![V1](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium%20Project/Inventor%20Files/V1/V1_Assembly.png)
+![V1](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium/Inventor%20Files/V1/V1_Assembly.png)
 
 ### V2 -> ~2018
-![V2](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium%20Project/Inventor%20Files/V2/V2_Assembly.png)
+![V2](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium/Inventor%20Files/V2/V2_Assembly.png)
 
 ### V3 -> ~2019
-![V3](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium%20Project/Inventor%20Files/V3/V3_Assembly.png)
+![V3](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium/Inventor%20Files/V3/V3_Assembly.png)
 
 
 

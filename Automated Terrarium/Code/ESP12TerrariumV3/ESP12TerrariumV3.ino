@@ -1,4 +1,4 @@
-#include <WiFi.h>
+#include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
 #include <Wire.h>
@@ -8,8 +8,6 @@
 #include <Adafruit_NeoPixel.h>
 
 #include <ds3231.h>
-
-#include "DHTesp.h"
 
 /************************************************
  * Light Sensor Setup
@@ -50,17 +48,40 @@
  * Wifi Control Stuff
  */
  
-char* ssid = "CasaDeJJ";
-char* password = "1104NW32ST";
 
-const char* mqtt_server = "192.168.0.25"; //Set ip of MQTT broker 
+const char* ssid = "CasaDeJJ";
+const char* password = "1104NW32ST";
+const char* mqtt_server = "192.168.0.25";
 
-WiFiClient espClient;  //Initalize Wifi object
-PubSubClient client(espClient); //Use wifi object to setup MQTT client
+WiFiClient espClient;
+PubSubClient client(espClient);
 long lastMsg = 0; //Store flag about last message recieved
 char msg[50]; //array to store message to be sent
 String Data; 
 long lastReconnectAttempt = 0;
+
+void setup_wifi() {
+
+  delay(10);
+  // We start by connecting to a WiFi network
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  randomSeed(micros());
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+}
 
 void callback(char* topic, byte* payload, unsigned int length) {
   // handle message arrived
@@ -69,12 +90,14 @@ void callback(char* topic, byte* payload, unsigned int length) {
 /************************************************
  * General Control
  */
-DHTesp dht;
+
 int moisture = A0;
 int Motor = D7;
-bool motor_state;
-float temp;
-float humidity; 
+bool motor_state = false;
+float temp = 0;
+float humidity = 0; 
+int RGB_Status = 0;
+int watering_hour = 12;
 
 void setup() {
   CCT_RGB[0] = strip.Color(255, 147, 41); //Candle
@@ -88,7 +111,11 @@ void setup() {
   Wire.begin(14, 2);
  
   Serial.begin(9600);
- 
+
+  setup_wifi();
+  client.setServer(mqtt_server, 1883);
+  client.setCallback(callback);
+  
   DS3231_init(DS3231_INTCN); //register the ds3231 (DS3231_INTCN is the default address of ds3231, this is set by macro for no performance loss)
   
   opt3001.begin(OPT3001_ADDRESS);
@@ -100,24 +127,22 @@ void setup() {
   printResult("High-Limit", opt3001.readHighLimit());
   printResult("Low-Limit", opt3001.readLowLimit());
   
-  strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
-  strip.show();            // Turn OFF all pixels ASAP
-  strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
-
-  dht.setup(17, DHTesp::DHT11); // Connect DHT sensor to GPIO 17
+  //strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+  //strip.show();            // Turn OFF all pixels ASAP
+  //strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
   
-  WiFi.begin(ssid, password);
 }
 
 void loop() {
-
-  theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
+  client.loop();
+  //theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
   
   check_light(); //Control lighting and light detection
   check_temp(); //Control watering and temp/humidity detection
   check_Wifi(); //Connect to wifi (or ignore if already connected)
 
   publish_status();
+  delay(1000);
 }
 
 void configureSensor() {
@@ -194,24 +219,25 @@ void printError(String text, OPT3001_ErrorCode error) {
 
 void publish_status()
 {
-  client.publish("Automated_Terrarium/light", result_light.lux);
-  client.publish("Automated_Terrarium/motor_state", result_light.lux);
-  client.publish("Automated_Terrarium/RGBstatus", result_light.lux);
-  //client.publish("Automated_Terrarium/humidity", result_light.lux);
-  //client.publish("Automated_Terrarium/temp", result_light.lux);
-  client.publish("Automated_Terrarium/time", ts.hour + ":" + ts.min);
-  client.publish("Automated_Terrarium/watering_hour", result_light.lux);
+  client.publish("Automated_Terrarium/light", String(result_light.lux).c_str());
+  client.publish("Automated_Terrarium/motor_state", String(motor_state).c_str());
+  client.publish("Automated_Terrarium/RGBstatus", String(CCT_RGB[RGB_Status]).c_str());
+  client.publish("Automated_Terrarium/humidity", String(humidity).c_str());
+  client.publish("Automated_Terrarium/temp", String(temp).c_str());
+  client.publish("Automated_Terrarium/time", (String(t.hour) + ":" + String(t.min)).c_str());
+ client.publish("Automated_Terrarium/watering_hour", String(watering_hour).c_str());
+  
 }
 
 void check_light()
 {
-  light_result = opt3001.readResult(); //To get the lux value, call result.lux 
+  result_light = opt3001.readResult(); //To get the lux value, call result.lux 
   //To get the error code (if any) call result.error. Check this before checking
 }
 
 void check_temp()
 {
-  
+  temp = DS3231_get_treg();
 }
 
 void check_Wifi()

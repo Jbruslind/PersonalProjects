@@ -1,5 +1,6 @@
 #	PCB Projects
 
+All of these can be found on my CircuitMaker profile located [here!](https://workspace.circuitmaker.com/User/Details/Jorian-Bruslind-2)
  
 
 ##	Robotics Ckub Related 
@@ -13,6 +14,10 @@ skills). So I created a simple design that would emulate that. The end result is
 
 
 All the design files include the schematics (none are electrically useful) and the gerbers to order them from a manufacturer. 
+
+![CiruitMaker OSURC Card](https://github.com/Jbruslind/PersonalProjects/blob/master/Reference_Pictures/OSURC_Cards.png)
+
+![CiruitMaker Personal Card](https://github.com/Jbruslind/PersonalProjects/blob/master/Reference_Pictures/Personal_Cards.png)
 
 ### Circuits For Kids
 
@@ -70,6 +75,8 @@ This directory contains all the files for the production PCBS designed for the U
 4. Sensor Board
 
 ##	Personal
+
+These projects were made for my own personal use 
 
 ### IOT Current Sensor
 

@@ -1,5 +1,6 @@
 #	PCB Projects
 
+All of these can be found on my CircuitMaker profile located [here!](https://workspace.circuitmaker.com/User/Details/Jorian-Bruslind-2)
  
 
 ##	Robotics Ckub Related 
@@ -74,6 +75,8 @@ This directory contains all the files for the production PCBS designed for the U
 4. Sensor Board
 
 ##	Personal
+
+These projects were made for my own personal use/curiosity
 
 ### IOT Current Sensor
 

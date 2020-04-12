@@ -4,9 +4,43 @@
 
 ##	Robotics Ckub Related 
 
+These projects include those that were made specifically for the OSU Robotics Club 
+
 ### Business Cards
 
+I saw a creator on Circuitmaker had made PCBs in the form of business cards and thought the idea would be a great idea to promote the club (as well as my own 
+skills). So I created a simple design that would emulate that. The end result is shown below: 
+
+
+All the design files include the schematics (none are electrically useful) and the gerbers to order them from a manufacturer. 
+
 ### Circuits For Kids
+
+This project was actually really fun and I'm glad I decided to do it. While in the OSU Robotics Club I would particiapate/host a variety of kids events 
+focused on getting the younger students excited about technology and the possibility of robotics. With that in mind I created a few custom PCBs that would illustrate
+certain skills or ideas. 
+
+#### Fruit Piano
+
+The Fruit Piano project is based on the Makey Makey product line (found [here](https://makeymakey.com/))
+in which you can use the human body as a resistive element in a circuit to produce sound based on touch. The general idea is that you would connect the 
+pads surrounding the circuit board to various fruits or otherwise high water content/conductive materials, have someone hold a grounding wire (placed on 
+the arduino wire or external source) and have them complete the circuit between the elements. The result would be the arduino would detect this voltage 
+change (based on the voltage pull down) and would send a specific sound frequency to the output headers. This could be amplified by a speaker and you could 
+play notes as if using a keyboard. 
+
+The project ended up being a huge hit with kids, who really enjoyed mashing fruit to play notes. 
+
+#### Issues 
+
+I neglected to put an actual dedicated ground connection on the board and so the only way to connect to ground is the place a wire on the arduino ISP header pins. 
+
+The pads were also very difficult to hook up alligator clips (any movement would cause continuity issues) so for the next version it would be good to 
+include some kind of dedicated mounting spot for alligator clips to hook on to. 
+
+#### RGB LEDS V2
+
+#### 7 Segment Display
 
 ### UROV 1819
 

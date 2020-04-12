@@ -1,0 +1,18 @@
+#	Stewart Platform 
+
+This project is in direct conjunction with the Raspberry Pi Stellar Photography project and serves as an automation tool to control a camera for positioning 
+towards different areas of the night sky. 
+
+The basic idea of a stewart platform is to have 6 independently controlled servo motors move to various radial postiions which will then move 6 sides of an 
+end effector. The combintaiton of the distance vectors will allow the end effector to be moved in 6 degrees of freedom (xyz and spherical yaw, pitch, roll). 
+
+The design is fairly simple: Have 6 equidistant servo motors control the vertical positions of 6 sides of a hexagon end effector. Based on the rotational angle 
+of these positions you can determine the area in 3D space of the center of the end effector through reverse kinematics. My current challenge is creating these 
+kinematic equations for the servo control based on my physical positions (and then fine tuning the design basd on my inital tests). 
+
+##	UWROV19
+
+This project is the Underwater ROV team 2018-2019 circuit board files. All of these were custom designed to fit with 
+the ROV. 
+
+![More information here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Altium_Circuitmaker%20Projects/UROV1819)

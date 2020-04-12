@@ -14,6 +14,10 @@ skills). So I created a simple design that would emulate that. The end result is
 
 All the design files include the schematics (none are electrically useful) and the gerbers to order them from a manufacturer. 
 
+![CiruitMaker OSURC Card](https://github.com/Jbruslind/PersonalProjects/blob/master/Reference_Pictures/OSURC_Cards.png)
+
+![CiruitMaker Personal Card](https://github.com/Jbruslind/PersonalProjects/blob/master/Reference_Pictures/Personal_Cards.png)
+
 ### Circuits For Kids
 
 This project was actually really fun and I'm glad I decided to do it. While in the OSU Robotics Club I would particiapate/host a variety of kids events 

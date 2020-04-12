@@ -3,7 +3,7 @@
 All of these can be found on my CircuitMaker profile located [here!](https://workspace.circuitmaker.com/User/Details/Jorian-Bruslind-2)
  
 
-##	Robotics Ckub Related 
+##	Robotics Club Related 
 
 These projects include those that were made specifically for the OSU Robotics Club 
 

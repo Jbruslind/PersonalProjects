@@ -12,14 +12,16 @@ just for sentimental value and because I can.
 The design revolves around the use of [Tritium](https://nuclearsafety.gc.ca/eng/pdfs/Fact_Sheets/January-2013-Fact-Sheet-Tritium_e.pdf) 
 which is a radioactive isotope of hydrogen. It's not radioactive in the sense that it'll cause damage, 
 just enough to cause some cool glowing effects. The radiation is low levels of Beta-particles and is not
-damaging unless ingested (so just don't eat the vials). With it as a core I created geometric designs 
+damaging unless ingested (so just don't eat the vials). Using this as a core, I created geometric designs 
 corresponding to each stone and their back story/ability. 
 
 Here's a picture of the full assembly. The metal colors are pretty off due to Inventor having weird colors...
 
+##More information can be found [here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
+
 ![All 6 pendants with metal coloring](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Infinity_Assembly.png)
 
-More information can be found ##[here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
+
  
 
 ##	Automatic Terrarium 

@@ -50,3 +50,7 @@ could be read in using a Teensy 3.2 microcontroller.
 We needed more connections than could be supported on the AUX board footprint so another duplicate 
 board was created with the extra 2 components on it and broken out connections. This board handled 
 the PWM motor control and Analog Signal inputs. 
+
+![AUX2 Render](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819_AUX_2/AUX2_Render.png)
+
+![AUX2 Traces](https://github.com/Jbruslind/PersonalProjects/blob/master/Altium_Circuitmaker%20Projects/UROV1819/UROV1819_AUX_2/AUX2_Traces.png)

@@ -50,7 +50,12 @@ But it was a fun project to work on and I think the recent revision looks pretty
 
 ##	UWROV19
 
-This project is the Underwater ROV team 2018-2019 circuit board files. All of these were custom designed to fit with 
-the ROV. 
+This project is the Underwater ROV team 2018-2019 circuit board files. These circuits were specially designed so that they would fit inside a 
+cylindrical pressure housing. Because of this we were able to use a standard PCB footprint for all our designs . 
+All of these were either designed by me or with me as the team lead.
+
+The basic idea was to abstract certain, similar components of an Underwater ROV onto these circuit boards and then to connect them all together 
+inside a pressure housing. These components included: Brushless motor control, power supply/delivery, sensor integration (pressure, distance, angular
+rotation), ground station signal delivery and actuator control. 
 
 ## More information can be found ![here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Altium_Circuitmaker%20Projects/UROV1819)

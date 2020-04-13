@@ -7,7 +7,7 @@ what the project is and the steps I took to do it. Some of my personal favorites
 ##	Infinity Stone Pendants 
 This project was inspired by Marvel's blockbuster hits (Avengers and their derivatives) and because of a 
 gift I had made previously for an old high school friend. There isn't any functional point to this, mostly
-just for sentimental value and because I can. 
+just for sentimental value.
 
 The design revolves around the use of [Tritium](https://nuclearsafety.gc.ca/eng/pdfs/Fact_Sheets/January-2013-Fact-Sheet-Tritium_e.pdf) 
 which is a radioactive isotope of hydrogen. It's not radioactive in the sense that it'll cause damage, 

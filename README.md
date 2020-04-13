@@ -17,7 +17,7 @@ corresponding to each stone and their back story/ability.
 
 Here's a picture of the full assembly. The metal colors are pretty off due to Inventor having weird colors...
 
-##More information can be found [here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
+More information can be found ## [here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
 
 ![All 6 pendants with metal coloring](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Infinity_Assembly.png)
 

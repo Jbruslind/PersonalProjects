@@ -19,7 +19,7 @@ Here's a picture of the full assembly. The metal colors are pretty off due to In
 
 ![All 6 pendants with metal coloring](https://github.com/Jbruslind/PersonalProjects/blob/master/Inventor%20Projects/Infinity/Infinity_Assembly.png)
 
-More information can be found [here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
+More information can be found ##[here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Inventor%20Projects/Infinity)
  
 
 ##	Automatic Terrarium 

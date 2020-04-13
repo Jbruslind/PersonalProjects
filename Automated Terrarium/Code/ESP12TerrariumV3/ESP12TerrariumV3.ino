@@ -7,7 +7,7 @@
 
 #include <Adafruit_NeoPixel.h>
 
-#include <ds3231.h>
+#include <DS3231.h>
 
 /************************************************
  * Light Sensor Setup
@@ -21,20 +21,44 @@
  */
   //I2C Comms are on SDA: GPIO2, SCL: GPIO14
   //CHANGE ON ALL I2C LIBRARIES
- 
-  ts t; //ts is a struct findable in ds3231.h
+  DS3231 Clock;
+  
+  bool h12 = false;
+  bool PM;
+  bool Century=false;
+  
+  struct ts {
+    uint8_t sec;         /* seconds */
+    uint8_t min;         /* minutes */
+    uint8_t hour;        /* hours */
+    uint8_t mday;        /* day of the month */
+    uint8_t mon;         /* month */
+    int16_t year;        /* year */
+    uint8_t wday;        /* day of the week */
+    uint8_t yday;        /* day in the year */
+    uint8_t isdst;       /* daylight saving time */
+    uint8_t year_s;      /* year in short notation*/
+};
 
-  //struct ts {
-    //uint8_t sec;         /* seconds */
-    //uint8_t min;         /* minutes */
-    //uint8_t hour;        /* hours */
-    //uint8_t mday;        /* day of the month */
-    //uint8_t mon;         /* month */
-    //int16_t year;        /* year */
-    //uint8_t wday;        /* day of the week */
-    //uint8_t yday;        /* day in the year */
-    //uint8_t isdst;       /* daylight saving time */
-    //uint8_t year_s;      /* year in short notation*/
+  ts t;
+
+  /*
+  Serial.print(Clock.getYear(), DEC);
+
+  Serial.print(Clock.getMonth(Century), DEC);
+
+  Serial.print(Clock.getDate(), DEC);
+
+  Serial.print(Clock.getDoW(), DEC);
+
+  Serial.print(Clock.getHour(h12, PM), DEC);
+
+  Serial.print(Clock.getMinute(), DEC);
+
+  Serial.print(Clock.getSecond(), DEC);
+
+  Clock.getTemperature()
+  */
 /************************************************
  * WS2812 RGB LED setup
  */
@@ -108,7 +132,7 @@ void setup() {
   CCT_RGB[5] = strip.Color(255, 255, 251); //High Noon Sun
   CCT_RGB[6] = strip.Color(255, 255, 255); //Direct Sunlight
   
-  Wire.begin(14, 2);
+  Wire.begin(2, 14);
  
   Serial.begin(9600);
 
@@ -116,7 +140,8 @@ void setup() {
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
   
-  DS3231_init(DS3231_INTCN); //register the ds3231 (DS3231_INTCN is the default address of ds3231, this is set by macro for no performance loss)
+  Clock.setClockMode(false); //Set clock to 24H (false) or 12H (true) mode
+  //Clock.setHour(byte(15));
   
   opt3001.begin(OPT3001_ADDRESS);
   Serial.print("OPT3001 Manufacturer ID");
@@ -127,9 +152,9 @@ void setup() {
   printResult("High-Limit", opt3001.readHighLimit());
   printResult("Low-Limit", opt3001.readLowLimit());
   
-  //strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
-  //strip.show();            // Turn OFF all pixels ASAP
-  //strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
+  strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+  strip.show();            // Turn OFF all pixels ASAP
+  strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
   
 }
 
@@ -140,7 +165,8 @@ void loop() {
   check_light(); //Control lighting and light detection
   check_temp(); //Control watering and temp/humidity detection
   check_Wifi(); //Connect to wifi (or ignore if already connected)
-
+  getTime();
+  //Serial.println(t.hour);
   publish_status();
   delay(1000);
 }
@@ -237,7 +263,7 @@ void check_light()
 
 void check_temp()
 {
-  temp = DS3231_get_treg();
+  temp = Clock.getTemperature();
 }
 
 void check_Wifi()
@@ -293,5 +319,61 @@ void theaterChaseRainbow(int wait) {
 
 void getTime()
 {
-   DS3231_get(&t); //get the value and pass to the function the pointer to t, that make an lower memory fingerprint and faster execution than use return
+   t.hour = Clock.getHour(h12, PM);
+   t.min = Clock.getMinute();
+   t.sec = Clock.getSecond();
+   t.year = Clock.getYear();
+   t.mon = Clock.getMonth(Century);
+   t.mday = Clock.getDate();
+   t.wday = Clock.getDoW();
+   switch(t.hour){
+
+    case 6:
+       RGB_Status = 0; 
+       break;
+    case 7:
+       RGB_Status = 1; 
+       break;
+    case 8:
+       RGB_Status = 2; 
+       break;
+    case 9:
+       RGB_Status = 3; 
+       break;
+    case 11:
+       RGB_Status = 4; 
+       break;
+    case 12:
+       RGB_Status = 5; 
+       break;
+    case 13:
+       RGB_Status = 6; 
+       break;   
+    case 15:
+       RGB_Status = 4; 
+       break; 
+    case 16:
+       RGB_Status = 3; 
+       break; 
+    case 18:
+       RGB_Status = 0; 
+       break; 
+    
+   }
+
+   if(t.hour > 19 || t.hour < 6)
+   {
+      strip.clear();
+      strip.show();
+   }
+   else
+   {
+    for(int i = 0; i < 4; i ++)
+    {
+      strip.setPixelColor(i, CCT_RGB[RGB_Status]);
+    }
+    strip.show();
+    
+   }
+   //Serial.println("time");
 }

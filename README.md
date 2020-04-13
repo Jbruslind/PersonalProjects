@@ -42,6 +42,8 @@ But it was a fun project to work on and I think the recent revision looks pretty
 ### V3 -> ~2019
 ![V3](https://github.com/Jbruslind/PersonalProjects/blob/master/Automated%20Terrarium/Inventor%20Files/V3/V3_Assembly.png)
 
+## ![More information here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Automated%20Terrarium)
+
 
 
 ##	UWROV19
@@ -49,4 +51,4 @@ But it was a fun project to work on and I think the recent revision looks pretty
 This project is the Underwater ROV team 2018-2019 circuit board files. All of these were custom designed to fit with 
 the ROV. 
 
-![More information here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Altium_Circuitmaker%20Projects/UROV1819)
+## ![More information here!](https://github.com/Jbruslind/PersonalProjects/tree/master/Altium_Circuitmaker%20Projects/UROV1819)

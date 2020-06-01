@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Valentines.CMPcbDoc   5/29/2020  11:09:53 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Valentines.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          9                1.80 Inch (45.72 mm)
+T2        39.4mil (1.00076mm)      Round          8                1.17 Inch (29.65 mm)
+T3        40mil (1.016mm)          Round          4                1.06 Inch (26.92 mm)
+---------------------------------------------------------------------------
+Totals                                            21               4.03 Inch (102.29 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

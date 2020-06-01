@@ -22,7 +22,7 @@ void setup() {
 }
 
 void loop() {
-    pulse_len = map(analogRead(2), 125, 250, 1, 10000);
+    //pulse_len = map(analogRead(2), 125, 250, 1, 10000);
     pixels.show(); // This sends the updated pixel color to the hardware.
     delay(10);
     for(int i = 0; i < 200; i++)

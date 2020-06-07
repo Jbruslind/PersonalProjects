@@ -23,7 +23,7 @@ void setup() {
   pinMode(2, INPUT);
   pixels.begin(); // This initializes the NeoPixel library.
   pixels.show();
-
+  Wire.begin();
   pinMode(1,INPUT);       // Interrupt pin input
   Wire.begin();
   xl.setI2CAddr(0x19);    // This MUST be called BEFORE .begin() so 
@@ -43,20 +43,66 @@ void setup() {
 }
 
 void loop() {
-    //pulse_len = map(analogRead(2), 125, 250, 1, 10000);
-    pixels.show(); // This sends the updated pixel color to the hardware.
-    delay(10);
-    for(int i = 0; i < 200; i++)
-    {
-      pixels.setPixelColor(0, pixels.Color(i,0, 0)); // Moderately bright green color.
-      pixels.show(); // This sends the updated pixel color to the hardware.
-      delayMicroseconds(pulse_len);
-    }
-    for(int j = 200; j > 0; j--)
-    {
-      pixels.setPixelColor(0, pixels.Color(j, 0, 0)); // Moderately bright green color.
-      pixels.show(); // This sends the updated pixel color to the hardware.
-      delayMicroseconds(pulse_len);
-    }
+//    //pulse_len = map(analogRead(2), 125, 250, 1, 10000);
+//    pixels.show(); // This sends the updated pixel color to the hardware.
+//    delay(10);
+//    for(int i = 0; i < 200; i++)
+//    {
+//      pixels.setPixelColor(0, pixels.Color(i,0, 0)); // Moderately bright green color.
+//      pixels.show(); // This sends the updated pixel color to the hardware.
+//      delayMicroseconds(pulse_len);
+//    }
+//    for(int j = 200; j > 0; j--)
+//    {
+//      pixels.setPixelColor(0, pixels.Color(j, 0, 0)); // Moderately bright green color.
+//      pixels.show(); // This sends the updated pixel color to the hardware.
+//      delayMicroseconds(pulse_len);
+//    }
+
+      byte error, address;
+      int nDevices;
+     
+      //Serial.println("Scanning...");
+      pixels.setPixelColor(0, pixels.Color(0,0, 10));
+      pixels.show();
+      nDevices = 0;
+      for(address = 1; address < 127; address++ )
+      {
+        // The i2c_scanner uses the return value of
+        // the Write.endTransmisstion to see if
+        // a device did acknowledge to the address.
+        Wire.beginTransmission(address);
+        error = Wire.endTransmission();
+     
+        if (error == 0)
+        {
+          Serial.print("I2C device found at address 0x");
+          if (address<16)
+            //Serial.print("0");
+//          Serial.print(address,HEX);
+//          Serial.println("  !");
+         pixels.setPixelColor(0, pixels.Color(0,10, 0));
+         pixels.show();
+          nDevices++;
+        }
+        else if (error==4)
+        {
+//          Serial.print("Unknown error at address 0x");
+//          if (address<16)
+//            Serial.print("0");
+//          Serial.println(address,HEX);
+          pixels.setPixelColor(0, pixels.Color(0,0, 10));
+          pixels.show();
+        }    
+      }
+      if (nDevices == 0){
+        //Serial.println("No I2C devices found\n");
+        pixels.setPixelColor(0, pixels.Color(10,10, 10));
+        pixels.show();
+      }
+      else{}
+        //Serial.println("done\n");
+     
+      delay(5000);           // wait 5 seconds for next scan
     
 }

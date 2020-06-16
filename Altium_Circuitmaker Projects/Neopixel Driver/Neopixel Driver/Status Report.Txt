@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:43:57 PM On 6/13/2020
+
+Output: ExportSTEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [NeopixelDriver.CMPcbDoc]
+   Generated File[NeopixelDriver.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 8:44:03 PM On 6/13/2020

@@ -122,6 +122,11 @@ float temp = 0;
 float humidity = 0; 
 int RGB_Status = 0;
 int watering_hour = 12;
+bool water_ = 0; //inital water state
+
+long previousMillis = 0;        // Storage variable for non-blocking timer
+long interval = 1000;           // Storage variable for non-blocking timer
+ 
 
 void setup() {
   CCT_RGB[0] = strip.Color(255, 147, 41); //Candle
@@ -155,20 +160,42 @@ void setup() {
   strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();            // Turn OFF all pixels ASAP
   strip.setBrightness(50); // Set BRIGHTNESS to about 1/5 (max = 255)
+
+  pinMode(Motor, OUTPUT);
   
 }
 
 void loop() {
-  client.loop();
-  //theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
+
+  unsigned long currentMillis = millis();
+ 
+  if(currentMillis - previousMillis > interval) {
+
+    if(water_ >= 1 && water_ < 8)
+    {
+      digitalWrite(Motor, HIGH);
+      water_++;
+    }
+    else
+    {
+      digitalWrite(Motor, LOW);
+    }
+    
+    client.loop();
+    
+    //theaterChaseRainbow(50); // Rainbow-enhanced theaterChase variant
+    
+    check_light(); //Control lighting and light detection
+    check_temp(); //Control watering and temp/humidity detection
+    check_Wifi(); //Connect to wifi (or ignore if already connected)
+    getTime();
   
-  check_light(); //Control lighting and light detection
-  check_temp(); //Control watering and temp/humidity detection
-  check_Wifi(); //Connect to wifi (or ignore if already connected)
-  getTime();
-  //Serial.println(t.hour);
-  publish_status();
-  delay(1000);
+    check_water(0);
+    
+    publish_status();
+    
+    previousMillis = currentMillis;   
+  }
 }
 
 void configureSensor() {
@@ -184,43 +211,43 @@ void configureSensor() {
     printError("OPT3001 configuration", errorConfig);
   else {
     OPT3001_Config sensorConfig = opt3001.readConfig();
-    Serial.println("OPT3001 Current Config:");
-    Serial.println("------------------------------");
-    
-    Serial.print("Conversion ready (R):");
-    Serial.println(sensorConfig.ConversionReady,HEX);
-
-    Serial.print("Conversion time (R/W):");
-    Serial.println(sensorConfig.ConvertionTime, HEX);
-
-    Serial.print("Fault count field (R/W):");
-    Serial.println(sensorConfig.FaultCount, HEX);
-
-    Serial.print("Flag high field (R-only):");
-    Serial.println(sensorConfig.FlagHigh, HEX);
-
-    Serial.print("Flag low field (R-only):");
-    Serial.println(sensorConfig.FlagLow, HEX);
-
-    Serial.print("Latch field (R/W):");
-    Serial.println(sensorConfig.Latch, HEX);
-
-    Serial.print("Mask exponent field (R/W):");
-    Serial.println(sensorConfig.MaskExponent, HEX);
-
-    Serial.print("Mode of conversion operation (R/W):");
-    Serial.println(sensorConfig.ModeOfConversionOperation, HEX);
-
-    Serial.print("Polarity field (R/W):");
-    Serial.println(sensorConfig.Polarity, HEX);
-
-    Serial.print("Overflow flag (R-only):");
-    Serial.println(sensorConfig.OverflowFlag, HEX);
-
-    Serial.print("Range number (R/W):");
-    Serial.println(sensorConfig.RangeNumber, HEX);
-
-    Serial.println("------------------------------");
+//    Serial.println("OPT3001 Current Config:");
+//    Serial.println("------------------------------");
+//    
+//    Serial.print("Conversion ready (R):");
+//    Serial.println(sensorConfig.ConversionReady,HEX);
+//
+//    Serial.print("Conversion time (R/W):");
+//    Serial.println(sensorConfig.ConvertionTime, HEX);
+//
+//    Serial.print("Fault count field (R/W):");
+//    Serial.println(sensorConfig.FaultCount, HEX);
+//
+//    Serial.print("Flag high field (R-only):");
+//    Serial.println(sensorConfig.FlagHigh, HEX);
+//
+//    Serial.print("Flag low field (R-only):");
+//    Serial.println(sensorConfig.FlagLow, HEX);
+//
+//    Serial.print("Latch field (R/W):");
+//    Serial.println(sensorConfig.Latch, HEX);
+//
+//    Serial.print("Mask exponent field (R/W):");
+//    Serial.println(sensorConfig.MaskExponent, HEX);
+//
+//    Serial.print("Mode of conversion operation (R/W):");
+//    Serial.println(sensorConfig.ModeOfConversionOperation, HEX);
+//
+//    Serial.print("Polarity field (R/W):");
+//    Serial.println(sensorConfig.Polarity, HEX);
+//
+//    Serial.print("Overflow flag (R-only):");
+//    Serial.println(sensorConfig.OverflowFlag, HEX);
+//
+//    Serial.print("Range number (R/W):");
+//    Serial.println(sensorConfig.RangeNumber, HEX);
+//
+//    Serial.println("------------------------------");
   }
   
 }
@@ -241,6 +268,14 @@ void printError(String text, OPT3001_ErrorCode error) {
   Serial.print(text);
   Serial.print(": [ERROR] Code #");
   Serial.println(error);
+}
+
+void check_water(int force)
+{
+  if((t.hour == 12 && water_ == 0) || force) 
+  {
+    water_ = 1;
+  }
 }
 
 void publish_status()
@@ -365,6 +400,7 @@ void getTime()
    {
       strip.clear();
       strip.show();
+      water_ = 0; //clear water state for next day
    }
    else
    {

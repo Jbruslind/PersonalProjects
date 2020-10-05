@@ -73,9 +73,9 @@
  */
  
 
-const char* ssid = "CasaDeJJ";
+const char* ssid = "CasaDeJJ_V2";
 const char* password = "1104NW32ST";
-const char* mqtt_server = "192.168.0.25";
+const char* mqtt_server = "192.168.1.156";
 
 WiFiClient espClient;
 PubSubClient client(espClient);

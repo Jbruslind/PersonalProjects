@@ -45,3 +45,5 @@ process took around an hour and was fairly frustrating, but I ended up getting e
 Something I realized while playing around with this design is that you need to set up the Attiny 85 before actually running your code. This 
 means you need to flash the bootloader to the chip before any programming can be done. As far as I understand, this inital flashing will set the fuses
 in the microcontroller which will enable/disable features such as clock frequency, pin usages, etc. 
+
+Overall it's pretty easy to use, I found a simple 

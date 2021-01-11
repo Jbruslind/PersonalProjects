@@ -9,8 +9,8 @@
 
 #include "DHTesp.h"
 
-const char *ssid     = ""
-const char *password = "";
+const char *ssid     = "CasaDeJJ";
+const char *password = "1104NW32ST";
 const char* mqtt_server = "192.168.0.17";
 
 

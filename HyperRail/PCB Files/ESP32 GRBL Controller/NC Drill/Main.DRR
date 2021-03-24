@@ -1,0 +1,26 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Main.CMPcbDoc   3/23/2021  10:34:56 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Main.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        11.8mil (0.29972mm)      Round          12               2.24 Inch (56.82 mm)
+T2        12.2mil (0.30988mm)      Round          31               9.67 Inch (245.72 mm)
+T3        13.8mil (0.35052mm)      Round          12               5.67 Inch (144.13 mm)
+T4        30mil (0.762mm)          Round          6                0.85 Inch (21.59 mm)
+T5        31.5mil (0.8001mm)       Round          48               8.68 Inch (220.50 mm)
+T6        39.4mil (1.00076mm)      Round          4                0.57 Inch (14.40 mm)
+T7        40mil (1.016mm)          Round          30               4.70 Inch (119.38 mm)
+T8        51.2mil (1.30048mm)      Round          14               8.49 Inch (215.77 mm)
+T9        90mil (2.286mm)          Round          1                0.00 Inch (0.00 mm)
+T10       126mil (3.2004mm)        Round          12               6.70 Inch (170.26 mm)
+T11       137.8mil (3.50012mm)     Round          4                8.66 Inch (220.00 mm)
+T12       43.3mil (1.09982mm)      Round          2         NPTH   0.17 Inch (4.40 mm)
+T13       118.1mil (2.99974mm)     Round          4         NPTH   3.67 Inch (93.28 mm)
+---------------------------------------------------------------------------
+Totals                                            180              60.09 Inch (1526.25 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

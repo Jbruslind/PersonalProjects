@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-NCDrill File Report For: NeopixelDriver.CMPcbDoc   6/13/2020  8:43:57 PM
+NCDrill File Report For: NeopixelDriver.CMPcbDoc   3/31/2021  10:22:59 AM
 ---------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,15 +9,16 @@ ASCII SlotHoles File : NeopixelDriver-SlotHoles.TXT
 Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
 ---------------------------------------------------------------------------
 T1        7.9mil (0.20066mm)       Round          4                0.13 Inch (3.30 mm)
-T2        15.7mil (0.39878mm)      Round          9                2.49 Inch (63.17 mm)
-T3        16.2mil (0.41148mm)      Round          4                0.44 Inch (11.28 mm)
+T2        15.7mil (0.39878mm)      Round          10               2.05 Inch (52.09 mm)
+T3        16.2mil (0.41148mm)      Round          3                0.29 Inch (7.35 mm)
 T4        19.7mil (0.50038mm)      Slot           4                284.51 Inch (7226.63 mm)
 T5        25.6mil (0.65024mm)      Round          1                0.00 Inch (0.00 mm)
 T6        25.6mil (0.65024mm)      Slot           1                283.94 Inch (7212.17 mm)
-T7        27.6mil (0.70104mm)      Round          10               0.55 Inch (13.97 mm)
-T8        31.5mil (0.8001mm)       Round          3                0.20 Inch (4.98 mm)
-T9        40mil (1.016mm)          Round          7                2.76 Inch (70.11 mm)
+T7        31.5mil (0.8001mm)       Round          3                0.20 Inch (4.98 mm)
+T8        35mil (0.889mm)          Round          10               0.90 Inch (22.86 mm)
+T9        40mil (1.016mm)          Round          7                2.80 Inch (71.01 mm)
+T10       137.8mil (3.50012mm)     Round          2                2.41 Inch (61.29 mm)
 ---------------------------------------------------------------------------
-Totals                                            43               575.02 Inch (14605.61 mm)
+Totals                                            45               577.23 Inch (14661.69 mm)
 
 Total Processing Time (hh:mm:ss) : 00:00:00

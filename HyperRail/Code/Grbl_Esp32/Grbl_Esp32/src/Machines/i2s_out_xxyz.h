@@ -20,7 +20,7 @@
     along with Grbl_ESP32.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#define MACHINE_NAME            "ESP32 I2S XXYYZZ Axis Driver Board (StepStick)"
+#define MACHINE_NAME            "ESP32 I2S XXYZ Axis Driver Board (StepStick)"
 
 #ifdef N_AXIS
         #undef N_AXIS
@@ -59,9 +59,9 @@
 #define Y_STEP_PIN         		I2SO(9)
 #define Y_DIRECTION_PIN         I2SO(10)
 
-#define Z_DISABLE_PIN           I2SO(16)
-#define Z_STEP_PIN         		I2SO(17)
-#define Z_DIRECTION_PIN         I2SO(18)
+#define Z_DISABLE_PIN           I2SO(11)
+#define Z_STEP_PIN         		I2SO(12)
+#define Z_DIRECTION_PIN         I2SO(13)
 
 
 #define SPINDLE_TYPE            SpindleType::PWM // only one spindle at a time

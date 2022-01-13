@@ -70,8 +70,9 @@
 #define SPINDLE_DIR_PIN         GPIO_NUM_16
 
 #define X_LIMIT_PIN             GPIO_NUM_33
-#define Y_LIMIT_PIN             GPIO_NUM_32
-#define Z_LIMIT_PIN             GPIO_NUM_35
+#define X_LIMIT_PIN             GPIO_NUM_32
+#define Y_LIMIT_PIN             GPIO_NUM_35
+#define Z_LIMIT_PIN             GPIO_NUM_33
 //#define A_LIMIT_PIN             GPIO_NUM_35
 //#define B_LIMIT_PIN             GPIO_NUM_32
 //#define C_LIMIT_PIN             GPIO_NUM_33

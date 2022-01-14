@@ -40,6 +40,9 @@
 
 #define USE_STEPSTICK   // makes sure MS1,2,3 !reset and !sleep are set
 
+
+#define DEFAULT_HOMING_SQUARED_AXES bit(X_AXIS)
+
 #define I2S_OUT_BCK             GPIO_NUM_22
 #define I2S_OUT_WS              GPIO_NUM_17
 #define I2S_OUT_DATA            GPIO_NUM_21
@@ -70,9 +73,9 @@
 #define SPINDLE_DIR_PIN         GPIO_NUM_16
 
 #define X_LIMIT_PIN             GPIO_NUM_33
-#define X_LIMIT_PIN             GPIO_NUM_32
-#define Y_LIMIT_PIN             GPIO_NUM_35
-#define Z_LIMIT_PIN             GPIO_NUM_33
+//#define X2_LIMIT_PIN             GPIO_NUM_32
+#define Y_LIMIT_PIN             GPIO_NUM_32
+#define Z_LIMIT_PIN             GPIO_NUM_35
 //#define A_LIMIT_PIN             GPIO_NUM_35
 //#define B_LIMIT_PIN             GPIO_NUM_32
 //#define C_LIMIT_PIN             GPIO_NUM_33

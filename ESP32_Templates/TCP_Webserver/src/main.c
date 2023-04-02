@@ -34,8 +34,8 @@ static void wifi_init_sta(const char* ssid, const char* password)
     // Configure the Wi-Fi connection
     wifi_config_t wifi_config = {
         .sta = {
-            .ssid = "",
-            .password = "",
+            .ssid = WIFI_SSID,
+            .password = WIFI_PASS
         },
     };
     strncpy((char*) wifi_config.sta.ssid, ssid, sizeof(wifi_config.sta.ssid));
@@ -104,6 +104,8 @@ void tcp_server_task(void *pvParameters)
         ESP_LOGI(TAG, "Client connected from %s", addr_str);
 
         while (1) {
+            char tx_buffer[] = "Hello there!\n";
+            int err = send(sock, tx_buffer, strlen(tx_buffer), 0);
             int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
             if (len < 0) {
                 ESP_LOGE(TAG, "Error occurred during receiving: errno %d", errno);

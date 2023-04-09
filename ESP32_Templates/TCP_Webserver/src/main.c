@@ -3,6 +3,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_wifi.h"
+#include "esp_netif.h"
 #include "esp_system.h"
 #include "esp_event.h"
 #include "esp_log.h"
@@ -12,8 +13,8 @@
 #include "lwip/netdb.h"
 #include "lwip/api.h"
 
-#define WIFI_SSID "your_wifi_ssid"
-#define WIFI_PASS "your_wifi_password"
+#define WIFI_SSID "Honey Latte Cafe"
+#define WIFI_PASS "honey_late"
 #define PORT 23 // Port number for the TCP server
 
 static const char *TAG = "tcp_server";
@@ -21,7 +22,7 @@ static const char *TAG = "tcp_server";
 static void wifi_init_sta(const char* ssid, const char* password)
 {
     // Initialize the TCP/IP stack
-    tcpip_adapter_init();
+    esp_netif_init();
 
     // Initialize the Wi-Fi event handler
     ESP_ERROR_CHECK(esp_event_loop_create_default());

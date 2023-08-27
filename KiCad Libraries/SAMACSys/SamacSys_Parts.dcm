@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP PMEG2020EPK,315
+D NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV
+K
+F https://assets.nexperia.com/documents/data-sheet/PMEG2020EPK.pdf
+$ENDCMP
+#
+$CMP TPS631000DRLR
+D Switching Voltage Regulators 1.5-A output current, high power density buck-boost converter
+K
+F https://www.ti.com/lit/ds/symlink/tps631000.pdf?ts=1652152702265
+$ENDCMP
+#
+$CMP ESP32-C3
+D Ultra-Low-Power SoC with RISC-V Single-Core CPU
+K
+F https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+$ENDCMP
+#
+$CMP MCP73831T-2ACI_OT
+D Li-Ion Charge Controller 4.2V SOT23-5
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf
+$ENDCMP
+#
+#End Doc Library

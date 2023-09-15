@@ -1,4 +1,4 @@
-22295080381697435
+22318799016500709
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -82656,6 +82656,55 @@ rotary encoder
 7
 6
 SamacSys_Parts
+3034
+3034
+Undefined or Miscellaneous
+0
+3
+3
+SamacSys_Parts
+ASFL1
+ASFL1
+Crystal or Oscillator
+0
+4
+4
+SamacSys_Parts
+CAPC1005X55N
+0402
+Capacitor
+0
+2
+2
+SamacSys_Parts
+CAPC1608X90N
+0603
+Capacitor
+0
+2
+2
+SamacSys_Parts
+DFE2HCAH1R0MJ0L
+1008 (2520) T=1.2mm
+Inductor
+0
+2
+2
+SamacSys_Parts
+LQG15WH0N7B02D
+
+Inductor
+0
+2
+2
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
 PMEG2020EPK315
 PMEG2020EPK,315-5
 Schottky Diode
@@ -82663,9 +82712,51 @@ Schottky Diode
 2
 2
 SamacSys_Parts
+PTS815SJM250SMTRLFS
+PTS815 SJM 250 SMTR LFS-2
+Switch
+0
+4
+4
+SamacSys_Parts
+QFN50P500X500X90-33N-D
+32-pin QFN
+Integrated Circuit
+0
+33
+33
+SamacSys_Parts
+RESC1608X55N
+RMCF0603
+Resistor
+0
+2
+2
+SamacSys_Parts
+RH1002500012F1010TR
+RH100-25.000-12-F-1010-TR-1
+Crystal or Oscillator
+0
+4
+4
+SamacSys_Parts
 SOIC127P600X175-8N
 D (R-PDSO-G8)
 Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOT95P270X145-5N
+(OT) [SOT-23]
+Integrated Circuit
+0
+5
+5
+SamacSys_Parts
+SOTFL50P160X60-8N
+DRL0008A
+Undefined or Miscellaneous
 0
 8
 8

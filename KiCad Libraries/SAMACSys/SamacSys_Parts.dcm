@@ -72,4 +72,16 @@ K
 F https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf
 $ENDCMP
 #
+$CMP DFE252012PD-1R0M=P2
+D DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)
+K
+F https://psearch.en.murata.com/inductor/product/DFE252012PD-1R0M%23.html
+$ENDCMP
+#
+$CMP 3034
+D Coin Cell Battery Holders COIN CELL RETAINER
+K
+F http://www.keyelco.com/product-pdf.cfm?p=798
+$ENDCMP
+#
 #End Doc Library

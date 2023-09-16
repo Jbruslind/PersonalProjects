@@ -84,4 +84,10 @@ K
 F http://www.keyelco.com/product-pdf.cfm?p=798
 $ENDCMP
 #
+$CMP 150505M173300
+D 2.4 V RGB LED 5050  SMD, Wurth Elektronik WL-SFTW 150505M173300
+K
+F https://katalog.we-online.de/led/datasheet/150505M173300.pdf
+$ENDCMP
+#
 #End Doc Library

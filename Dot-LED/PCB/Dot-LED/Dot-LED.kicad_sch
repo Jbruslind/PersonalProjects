@@ -570,6 +570,9 @@
     (property "Datasheet" "" (at 166.37 190.5 0)
       (effects (font (size 1.524 1.524)) hide)
     )
+    (property "LCSC Part Number" "" (at 166.37 190.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
       (project "Dot-LED"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"

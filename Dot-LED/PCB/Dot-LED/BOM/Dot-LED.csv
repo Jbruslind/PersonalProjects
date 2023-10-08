@@ -1,0 +1,18 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"C12,C17,C6";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";3;"1uF";;;
+2;"S2,S1";"PTS815SJM250SMTRLFS";2;"PTS815_SJM_250_SMTR_LFS";;;
+3;"RX1,GND2,TX1";"Test-Point-Pin_Drill2.79mm";3;"1508-0-57-15-00-00-03-0";;;
+4;"C13,C9,C8,C7,C18";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";5;"100nf";;;
+5;"D2,D1";"PMEG2020EPK315";2;"PMEG2020EPK,315";;;
+6;"CON1";"Headphone_Jack_3.5mm_SJ1-3523N";1;"SJ1-3523N";;;
+7;"GND1,VCC1,Data1";"PROBE_PAD_1206";3;"RCW-0C";;;
+8;"P1";"USB-C_Female_E8124-015-01";1;"USB_C_Plug";;;
+9;"R1";"RESC1608X55N";1;"1";;;
+10;"R2,R9,R3,R8";"RESC1608X55N";4;"15k";;;
+11;"D4";"LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm";1;"WS2813";;;
+12;"U1";"ESP32-C3-MINI-1U";1;"ESP32-C3-MINI-1";;;
+13;"C14,C16,C15";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";3;"10uf";;;
+14;"R7";"RESC1608X55N";1;"91k";;;
+15;"U3";"SOTFL50P160X60-8N";1;"TPS631000DRLR";;;
+16;"R6";"RESC1608X55N";1;"511k";;;
+17;"L2";"DFE2HCAH1R0MJ0L";1;"DFE252012PD-1R0M=P2";;;

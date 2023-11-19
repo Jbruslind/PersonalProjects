@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\GitHub\PersonalProjects\Dot-LED\PCB\Dot-LED\Dot-LED.kicad_sch</source>
+    <date>11/19/2023 11:29:08 AM</date>
+    <tool>Eeschema (7.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Dot-LED.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ESP32C3_MCU.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>IOConnectors.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Buck_Boost.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="N1">
+      <value>V20220506</value>
+      <footprint>SquantorLabels:Label_Generic</footprint>
+      <libsource lib="SquantorLabels" part="VYYYYMMDD" description=""/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Dot-LED.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebe367f5-1f3e-4a04-ac2f-963e9f4d7b90</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10A105KA8NNNC_Spec.pdf</datasheet>
+      <fields>
+        <field name="Description">CAP CER 1UF 25V X5R 0603</field>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C15849</field>
+        <field name="MPN">C15849</field>
+        <field name="Manufacturer_Name">YAGEO</field>
+        <field name="Manufacturer_Part_Number">CL10A105KA8NNNC</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value="CAP CER 1UF 25V X5R 0603"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value="YAGEO"/>
+      <property name="Manufacturer_Part_Number" value="CL10A105KA8NNNC"/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C15849"/>
+      <property name="MPN" value="C15849"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>ccd5e6f7-0d4d-4cdd-af47-2607fbbc7c74</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C14663</field>
+        <field name="MPN">C14663</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="LCSC Part Number" value="C14663"/>
+      <property name="MPN" value="C14663"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>7a25f9c7-4083-48c7-acea-ee2bccd2a4c3</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C14663</field>
+        <field name="MPN">C14663</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="LCSC Part Number" value="C14663"/>
+      <property name="MPN" value="C14663"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>f4f1f93d-4bd8-4d07-bf51-bec5e89a0822</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C14663</field>
+        <field name="MPN">C14663</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="LCSC Part Number" value="C14663"/>
+      <property name="MPN" value="C14663"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>bed8d004-db38-4a16-ae94-fd0bfdfc63ad</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>WS2813</value>
+      <footprint>LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm</footprint>
+      <datasheet>http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C114592</field>
+        <field name="MPN">C114592</field>
+      </fields>
+      <libsource lib="LED" part="WS2813" description="RGB LED with integrated controller"/>
+      <property name="LCSC Part Number" value="C114592"/>
+      <property name="MPN" value="C114592"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RGB LED with integrated controller"/>
+      <property name="ki_keywords" value="RGB LED addressable"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>0e5a765f-14c8-497c-b13b-49c27299fee3</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>BSS138P,215</value>
+      <footprint>SamacSys_Parts:SOT95P230X110-3N</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BSS138P.pdf</datasheet>
+      <fields>
+        <field name="Description">BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia</field>
+        <field name="Height">1.1</field>
+        <field name="LCSC Part Number">C75547</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">BSS138P,215</field>
+        <field name="Mouser Part Number">771-BSS138P215</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Nexperia/BSS138P215?qs=A1cBxND5mHJyVAOcRahidg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="BSS138P,215" description="BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia"/>
+      <property name="Description" value="BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia"/>
+      <property name="Height" value="1.1"/>
+      <property name="Mouser Part Number" value="771-BSS138P215"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Nexperia/BSS138P215?qs=A1cBxND5mHJyVAOcRahidg%3D%3D"/>
+      <property name="Manufacturer_Name" value="Nexperia"/>
+      <property name="Manufacturer_Part_Number" value="BSS138P,215"/>
+      <property name="LCSC Part Number" value="C75547"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>4f8b12f1-41bc-46c3-9574-3be83d202708</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C247057</field>
+        <field name="MPN">C247057</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C247057"/>
+      <property name="MPN" value="C247057"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>a7513cc6-6478-48ff-bfe3-8d4b3bff96ef</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>15k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C22809</field>
+        <field name="MPN">C22809</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C22809"/>
+      <property name="MPN" value="C22809"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>422a5953-7889-43e3-98ac-d30b7716e461</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>15k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C22809</field>
+        <field name="MPN">C22809</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C22809"/>
+      <property name="MPN" value="C22809"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>e5b180eb-a63b-474a-a74c-175f3a417d52</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>15k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C22809</field>
+        <field name="MPN">C22809</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C22809"/>
+      <property name="MPN" value="C22809"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>e370855f-680d-4a18-970e-c2b578877e0d</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>15k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C22809</field>
+        <field name="MPN">C22809</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C22809"/>
+      <property name="MPN" value="C22809"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>a08dd234-9bdd-4894-8720-c619497a5739</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>PTS815_SJM_250_SMTR_LFS</value>
+      <footprint>PTS815SJM250SMTRLFS</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck</field>
+        <field name="Description">Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads</field>
+        <field name="Digi-Key_PN">611-PTS815SJM250SMTR</field>
+        <field name="Height">2.7</field>
+        <field name="LCSC Part Number">C411883</field>
+        <field name="MPN">C411883</field>
+        <field name="Manufacturer_Name">C &amp; K COMPONENTS</field>
+        <field name="Manufacturer_Part_Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Mouser Part Number">611-PTS815SJM250SMTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PTS815_SJM_250_SMTR_LFS" description="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <property name="Description" value="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <property name="Height" value="2.7"/>
+      <property name="Manufacturer_Name" value="C &amp; K COMPONENTS"/>
+      <property name="Manufacturer_Part_Number" value="PTS815 SJM 250 SMTR LFS"/>
+      <property name="Mouser Part Number" value="611-PTS815SJM250SMTR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D"/>
+      <property name="Arrow Part Number" value="PTS815 SJM 250 SMTR LFS"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck"/>
+      <property name="Digi-Key_PN" value="611-PTS815SJM250SMTR"/>
+      <property name="LCSC Part Number" value="C411883"/>
+      <property name="MPN" value="C411883"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>56d1d64e-b28b-45d8-8444-7d86d5b2f337</tstamps>
+    </comp>
+    <comp ref="S2">
+      <value>PTS815_SJM_250_SMTR_LFS</value>
+      <footprint>PTS815SJM250SMTRLFS</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck</field>
+        <field name="Description">Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads</field>
+        <field name="Digi-Key_PN">611-PTS815SJM250SMTR</field>
+        <field name="Height">2.7</field>
+        <field name="LCSC Part Number">C411883</field>
+        <field name="MPN">C411883</field>
+        <field name="Manufacturer_Name">C &amp; K COMPONENTS</field>
+        <field name="Manufacturer_Part_Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Mouser Part Number">611-PTS815SJM250SMTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PTS815_SJM_250_SMTR_LFS" description="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <property name="Description" value="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <property name="Height" value="2.7"/>
+      <property name="Manufacturer_Name" value="C &amp; K COMPONENTS"/>
+      <property name="Manufacturer_Part_Number" value="PTS815 SJM 250 SMTR LFS"/>
+      <property name="Mouser Part Number" value="611-PTS815SJM250SMTR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D"/>
+      <property name="Arrow Part Number" value="PTS815 SJM 250 SMTR LFS"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck"/>
+      <property name="Digi-Key_PN" value="611-PTS815SJM250SMTR"/>
+      <property name="LCSC Part Number" value="C411883"/>
+      <property name="MPN" value="C411883"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>aed5cff4-4ecc-49d6-bbcf-1533ff42a551</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ESP32-C3-MINI-1</value>
+      <footprint>Espressif:ESP32-C3-MINI-1U</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C2911374</field>
+        <field name="MPN">C2911374</field>
+      </fields>
+      <libsource lib="Espressif" part="ESP32-C3-MINI-1" description="ESP32-C3-MINI-1 family is an ultra-low-power MCU-based SoC solution that supports 2.4 GHz Wi-Fi and Bluetooth®Low Energy (Bluetooth LE)."/>
+      <property name="LCSC Part Number" value="C2911374"/>
+      <property name="MPN" value="C2911374"/>
+      <property name="Sheetname" value="ESP32C3_MCU"/>
+      <property name="Sheetfile" value="ESP32C3_MCU.kicad_sch"/>
+      <property name="ki_description" value="ESP32-C3-MINI-1 family is an ultra-low-power MCU-based SoC solution that supports 2.4 GHz Wi-Fi and Bluetooth®Low Energy (Bluetooth LE)."/>
+      <property name="ki_keywords" value="esp32-c3"/>
+      <sheetpath names="/ESP32C3_MCU/" tstamps="/a9d22b06-9d00-4739-b036-54f1b218cb56/"/>
+      <tstamps>ed0af3ac-2dc9-46a5-9ca2-8f37908322a1</tstamps>
+    </comp>
+    <comp ref="CON1">
+      <value>SJ1-3523N</value>
+      <footprint>digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N</footprint>
+      <datasheet>https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf</datasheet>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Datasheet_Link">https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689</field>
+        <field name="Description">CONN JACK STEREO 3.5MM R/A</field>
+        <field name="Digi-Key_PN">CP1-3523N-ND</field>
+        <field name="Family">Barrel - Audio Connectors</field>
+        <field name="Manufacturer">CUI Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Barrel-Audio-Connectors" part="SJ1-3523N" description="CONN JACK STEREO 3.5MM R/A"/>
+      <property name="Digi-Key_PN" value="CP1-3523N-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Connectors, Interconnects"/>
+      <property name="Family" value="Barrel - Audio Connectors"/>
+      <property name="DK_Datasheet_Link" value="https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689"/>
+      <property name="Description" value="CONN JACK STEREO 3.5MM R/A"/>
+      <property name="Manufacturer" value="CUI Inc."/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="CONN JACK STEREO 3.5MM R/A"/>
+      <property name="ki_keywords" value="CP1-3523N-ND SJ1"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>be573265-0a91-4b21-a004-5e0db524670e</tstamps>
+    </comp>
+    <comp ref="Data1">
+      <value>RCW-0C</value>
+      <footprint>digikey-footprints:PROBE_PAD_1206</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</field>
+        <field name="DK_Detail_Page">/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803</field>
+        <field name="Description">PC TEST POINT NATURAL</field>
+        <field name="Digi-Key_PN">A106146CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="RCW-0C" description="PC TEST POINT NATURAL"/>
+      <property name="Digi-Key_PN" value="A106146CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803"/>
+      <property name="Description" value="PC TEST POINT NATURAL"/>
+      <property name="Manufacturer" value="TE Connectivity AMP Connectors"/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="PC TEST POINT NATURAL"/>
+      <property name="ki_keywords" value="A106146CT-ND RC, CGS"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>944c7187-845a-4059-8795-8f824551f8aa</tstamps>
+    </comp>
+    <comp ref="GND1">
+      <value>RCW-0C</value>
+      <footprint>digikey-footprints:PROBE_PAD_1206</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</field>
+        <field name="DK_Detail_Page">/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803</field>
+        <field name="Description">PC TEST POINT NATURAL</field>
+        <field name="Digi-Key_PN">A106146CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="RCW-0C" description="PC TEST POINT NATURAL"/>
+      <property name="Digi-Key_PN" value="A106146CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803"/>
+      <property name="Description" value="PC TEST POINT NATURAL"/>
+      <property name="Manufacturer" value="TE Connectivity AMP Connectors"/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="PC TEST POINT NATURAL"/>
+      <property name="ki_keywords" value="A106146CT-ND RC, CGS"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>fb838e82-64cf-4f11-9dbc-bfff259b3299</tstamps>
+    </comp>
+    <comp ref="GND2">
+      <value>1508-0-57-15-00-00-03-0</value>
+      <footprint>digikey-footprints:Test-Point-Pin_Drill2.79mm</footprint>
+      <datasheet>https://www.mill-max.com/assets/pdfs/224.pdf</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.mill-max.com/assets/pdfs/224.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225</field>
+        <field name="Description">TESTPOINT PIN SMD</field>
+        <field name="Digi-Key_PN">ED1088CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">Mill-Max Manufacturing Corp.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="1508-0-57-15-00-00-03-0" description="TESTPOINT PIN SMD"/>
+      <property name="Digi-Key_PN" value="ED1088CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.mill-max.com/assets/pdfs/224.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225"/>
+      <property name="Description" value="TESTPOINT PIN SMD"/>
+      <property name="Manufacturer" value="Mill-Max Manufacturing Corp."/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="TESTPOINT PIN SMD"/>
+      <property name="ki_keywords" value="ED1088CT-ND 1508"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>8f222eb1-d659-48b1-922e-48e04aea7f17</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>USB_C_Plug</value>
+      <footprint>Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="LCSC Part Number">C2982555</field>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Plug" description="USB Type-C Plug connector"/>
+      <property name="LCSC Part Number" value="C2982555"/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="USB Type-C Plug connector"/>
+      <property name="ki_keywords" value="usb universal serial bus"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>1afcd5c7-7481-4243-9361-c5f807535980</tstamps>
+    </comp>
+    <comp ref="RX1">
+      <value>1508-0-57-15-00-00-03-0</value>
+      <footprint>digikey-footprints:Test-Point-Pin_Drill2.79mm</footprint>
+      <datasheet>https://www.mill-max.com/assets/pdfs/224.pdf</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.mill-max.com/assets/pdfs/224.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225</field>
+        <field name="Description">TESTPOINT PIN SMD</field>
+        <field name="Digi-Key_PN">ED1088CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">Mill-Max Manufacturing Corp.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="1508-0-57-15-00-00-03-0" description="TESTPOINT PIN SMD"/>
+      <property name="Digi-Key_PN" value="ED1088CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.mill-max.com/assets/pdfs/224.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225"/>
+      <property name="Description" value="TESTPOINT PIN SMD"/>
+      <property name="Manufacturer" value="Mill-Max Manufacturing Corp."/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="TESTPOINT PIN SMD"/>
+      <property name="ki_keywords" value="ED1088CT-ND 1508"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>661040a5-4a33-4472-9603-a37fc1591025</tstamps>
+    </comp>
+    <comp ref="TX1">
+      <value>1508-0-57-15-00-00-03-0</value>
+      <footprint>digikey-footprints:Test-Point-Pin_Drill2.79mm</footprint>
+      <datasheet>https://www.mill-max.com/assets/pdfs/224.pdf</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.mill-max.com/assets/pdfs/224.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225</field>
+        <field name="Description">TESTPOINT PIN SMD</field>
+        <field name="Digi-Key_PN">ED1088CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">Mill-Max Manufacturing Corp.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="1508-0-57-15-00-00-03-0" description="TESTPOINT PIN SMD"/>
+      <property name="Digi-Key_PN" value="ED1088CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.mill-max.com/assets/pdfs/224.pdf"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225"/>
+      <property name="Description" value="TESTPOINT PIN SMD"/>
+      <property name="Manufacturer" value="Mill-Max Manufacturing Corp."/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="TESTPOINT PIN SMD"/>
+      <property name="ki_keywords" value="ED1088CT-ND 1508"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>a14c657f-03c4-4566-9c5d-3b87a0c128c6</tstamps>
+    </comp>
+    <comp ref="VCC1">
+      <value>RCW-0C</value>
+      <footprint>digikey-footprints:PROBE_PAD_1206</footprint>
+      <datasheet>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</datasheet>
+      <fields>
+        <field name="Category">Test and Measurement</field>
+        <field name="DK_Datasheet_Link">https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</field>
+        <field name="DK_Detail_Page">/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803</field>
+        <field name="Description">PC TEST POINT NATURAL</field>
+        <field name="Digi-Key_PN">A106146CT-ND</field>
+        <field name="Family">Test Points</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Test-Points" part="RCW-0C" description="PC TEST POINT NATURAL"/>
+      <property name="Digi-Key_PN" value="A106146CT-ND"/>
+      <property name="MPN" value=""/>
+      <property name="Category" value="Test and Measurement"/>
+      <property name="Family" value="Test Points"/>
+      <property name="DK_Datasheet_Link" value="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English"/>
+      <property name="DK_Detail_Page" value="/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803"/>
+      <property name="Description" value="PC TEST POINT NATURAL"/>
+      <property name="Manufacturer" value="TE Connectivity AMP Connectors"/>
+      <property name="Status" value="Active"/>
+      <property name="LCSC Part Number" value=""/>
+      <property name="Sheetname" value="IOConnectors"/>
+      <property name="Sheetfile" value="IOConnectors.kicad_sch"/>
+      <property name="ki_description" value="PC TEST POINT NATURAL"/>
+      <property name="ki_keywords" value="A106146CT-ND RC, CGS"/>
+      <sheetpath names="/IOConnectors/" tstamps="/3611ee7d-ea21-4fbb-a452-8a28bf21b8f5/"/>
+      <tstamps>b726feea-43fa-42ad-9046-21d5ba70e9b8</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10A105KA8NNNC_Spec.pdf</datasheet>
+      <fields>
+        <field name="Description">CAP CER 1UF 25V X5R 0603</field>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C15849</field>
+        <field name="MPN">C15849</field>
+        <field name="Manufacturer_Name">YAGEO</field>
+        <field name="Manufacturer_Part_Number">CL10A105KA8NNNC</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value="CAP CER 1UF 25V X5R 0603"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value="YAGEO"/>
+      <property name="Manufacturer_Part_Number" value="CL10A105KA8NNNC"/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C15849"/>
+      <property name="MPN" value="C15849"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>83271adb-1199-4254-a149-92f354a5f0d9</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C14663</field>
+        <field name="MPN">C14663</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="LCSC Part Number" value="C14663"/>
+      <property name="MPN" value="C14663"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>7cbe7a0a-a34f-4d1f-b571-b9df90865e32</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C96446</field>
+        <field name="MPN">C96446</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C96446"/>
+      <property name="MPN" value="C96446"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>310aaca6-3124-4e02-9fe3-2082cecca459</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C96446</field>
+        <field name="MPN">C96446</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C96446"/>
+      <property name="MPN" value="C96446"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>feab6d49-0f0b-4079-ae8a-0bf714d1f692</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C96446</field>
+        <field name="MPN">C96446</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C96446"/>
+      <property name="MPN" value="C96446"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>79efbad4-336c-4364-b291-95b76cb0dee1</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <datasheet>https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10A105KA8NNNC_Spec.pdf</datasheet>
+      <fields>
+        <field name="Description">CAP CER 1UF 25V X5R 0603</field>
+        <field name="Digi-Key_PN">1276-1102-1-ND</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C15849</field>
+        <field name="MPN">C15849</field>
+        <field name="Manufacturer_Name">YAGEO</field>
+        <field name="Manufacturer_Part_Number">CL10A105KA8NNNC</field>
+        <field name="Mouser Part Number">1276-1102-1-ND</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value="CAP CER 1UF 25V X5R 0603"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value="YAGEO"/>
+      <property name="Manufacturer_Part_Number" value="CL10A105KA8NNNC"/>
+      <property name="Mouser Part Number" value="1276-1102-1-ND"/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Digi-Key_PN" value="1276-1102-1-ND"/>
+      <property name="LCSC Part Number" value="C15849"/>
+      <property name="MPN" value="C15849"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>5fe4e97c-2765-4385-8fee-cccdcca6472c</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C14663</field>
+        <field name="MPN">C14663</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="0402B102K500NT" description="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <property name="Description" value=""/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="LCSC Part Number" value="C14663"/>
+      <property name="MPN" value="C14663"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>26ccede6-2e48-41d2-a718-53adb14af60e</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>PMEG2020EPK,315</value>
+      <footprint>PMEG2020EPK315</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EPK.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">PMEG2020EPK,315</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pmeg2020epk315/nexperia?region=nac</field>
+        <field name="Description">NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV</field>
+        <field name="Digi-Key_PN">771-PMEG2020EPK,315</field>
+        <field name="Height">0.4</field>
+        <field name="LCSC Part Number">C552841</field>
+        <field name="MPN">C552841</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG2020EPK,315</field>
+        <field name="Mouser Part Number">771-PMEG2020EPK,315</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG2020EPK315?qs=zHGtguZFFhKxs4HM5hK1uw%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PMEG2020EPK,315" description="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <property name="Description" value="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <property name="Height" value="0.4"/>
+      <property name="Manufacturer_Name" value="Nexperia"/>
+      <property name="Manufacturer_Part_Number" value="PMEG2020EPK,315"/>
+      <property name="Mouser Part Number" value="771-PMEG2020EPK,315"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG2020EPK315?qs=zHGtguZFFhKxs4HM5hK1uw%3D%3D"/>
+      <property name="Arrow Part Number" value="PMEG2020EPK,315"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/pmeg2020epk315/nexperia?region=nac"/>
+      <property name="Digi-Key_PN" value="771-PMEG2020EPK,315"/>
+      <property name="LCSC Part Number" value="C552841"/>
+      <property name="MPN" value="C552841"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>d17674b7-39d8-4595-b06d-a18335f8ebba</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>PMEG2020EPK,315</value>
+      <footprint>PMEG2020EPK315</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG2020EPK.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">PMEG2020EPK,315</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pmeg2020epk315/nexperia?region=nac</field>
+        <field name="Description">NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV</field>
+        <field name="Digi-Key_PN">771-PMEG2020EPK,315</field>
+        <field name="Height">0.4</field>
+        <field name="LCSC Part Number">C552841</field>
+        <field name="MPN">C552841</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG2020EPK,315</field>
+        <field name="Mouser Part Number">771-PMEG2020EPK,315</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG2020EPK315?qs=zHGtguZFFhKxs4HM5hK1uw%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PMEG2020EPK,315" description="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <property name="Description" value="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <property name="Height" value="0.4"/>
+      <property name="Manufacturer_Name" value="Nexperia"/>
+      <property name="Manufacturer_Part_Number" value="PMEG2020EPK,315"/>
+      <property name="Mouser Part Number" value="771-PMEG2020EPK,315"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG2020EPK315?qs=zHGtguZFFhKxs4HM5hK1uw%3D%3D"/>
+      <property name="Arrow Part Number" value="PMEG2020EPK,315"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/pmeg2020epk315/nexperia?region=nac"/>
+      <property name="Digi-Key_PN" value="771-PMEG2020EPK,315"/>
+      <property name="LCSC Part Number" value="C552841"/>
+      <property name="MPN" value="C552841"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>0df93c47-b814-41ef-b71a-12ffbb61bbc3</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>TPS631010YBGR</value>
+      <footprint>BGA8C40P2X4_86X176X50</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps631010.pdf?ts=1686578827580&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS631010%252Fpart-details%252FTPS631010YBGR</datasheet>
+      <fields>
+        <field name="Arrow Part Number">TPS631010YBGR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps631010ybgr/texas-instruments?region=nac</field>
+        <field name="Description">Texas Instruments</field>
+        <field name="Height">0.5</field>
+        <field name="LCSC Part Number">C6719123</field>
+        <field name="MPN">C6719123</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS631010YBGR</field>
+        <field name="Mouser Part Number">595-TPS631010YBGR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS631010YBGR?qs=rQFj71Wb1eUnypyc1JLtRA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="TPS631010YBGR" description="Texas Instruments"/>
+      <property name="Description" value="Texas Instruments"/>
+      <property name="Height" value="0.5"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="TPS631010YBGR"/>
+      <property name="Mouser Part Number" value="595-TPS631010YBGR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS631010YBGR?qs=rQFj71Wb1eUnypyc1JLtRA%3D%3D"/>
+      <property name="Arrow Part Number" value="TPS631010YBGR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/tps631010ybgr/texas-instruments?region=nac"/>
+      <property name="LCSC Part Number" value="C6719123"/>
+      <property name="MPN" value="C6719123"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="Texas Instruments"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>4eea1ef3-0e30-47ad-ad97-0fb2fae67138</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>DFE252012PD-1R0M=P2</value>
+      <footprint>DFE2HCAH1R0MJ0L</footprint>
+      <datasheet>https://psearch.en.murata.com/inductor/product/DFE252012PD-1R0M%23.html</datasheet>
+      <fields>
+        <field name="Arrow Part Number">DFE252012PD-1R0M=P2</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/dfe252012pd-1r0mp2/murata-manufacturing?region=nac</field>
+        <field name="Description">DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)</field>
+        <field name="Digi-Key_PN">81-DFE252012PD1R0MP2</field>
+        <field name="Height">1.2</field>
+        <field name="LCSC Part Number">C285917</field>
+        <field name="MPN">C285917</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">DFE252012PD-1R0M=P2</field>
+        <field name="Mouser Part Number">81-DFE252012PD1R0MP2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DFE252012PD-1R0M%3dP2?qs=AQlKX63v8RvGsSiwzbLNIA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="DFE252012PD-1R0M=P2" description="DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)"/>
+      <property name="Description" value="DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)"/>
+      <property name="Height" value="1.2"/>
+      <property name="Manufacturer_Name" value="Murata Electronics"/>
+      <property name="Manufacturer_Part_Number" value="DFE252012PD-1R0M=P2"/>
+      <property name="Mouser Part Number" value="81-DFE252012PD1R0MP2"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DFE252012PD-1R0M%3dP2?qs=AQlKX63v8RvGsSiwzbLNIA%3D%3D"/>
+      <property name="Arrow Part Number" value="DFE252012PD-1R0M=P2"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/dfe252012pd-1r0mp2/murata-manufacturing?region=nac"/>
+      <property name="Digi-Key_PN" value="81-DFE252012PD1R0MP2"/>
+      <property name="LCSC Part Number" value="C285917"/>
+      <property name="MPN" value="C285917"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>8fde759a-02ba-49fb-a867-4d22e233208d</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>511k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C3016414</field>
+        <field name="MPN">C3016414</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C3016414"/>
+      <property name="MPN" value="C3016414"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>b18c0935-cc37-4dac-8144-c13de9a823ab</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>91k</value>
+      <footprint>RESC1608X55N</footprint>
+      <fields>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="LCSC Part Number">C101235</field>
+        <field name="MPN">C101235</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="RMCF0603ZT0R00" description="RES, 0603, Jumper"/>
+      <property name="Description" value="RES, 0603, Jumper"/>
+      <property name="Height" value="0.55"/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value="RMCF0603ZT0R00"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"/>
+      <property name="LCSC Part Number" value="C101235"/>
+      <property name="MPN" value="C101235"/>
+      <property name="Sheetname" value="Buck_Boost"/>
+      <property name="Sheetfile" value="Buck_Boost.kicad_sch"/>
+      <property name="ki_description" value="RES, 0603, Jumper"/>
+      <sheetpath names="/Buck_Boost/" tstamps="/eadb16b8-295e-4810-8d56-9eb69942c69b/"/>
+      <tstamps>4049f398-c13e-4281-8d83-194b9c10e005</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_C_Plug">
+      <description>USB Type-C Plug connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Plug*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_C_Plug</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A2" name="TX1+" type="bidirectional"/>
+        <pin num="A3" name="TX1-" type="bidirectional"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A10" name="RX2-" type="bidirectional"/>
+        <pin num="A11" name="RX2+" type="bidirectional"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B2" name="TX2+" type="bidirectional"/>
+        <pin num="B3" name="TX2-" type="bidirectional"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="VCONN" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B10" name="RX1-" type="bidirectional"/>
+        <pin num="B11" name="RX1+" type="bidirectional"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Espressif" part="ESP32-C3-MINI-1">
+      <description>ESP32-C3-MINI-1 family is an ultra-low-power MCU-based SoC solution that supports 2.4 GHz Wi-Fi and Bluetooth®Low Energy (Bluetooth LE).</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-C3-MINI-1</field>
+        <field name="Footprint">Espressif:ESP32-C3-MINI-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="3V3" type="power_in"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="GPIO2/ADC1_CH2" type="bidirectional"/>
+        <pin num="6" name="GPIO3/ADC1_CH3" type="bidirectional"/>
+        <pin num="7" name="NC" type="no_connect"/>
+        <pin num="8" name="EN/CHIP_PU" type="input"/>
+        <pin num="9" name="NC" type="no_connect"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="GND" type="passive"/>
+        <pin num="12" name="GPIO0/ADC1_CH0/XTAL_32K_P" type="bidirectional"/>
+        <pin num="13" name="GPIO1/ADC1_CH1/XTAL_32K_N" type="bidirectional"/>
+        <pin num="14" name="GND" type="passive"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="GPIO10" type="bidirectional"/>
+        <pin num="17" name="NC" type="no_connect"/>
+        <pin num="18" name="GPIO4/ADC1_CH4" type="bidirectional"/>
+        <pin num="19" name="GPIO5/ADC2_CH0" type="bidirectional"/>
+        <pin num="20" name="GPIO6" type="bidirectional"/>
+        <pin num="21" name="GPIO7" type="bidirectional"/>
+        <pin num="22" name="GPIO8" type="bidirectional"/>
+        <pin num="23" name="GPIO9" type="bidirectional"/>
+        <pin num="24" name="NC" type="no_connect"/>
+        <pin num="25" name="NC" type="no_connect"/>
+        <pin num="26" name="GPIO18/USB_D-" type="bidirectional"/>
+        <pin num="27" name="GPIO19/USB_D+" type="bidirectional"/>
+        <pin num="28" name="NC" type="no_connect"/>
+        <pin num="29" name="NC" type="no_connect"/>
+        <pin num="30" name="GPIO20/U0RXD" type="bidirectional"/>
+        <pin num="31" name="GPIO21/U0TXD" type="bidirectional"/>
+        <pin num="32" name="NC" type="no_connect"/>
+        <pin num="33" name="NC" type="no_connect"/>
+        <pin num="34" name="NC" type="no_connect"/>
+        <pin num="35" name="NC" type="no_connect"/>
+        <pin num="36" name="GND" type="passive"/>
+        <pin num="37" name="GND" type="passive"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+        <pin num="40" name="GND" type="passive"/>
+        <pin num="41" name="GND" type="passive"/>
+        <pin num="42" name="GND" type="passive"/>
+        <pin num="43" name="GND" type="passive"/>
+        <pin num="44" name="GND" type="passive"/>
+        <pin num="45" name="GND" type="passive"/>
+        <pin num="46" name="GND" type="passive"/>
+        <pin num="47" name="GND" type="passive"/>
+        <pin num="48" name="GND" type="passive"/>
+        <pin num="49" name="GND" type="passive"/>
+        <pin num="50" name="GND" type="passive"/>
+        <pin num="51" name="GND" type="passive"/>
+        <pin num="52" name="GND" type="passive"/>
+        <pin num="53" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="WS2813">
+      <description>RGB LED with integrated controller</description>
+      <docs>http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf</docs>
+      <footprints>
+        <fp>LED*WS2812*PLCC*5.0x5.0mm*P1.6mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WS2813</field>
+        <field name="Footprint">LED_SMD:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm</field>
+        <field name="Datasheet">http://www.normandled.com/upload/201605/WS2813%20LED%20Datasheet.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="DOUT" type="output"/>
+        <pin num="4" name="DIN" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="BIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="0402B102K500NT">
+      <description>Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402B102K500NT_C1523.pdf</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0402B102K500NT</field>
+        <field name="Footprint">CAPC1005X55N</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402B102K500NT_C1523.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 1nF 50V 0402 RoHS</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Guangdong Fenghua Advanced Tech</field>
+        <field name="Manufacturer_Part_Number">0402B102K500NT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="BSS138P,215">
+      <description>BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BSS138P.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138P,215</field>
+        <field name="Footprint">SOT95P230X110-3N</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BSS138P.pdf</field>
+        <field name="Description">BSS138P,215 N-Channel MOSFET, 360 mA, 60 V, 3-Pin SOT-23 Nexperia</field>
+        <field name="Height">1.1</field>
+        <field name="Mouser Part Number">771-BSS138P215</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Nexperia/BSS138P215?qs=A1cBxND5mHJyVAOcRahidg%3D%3D</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">BSS138P,215</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="DFE252012PD-1R0M=P2">
+      <description>DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)</description>
+      <docs>https://psearch.en.murata.com/inductor/product/DFE252012PD-1R0M%23.html</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">DFE252012PD-1R0M=P2</field>
+        <field name="Footprint">DFE2HCAH1R0MJ0L</field>
+        <field name="Datasheet">https://psearch.en.murata.com/inductor/product/DFE252012PD-1R0M%23.html</field>
+        <field name="Description">DFE252012P_D Series Inductor 1.0uH +/-20% 1008 (2520)</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">DFE252012PD-1R0M=P2</field>
+        <field name="Mouser Part Number">81-DFE252012PD1R0MP2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DFE252012PD-1R0M%3dP2?qs=AQlKX63v8RvGsSiwzbLNIA%3D%3D</field>
+        <field name="Arrow Part Number">DFE252012PD-1R0M=P2</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/dfe252012pd-1r0mp2/murata-manufacturing?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="PMEG2020EPK,315">
+      <description>NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/PMEG2020EPK.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">PMEG2020EPK,315</field>
+        <field name="Footprint">PMEG2020EPK315</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG2020EPK.pdf</field>
+        <field name="Description">NEXPERIA - PMEG2020EPK,315 - Schottky Rectifier, 20 V, 2 A, Single, SOD-1608, 2 Pins, 450 mV</field>
+        <field name="Height">0.4</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG2020EPK,315</field>
+        <field name="Mouser Part Number">771-PMEG2020EPK,315</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG2020EPK315?qs=zHGtguZFFhKxs4HM5hK1uw%3D%3D</field>
+        <field name="Arrow Part Number">PMEG2020EPK,315</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pmeg2020epk315/nexperia?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="PTS815_SJM_250_SMTR_LFS">
+      <description>Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">PTS815_SJM_250_SMTR_LFS</field>
+        <field name="Footprint">PTS815SJM250SMTRLFS</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/PTS815 SJM 250 SMTR LFS.pdf</field>
+        <field name="Description">Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads</field>
+        <field name="Height">2.7</field>
+        <field name="Manufacturer_Name">C &amp; K COMPONENTS</field>
+        <field name="Manufacturer_Part_Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Mouser Part Number">611-PTS815SJM250SMTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CK/PTS815-SJM-250-SMTR-LFS?qs=ahcBuItHZ3xKWmfV%2F2E6bA%3D%3D</field>
+        <field name="Arrow Part Number">PTS815 SJM 250 SMTR LFS</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pts815-sjm-250-smtr-lfs/ck</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COM_1" type="passive"/>
+        <pin num="2" name="COM_2" type="passive"/>
+        <pin num="3" name="NO_1" type="passive"/>
+        <pin num="4" name="NO_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="RMCF0603ZT0R00">
+      <description>RES, 0603, Jumper</description>
+      <docs>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RMCF0603ZT0R00</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</field>
+        <field name="Description">RES, 0603, Jumper</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Stackpole Electronics, Inc.</field>
+        <field name="Manufacturer_Part_Number">RMCF0603ZT0R00</field>
+        <field name="Mouser Part Number">708-RMCF0603ZT0R00</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/SEI-Stackpole/RMCF0603ZT0R00?qs=FESYatJ8odLJgZb1WGmvgw%3D%3D</field>
+        <field name="Arrow Part Number">RMCF0603ZT0R00</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="TPS631010YBGR">
+      <description>Texas Instruments</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps631010.pdf?ts=1686578827580&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS631010%252Fpart-details%252FTPS631010YBGR</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TPS631010YBGR</field>
+        <field name="Footprint">BGA8C40P2X4_86X176X50</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps631010.pdf?ts=1686578827580&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS631010%252Fpart-details%252FTPS631010YBGR</field>
+        <field name="Description">Texas Instruments</field>
+        <field name="Height">0.5</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS631010YBGR</field>
+        <field name="Mouser Part Number">595-TPS631010YBGR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS631010YBGR?qs=rQFj71Wb1eUnypyc1JLtRA%3D%3D</field>
+        <field name="Arrow Part Number">TPS631010YBGR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps631010ybgr/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="VIN" type="passive"/>
+        <pin num="A2" name="EN" type="passive"/>
+        <pin num="B1" name="LX1" type="passive"/>
+        <pin num="B2" name="MODE" type="passive"/>
+        <pin num="C1" name="LX2" type="passive"/>
+        <pin num="C2" name="GND" type="passive"/>
+        <pin num="D1" name="VOUT" type="passive"/>
+        <pin num="D2" name="FB" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SquantorLabels" part="VYYYYMMDD">
+      <fields>
+        <field name="Reference">N</field>
+        <field name="Value">VYYYYMMDD</field>
+      </fields>
+    </libpart>
+    <libpart lib="dk_Barrel-Audio-Connectors" part="SJ1-3523N">
+      <description>CONN JACK STEREO 3.5MM R/A</description>
+      <docs>https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf</docs>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">SJ1-3523N</field>
+        <field name="Footprint">digikey-footprints:Headphone_Jack_3.5mm_SJ1-3523N</field>
+        <field name="Datasheet">https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf</field>
+        <field name="Digi-Key_PN">CP1-3523N-ND</field>
+        <field name="MPN">SJ1-3523N</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Barrel - Audio Connectors</field>
+        <field name="DK_Datasheet_Link">https://www.cui.com/product/resource/digikeypdf/sj1-352xn_series.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689</field>
+        <field name="Description">CONN JACK STEREO 3.5MM R/A</field>
+        <field name="Manufacturer">CUI Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="T" type="passive"/>
+        <pin num="3" name="R" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Test-Points" part="1508-0-57-15-00-00-03-0">
+      <description>TESTPOINT PIN SMD</description>
+      <docs>https://www.mill-max.com/assets/pdfs/224.pdf</docs>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">1508-0-57-15-00-00-03-0</field>
+        <field name="Footprint">digikey-footprints:Test-Point-Pin_Drill2.79mm</field>
+        <field name="Datasheet">https://www.mill-max.com/assets/pdfs/224.pdf</field>
+        <field name="Digi-Key_PN">ED1088CT-ND</field>
+        <field name="MPN">1508-0-57-15-00-00-03-0</field>
+        <field name="Category">Test and Measurement</field>
+        <field name="Family">Test Points</field>
+        <field name="DK_Datasheet_Link">https://www.mill-max.com/assets/pdfs/224.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/mill-max-manufacturing-corp/1508-0-57-15-00-00-03-0/ED1088CT-ND/3029225</field>
+        <field name="Description">TESTPOINT PIN SMD</field>
+        <field name="Manufacturer">Mill-Max Manufacturing Corp.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Test-Points" part="RCW-0C">
+      <description>PC TEST POINT NATURAL</description>
+      <docs>https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</docs>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">RCW-0C</field>
+        <field name="Footprint">digikey-footprints:PROBE_PAD_1206</field>
+        <field name="Datasheet">https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</field>
+        <field name="Digi-Key_PN">A106146CT-ND</field>
+        <field name="MPN">RCW-0C</field>
+        <field name="Category">Test and Measurement</field>
+        <field name="Family">Test Points</field>
+        <field name="DK_Datasheet_Link">https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1773266&amp;DocType=DS&amp;DocLang=English</field>
+        <field name="DK_Detail_Page">/product-detail/en/te-connectivity-amp-connectors/RCW-0C/A106146CT-ND/3477803</field>
+        <field name="Description">PC TEST POINT NATURAL</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>D:\Programs\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Espressif">
+      <uri>D:/GitHub/PersonalProjects/KiCad Libraries/Espressif Chips/libraries/Espressif.kicad_sym</uri>
+    </library>
+    <library logical="LED">
+      <uri>D:\Programs\KiCad\7.0\share\kicad\symbols\/LED.kicad_sym</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>D:/GitHub/PersonalProjects/KiCad Libraries/SAMACSys/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="SquantorLabels">
+      <uri/>
+    </library>
+    <library logical="dk_Barrel-Audio-Connectors">
+      <uri>D:/GitHub/PersonalProjects/KiCad Libraries/digikey-kicad-library/digikey-symbols/dk_Barrel-Audio-Connectors.kicad_sym</uri>
+    </library>
+    <library logical="dk_Test-Points">
+      <uri>D:/GitHub/PersonalProjects/KiCad Libraries/digikey-kicad-library/digikey-symbols/dk_Test-Points.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Buck_Boost/V_Bat">
+      <node ref="D1" pin="2" pintype="passive"/>
+    </net>
+    <net code="2" name="/ESP32C3_MCU/5V_DIN">
+      <node ref="D4" pin="4" pinfunction="DIN" pintype="input"/>
+      <node ref="Q2" pin="3" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/ESP32C3_MCU/ESP_DN">
+      <node ref="P1" pin="A7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="U1" pin="26" pinfunction="GPIO18/USB_D-" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/ESP32C3_MCU/ESP_DP">
+      <node ref="P1" pin="A6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="U1" pin="27" pinfunction="GPIO19/USB_D+" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="3V3_VCC">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="D1" pinfunction="VOUT" pintype="passive"/>
+      <node ref="Q2" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="3V3" pintype="power_in"/>
+    </net>
+    <net code="6" name="5V">
+      <node ref="CON1" pin="1" pinfunction="S" pintype="passive"/>
+      <node ref="D2" pin="2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="VDD" pintype="power_in"/>
+      <node ref="P1" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="P1" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="P1" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="P1" pin="B9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="VCC1" pin="1" pintype="passive"/>
+    </net>
+    <net code="8" name="D2">
+      <node ref="U1" pin="5" pinfunction="GPIO2/ADC1_CH2" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="D3">
+      <node ref="U1" pin="6" pinfunction="GPIO3/ADC1_CH3" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="D4">
+      <node ref="U1" pin="18" pinfunction="GPIO4/ADC1_CH4" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="D5">
+      <node ref="Q2" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="GPIO5/ADC2_CH0" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="D5_out">
+      <node ref="CON1" pin="2" pinfunction="T" pintype="passive"/>
+      <node ref="D4" pin="3" pinfunction="DOUT" pintype="output"/>
+      <node ref="Data1" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="D8">
+      <node ref="U1" pin="22" pinfunction="GPIO8" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="D9">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="S2" pin="4" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="GPIO9" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="EN">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="S1" pin="4" pinfunction="NO_2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="EN/CHIP_PU" pintype="input"/>
+    </net>
+    <net code="16" name="GND">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="CON1" pin="3" pinfunction="R" pintype="passive"/>
+      <node ref="D4" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="GND1" pin="1" pintype="passive"/>
+      <node ref="GND2" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="B2" pinfunction="MODE" pintype="passive"/>
+      <node ref="IC1" pin="C2" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="P1" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="S1" pin="3" pinfunction="NO_1" pintype="passive"/>
+      <node ref="S2" pin="3" pinfunction="NO_1" pintype="passive"/>
+      <node ref="U1" pin="36" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="37" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="38" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="39" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="40" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="41" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="42" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="43" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="44" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="45" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="46" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="47" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="48" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="49" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="50" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="51" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="52" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="53" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="17" name="L1">
+      <node ref="IC1" pin="B1" pinfunction="LX1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(IC1-FB)">
+      <node ref="IC1" pin="D2" pinfunction="FB" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(IC1-LX2)">
+      <node ref="IC1" pin="C1" pinfunction="LX2" pintype="passive"/>
+      <node ref="L1" pin="2" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(U1-GND-Pad1)">
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="11" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="GND" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(U1-GPIO20{slash}U0RXD)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="GPIO20/U0RXD" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="RX_D7">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="RX1" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="TX_D6">
+      <node ref="TX1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="GPIO21/U0TXD" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="VIN">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="A1" pinfunction="VIN" pintype="passive"/>
+      <node ref="IC1" pin="A2" pinfunction="EN" pintype="passive"/>
+    </net>
+    <net code="27" name="unconnected-(D4-BIN-Pad6)">
+      <node ref="D4" pin="6" pinfunction="BIN" pintype="input"/>
+    </net>
+    <net code="28" name="unconnected-(D4-VCC-Pad1)">
+      <node ref="D4" pin="1" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="29" name="unconnected-(P1-CC-PadA5)">
+      <node ref="P1" pin="A5" pinfunction="CC" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="unconnected-(P1-RX1+-PadB11)">
+      <node ref="P1" pin="B11" pinfunction="RX1+" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="unconnected-(P1-RX1--PadB10)">
+      <node ref="P1" pin="B10" pinfunction="RX1-" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="unconnected-(P1-RX2+-PadA11)">
+      <node ref="P1" pin="A11" pinfunction="RX2+" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="unconnected-(P1-RX2--PadA10)">
+      <node ref="P1" pin="A10" pinfunction="RX2-" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="unconnected-(P1-SBU1-PadA8)">
+      <node ref="P1" pin="A8" pinfunction="SBU1" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="unconnected-(P1-SBU2-PadB8)">
+      <node ref="P1" pin="B8" pinfunction="SBU2" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="unconnected-(P1-TX1+-PadA2)">
+      <node ref="P1" pin="A2" pinfunction="TX1+" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="unconnected-(P1-TX1--PadA3)">
+      <node ref="P1" pin="A3" pinfunction="TX1-" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="unconnected-(P1-TX2+-PadB2)">
+      <node ref="P1" pin="B2" pinfunction="TX2+" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="unconnected-(P1-TX2--PadB3)">
+      <node ref="P1" pin="B3" pinfunction="TX2-" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="unconnected-(P1-VCONN-PadB5)">
+      <node ref="P1" pin="B5" pinfunction="VCONN" pintype="bidirectional"/>
+    </net>
+    <net code="41" name="unconnected-(S1-COM_1-Pad1)">
+      <node ref="S1" pin="1" pinfunction="COM_1" pintype="passive"/>
+    </net>
+    <net code="42" name="unconnected-(S1-COM_2-Pad2)">
+      <node ref="S1" pin="2" pinfunction="COM_2" pintype="passive"/>
+    </net>
+    <net code="43" name="unconnected-(S2-COM_1-Pad1)">
+      <node ref="S2" pin="1" pinfunction="COM_1" pintype="passive"/>
+    </net>
+    <net code="44" name="unconnected-(S2-COM_2-Pad2)">
+      <node ref="S2" pin="2" pinfunction="COM_2" pintype="passive"/>
+    </net>
+    <net code="45" name="unconnected-(U1-GPIO0{slash}ADC1_CH0{slash}XTAL_32K_P-Pad12)">
+      <node ref="U1" pin="12" pinfunction="GPIO0/ADC1_CH0/XTAL_32K_P" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="unconnected-(U1-GPIO1{slash}ADC1_CH1{slash}XTAL_32K_N-Pad13)">
+      <node ref="U1" pin="13" pinfunction="GPIO1/ADC1_CH1/XTAL_32K_N" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="unconnected-(U1-GPIO6-Pad20)">
+      <node ref="U1" pin="20" pinfunction="GPIO6" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="unconnected-(U1-GPIO7-Pad21)">
+      <node ref="U1" pin="21" pinfunction="GPIO7" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="unconnected-(U1-GPIO10-Pad16)">
+      <node ref="U1" pin="16" pinfunction="GPIO10" pintype="bidirectional"/>
+    </net>
+    <net code="50" name="unconnected-(U1-NC-Pad4)">
+      <node ref="U1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-NC-Pad7)">
+      <node ref="U1" pin="7" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-NC-Pad9)">
+      <node ref="U1" pin="9" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-NC-Pad10)">
+      <node ref="U1" pin="10" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-NC-Pad15)">
+      <node ref="U1" pin="15" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-NC-Pad17)">
+      <node ref="U1" pin="17" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-NC-Pad24)">
+      <node ref="U1" pin="24" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-NC-Pad25)">
+      <node ref="U1" pin="25" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1-NC-Pad28)">
+      <node ref="U1" pin="28" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U1-NC-Pad29)">
+      <node ref="U1" pin="29" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U1-NC-Pad32)">
+      <node ref="U1" pin="32" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U1-NC-Pad33)">
+      <node ref="U1" pin="33" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U1-NC-Pad34)">
+      <node ref="U1" pin="34" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U1-NC-Pad35)">
+      <node ref="U1" pin="35" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

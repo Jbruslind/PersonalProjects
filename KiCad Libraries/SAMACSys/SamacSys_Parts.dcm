@@ -132,4 +132,10 @@ K
 F https://omronfs.omron.com/en_US/ecb/products/pdf/en-sdbt-022c.pdf
 $ENDCMP
 #
+$CMP 218-4LPSTR
+D 4 Way Surface Mount DIP Switch Single Pole Single Throw (SPST)
+K
+F https://www.ctscorp.com/wp-content/uploads/218.pdf
+$ENDCMP
+#
 #End Doc Library

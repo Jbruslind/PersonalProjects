@@ -1474,7 +1474,7 @@
   (symbol (lib_id "SamacSys_Parts:0402B102K500NT") (at 186.69 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e95d5c5e-ed0d-4b9d-82dd-920ab8fddf83)
-    (property "Reference" "C_BOOT" (at 193.04 77.47 0)
+    (property "Reference" "C_BOOT1" (at 193.04 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 193.04 80.01 0)
@@ -1524,7 +1524,7 @@
     (instances
       (project "Automated_Aquarium_v3"
         (path "/953ef1f2-1b30-471f-8352-2e2b084ebc55/74cfcaf9-5269-4ba4-8d15-75996e6dd2a1"
-          (reference "C_BOOT") (unit 1)
+          (reference "C_BOOT1") (unit 1)
         )
       )
       (project "Dot-LED"

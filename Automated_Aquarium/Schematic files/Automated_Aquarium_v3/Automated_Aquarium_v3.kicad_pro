@@ -338,6 +338,14 @@
     [
       "776c66f3-b8e4-46d2-a967-edc0306303b2",
       "IOConnectors"
+    ],
+    [
+      "15b28850-081f-4394-9d99-60f82e5d2ece",
+      "Stepper_Drivers"
+    ],
+    [
+      "4e9bf6dc-f088-4e5f-8705-18ce454bedb2",
+      "Sensors"
     ]
   ],
   "text_variables": {}

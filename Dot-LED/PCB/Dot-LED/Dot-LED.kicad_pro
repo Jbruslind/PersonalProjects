@@ -599,7 +599,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Dot-LED.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

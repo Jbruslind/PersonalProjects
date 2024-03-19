@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid d50c35fb-9562-48a5-9344-cc0cf025806e)
+  (uuid 46746225-4ed3-48c3-8f21-6ebc15254949)
 
   (paper "A4")
 
@@ -201,11 +201,11 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 1b6220f7-476f-44ba-af72-a405accbeb51)
   )
-  (hierarchical_label "RS485_RX" (shape input) (at 151.13 85.09 0) (fields_autoplaced)
+  (hierarchical_label "CANL" (shape input) (at 151.13 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 7df1f667-af9e-4654-bf51-01ae25f52edb)
   )
-  (hierarchical_label "RS485_TX" (shape input) (at 151.13 82.55 0) (fields_autoplaced)
+  (hierarchical_label "CANH" (shape input) (at 151.13 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b98c37d6-9c4a-4749-a9a1-730461ecf99a)
   )

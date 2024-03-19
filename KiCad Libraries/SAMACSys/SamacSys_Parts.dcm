@@ -144,4 +144,10 @@ K
 F http://www.ti.com/lit/ds/symlink/drv8844.pdf
 $ENDCMP
 #
+$CMP SN65HVD230DR
+D 3.3 V CAN Transceiver with Standby Mode
+K
+F http://www.ti.com/lit/gpn/sn65hvd230
+$ENDCMP
+#
 #End Doc Library

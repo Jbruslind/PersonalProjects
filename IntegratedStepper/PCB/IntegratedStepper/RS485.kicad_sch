@@ -303,7 +303,7 @@
     (property "Value" "SN65HVD230DR" (at 146.05 82.55 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "SOT127P600X175-8N" (at 156.21 83.82 0)
+    (property "Footprint" "SamacSys_Parts:SOT127P600X175-8N" (at 156.21 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn65hvd230" (at 156.21 86.36 0)

@@ -150,4 +150,22 @@ K
 F http://www.ti.com/lit/gpn/sn65hvd230
 $ENDCMP
 #
+$CMP LMR38020FSQDDARQ1
+D Switching Voltage Regulators Automotive SIMPLE SWITCHER power converter 4.2-V to 80-V, 2-A, synchronous buck converter
+K
+F https://www.ti.com/lit/gpn/LMR38010
+$ENDCMP
+#
+$CMP PMEG6020ER,115
+D Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W
+K
+F https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.pdf
+$ENDCMP
+#
+$CMP IHLP2525CZER100M01
+D Vishay IHLP Series Type 2525 Shielded Wire-wound SMD Inductor with a Metal Composite Core, 10 uH +/-20% Wire-Wound
+K
+F https://www.vishay.com/docs/34104/ihlp-2525cz-01.pdf
+$ENDCMP
+#
 #End Doc Library

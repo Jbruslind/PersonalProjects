@@ -350,6 +350,10 @@
     [
       "1bafc6f7-07ea-452b-8b4f-66f8063c8934",
       "Input_RJ45"
+    ],
+    [
+      "43bbe4fd-5a99-4112-a855-d9b549a4340b",
+      "Stepper_Outputs"
     ]
   ],
   "text_variables": {}

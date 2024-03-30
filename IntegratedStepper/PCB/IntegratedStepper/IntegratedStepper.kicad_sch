@@ -1,292 +1,757 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid ab592993-dafc-411a-b466-8e8425f43767)
-
-  (paper "A4")
-
-  (lib_symbols
-  )
-
-  (junction (at 85.09 138.43) (diameter 0) (color 0 0 0 0)
-    (uuid 61a52345-c4ab-48cb-b179-a585907a0d58)
-  )
-  (junction (at 82.55 134.62) (diameter 0) (color 0 0 0 0)
-    (uuid 94ec1fec-5245-45b8-a684-56b51d37f833)
-  )
-
-  (wire (pts (xy 82.55 121.92) (xy 82.55 134.62))
-    (stroke (width 0) (type default))
-    (uuid 1802ecae-9b9c-4bd2-aa2c-336cf4dd5c5a)
-  )
-  (wire (pts (xy 64.77 78.74) (xy 64.77 138.43))
-    (stroke (width 0) (type default))
-    (uuid 2c57770e-74bb-4773-9ea3-312807d0ae49)
-  )
-  (wire (pts (xy 96.52 86.36) (xy 96.52 109.22))
-    (stroke (width 0) (type default))
-    (uuid 45951da3-c549-4be2-b752-33412f39e789)
-  )
-  (wire (pts (xy 85.09 138.43) (xy 156.21 138.43))
-    (stroke (width 0) (type default))
-    (uuid 533e1b56-f449-4789-8114-9b8c3645b58d)
-  )
-  (wire (pts (xy 92.71 86.36) (xy 96.52 86.36))
-    (stroke (width 0) (type default))
-    (uuid 5af06905-1b39-4ae0-bbfc-b0144e415830)
-  )
-  (wire (pts (xy 96.52 109.22) (xy 104.14 109.22))
-    (stroke (width 0) (type default))
-    (uuid 87d1b842-44cc-4c75-8c93-08c9baadb401)
-  )
-  (wire (pts (xy 82.55 134.62) (xy 153.67 134.62))
-    (stroke (width 0) (type default))
-    (uuid 8ecc7516-14f8-43e7-a671-7982742f277a)
-  )
-  (wire (pts (xy 67.31 81.28) (xy 67.31 134.62))
-    (stroke (width 0) (type default))
-    (uuid a4e5b0a5-a147-46cc-9c24-8bf8032fbc3a)
-  )
-  (wire (pts (xy 90.17 115.57) (xy 104.14 115.57))
-    (stroke (width 0) (type default))
-    (uuid aadf8193-5a66-4fa5-ab6f-8488757d34be)
-  )
-  (wire (pts (xy 153.67 134.62) (xy 153.67 93.98))
-    (stroke (width 0) (type default))
-    (uuid b670ba66-6e81-41bd-9de5-0413364bcf94)
-  )
-  (wire (pts (xy 64.77 138.43) (xy 85.09 138.43))
-    (stroke (width 0) (type default))
-    (uuid c1904aa6-2335-44a5-8cfd-4929eaafd69f)
-  )
-  (wire (pts (xy 90.17 113.03) (xy 104.14 113.03))
-    (stroke (width 0) (type default))
-    (uuid d59dee48-6ac1-4235-9d46-98fbc7110730)
-  )
-  (wire (pts (xy 85.09 121.92) (xy 85.09 138.43))
-    (stroke (width 0) (type default))
-    (uuid e0e1346b-6b27-4d38-9fc8-ff7be2303966)
-  )
-  (wire (pts (xy 156.21 138.43) (xy 156.21 93.98))
-    (stroke (width 0) (type default))
-    (uuid e4e814ce-2136-4331-8dd6-391617fb51c6)
-  )
-  (wire (pts (xy 69.85 81.28) (xy 67.31 81.28))
-    (stroke (width 0) (type default))
-    (uuid f6bdcb9a-0a27-41ec-bdb8-e7fded65336e)
-  )
-  (wire (pts (xy 67.31 134.62) (xy 82.55 134.62))
-    (stroke (width 0) (type default))
-    (uuid f743e353-4fec-4a4f-84f3-2cfe5120ed86)
-  )
-  (wire (pts (xy 69.85 78.74) (xy 64.77 78.74))
-    (stroke (width 0) (type default))
-    (uuid fe511bc3-83e8-4236-85b3-757dd4f25af5)
-  )
-
-  (sheet (at 77.47 106.68) (size 12.7 15.24) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 1bafc6f7-07ea-452b-8b4f-66f8063c8934)
-    (property "Sheetname" "Input_RJ45" (at 77.47 105.9684 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Input_RJ45.kicad_sch" (at 77.47 122.5046 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "VM" input (at 85.09 121.92 270)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1140850a-3343-4b1e-8260-8d70f6306dd1)
-    )
-    (pin "VM-" input (at 82.55 121.92 270)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0f9c25ac-4a2f-4e3e-808b-83bdd6294ea8)
-    )
-    (pin "CANL" input (at 90.17 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 3bb62567-73ab-4712-ac96-68bbae6809aa)
-    )
-    (pin "CANH" input (at 90.17 115.57 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid fcb1e379-073e-426c-bc30-6da3bf79af14)
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 179.07 71.12) (size 19.05 22.86) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 43bbe4fd-5a99-4112-a855-d9b549a4340b)
-    (property "Sheetname" "Stepper_Outputs" (at 179.07 70.4084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Stepper_Outputs.kicad_sch" (at 179.07 94.5646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "8"))
-      )
-    )
-  )
-
-  (sheet (at 148.59 71.12) (size 19.05 22.86) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 629c76d2-6f66-4ca5-9833-9cfbfc13e6ac)
-    (property "Sheetname" "DRV8844" (at 148.59 70.4084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "DRV8844.kicad_sch" (at 148.59 94.5646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "VM-" input (at 153.67 93.98 270)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 7f57cda8-0575-4df8-90ea-930a885d1e30)
-    )
-    (pin "VM" input (at 156.21 93.98 270)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid e58896e0-ce06-42e5-9112-ef92589b8875)
-    )
-    (pin "NFAULT" input (at 148.59 87.63 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid bf616cef-da56-4de6-834a-27a5c0d8cd3f)
-    )
-    (pin "NSLEEP" input (at 148.59 85.09 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 70eff78b-af0a-4e88-bc95-1bbd9565e3f3)
-    )
-    (pin "NRESET" input (at 148.59 82.55 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid f797a934-cdee-4184-b6a6-06ff4a1585b9)
-    )
-    (pin "EN[1..4]" input (at 148.59 73.66 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1ed8d6d2-358e-40a3-bdaa-d87c08ba94a0)
-    )
-    (pin "IN[1..4]" input (at 148.59 76.2 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 03254f50-1928-4a65-8a6c-55cadd1a42a7)
-    )
-    (pin "OUT[1..4]" input (at 167.64 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 1439ccfd-3ed2-4194-94b2-d43a4d8a86d2)
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 105.41 45.72) (size 24.13 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 6da1971f-08c3-4e21-a92d-fad67e956a56)
-    (property "Sheetname" "Magnetic_Encoder" (at 105.41 45.0084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "Magnetic_Encoder.kicad_sch" (at 105.41 59.0046 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 104.14 71.12) (size 25.4 21.59) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid b9563b8e-97b8-4046-b1ec-b1f0622bda15)
-    (property "Sheetname" "ESP32_MCU" (at 104.14 70.4084 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ESP32_MCU.kicad_sch" (at 104.14 93.2946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 69.85 74.93) (size 22.86 13.97) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb)
-    (property "Sheetname" "3V3_VReg" (at 69.85 74.2184 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "3V3_VReg.kicad_sch" (at 69.85 89.4846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "3V3_VCC" input (at 92.71 86.36 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 102707f0-f2e2-430d-900a-281c14faa5f4)
-    )
-    (pin "V_USB" input (at 69.85 86.36 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0ee6d0f0-ac1d-4d1f-a249-13b904d39892)
-    )
-    (pin "VM" input (at 69.85 78.74 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1d6d3420-dfd1-40be-8674-c6e943fdba8f)
-    )
-    (pin "VM-" input (at 69.85 81.28 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6fa9b801-aeed-45f9-95c6-deb8179320a0)
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 104.14 106.68) (size 22.86 15.24) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid f6cdbece-6675-4a06-843f-4c3f5c22b49a)
-    (property "Sheetname" "RS485_Transciever" (at 104.14 105.9684 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "RS485.kicad_sch" (at 104.14 122.5046 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "TX" input (at 118.11 106.68 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid d6076a29-f3df-4f88-a497-e3fe1ad56b8d)
-    )
-    (pin "RX" input (at 120.65 106.68 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 22d10a7e-a5fc-4a1c-9ca7-7e4ad320f99d)
-    )
-    (pin "3V3" input (at 104.14 109.22 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid e0ef17ff-88f2-4d08-bfe0-6bf306c3ca5a)
-    )
-    (pin "CANL" input (at 104.14 113.03 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 608a9a22-f84b-4b1e-be02-ff87d803989f)
-    )
-    (pin "CANH" input (at 104.14 115.57 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1bca3b53-6fce-4a4c-a334-9931d4d8ccb3)
-    )
-    (instances
-      (project "IntegratedStepper"
-        (path "/ab592993-dafc-411a-b466-8e8425f43767" (page "5"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ab592993-dafc-411a-b466-8e8425f43767")
+	(paper "A4")
+	(lib_symbols)
+	(junction
+		(at 85.09 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61a52345-c4ab-48cb-b179-a585907a0d58")
+	)
+	(junction
+		(at 82.55 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94ec1fec-5245-45b8-a684-56b51d37f833")
+	)
+	(junction
+		(at 96.52 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2850469-250e-4a98-a44e-aab493dae697")
+	)
+	(wire
+		(pts
+			(xy 96.52 86.36) (xy 96.52 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b40c54-6943-46dc-bdd6-07f9fb1c2077")
+	)
+	(wire
+		(pts
+			(xy 82.55 121.92) (xy 82.55 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1802ecae-9b9c-4bd2-aa2c-336cf4dd5c5a")
+	)
+	(wire
+		(pts
+			(xy 64.77 78.74) (xy 64.77 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c57770e-74bb-4773-9ea3-312807d0ae49")
+	)
+	(wire
+		(pts
+			(xy 96.52 86.36) (xy 96.52 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45951da3-c549-4be2-b752-33412f39e789")
+	)
+	(wire
+		(pts
+			(xy 85.09 138.43) (xy 156.21 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "533e1b56-f449-4789-8114-9b8c3645b58d")
+	)
+	(wire
+		(pts
+			(xy 92.71 86.36) (xy 96.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af06905-1b39-4ae0-bbfc-b0144e415830")
+	)
+	(wire
+		(pts
+			(xy 96.52 46.99) (xy 105.41 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ceaeb1-6554-4e77-aac4-22a5f7ba1bdc")
+	)
+	(wire
+		(pts
+			(xy 96.52 109.22) (xy 104.14 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d1b842-44cc-4c75-8c93-08c9baadb401")
+	)
+	(wire
+		(pts
+			(xy 82.55 134.62) (xy 153.67 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ecc7516-14f8-43e7-a671-7982742f277a")
+	)
+	(wire
+		(pts
+			(xy 67.31 81.28) (xy 67.31 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e5b0a5-a147-46cc-9c24-8bf8032fbc3a")
+	)
+	(wire
+		(pts
+			(xy 90.17 115.57) (xy 104.14 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aadf8193-5a66-4fa5-ab6f-8488757d34be")
+	)
+	(wire
+		(pts
+			(xy 153.67 134.62) (xy 153.67 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b670ba66-6e81-41bd-9de5-0413364bcf94")
+	)
+	(wire
+		(pts
+			(xy 64.77 138.43) (xy 85.09 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1904aa6-2335-44a5-8cfd-4929eaafd69f")
+	)
+	(wire
+		(pts
+			(xy 90.17 113.03) (xy 104.14 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59dee48-6ac1-4235-9d46-98fbc7110730")
+	)
+	(wire
+		(pts
+			(xy 85.09 121.92) (xy 85.09 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e1346b-6b27-4d38-9fc8-ff7be2303966")
+	)
+	(wire
+		(pts
+			(xy 156.21 138.43) (xy 156.21 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4e814ce-2136-4331-8dd6-391617fb51c6")
+	)
+	(wire
+		(pts
+			(xy 69.85 81.28) (xy 67.31 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6bdcb9a-0a27-41ec-bdb8-e7fded65336e")
+	)
+	(wire
+		(pts
+			(xy 67.31 134.62) (xy 82.55 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f743e353-4fec-4a4f-84f3-2cfe5120ed86")
+	)
+	(wire
+		(pts
+			(xy 69.85 78.74) (xy 64.77 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe511bc3-83e8-4236-85b3-757dd4f25af5")
+	)
+	(sheet
+		(at 77.47 106.68)
+		(size 12.7 15.24)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1bafc6f7-07ea-452b-8b4f-66f8063c8934")
+		(property "Sheetname" "Input_Con"
+			(at 77.47 105.9684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Input_RJ45.kicad_sch"
+			(at 77.47 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM" input
+			(at 85.09 121.92 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1140850a-3343-4b1e-8260-8d70f6306dd1")
+		)
+		(pin "VM-" input
+			(at 82.55 121.92 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0f9c25ac-4a2f-4e3e-808b-83bdd6294ea8")
+		)
+		(pin "CANL" input
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3bb62567-73ab-4712-ac96-68bbae6809aa")
+		)
+		(pin "CANH" input
+			(at 90.17 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fcb1e379-073e-426c-bc30-6da3bf79af14")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 71.12)
+		(size 19.05 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "43bbe4fd-5a99-4112-a855-d9b549a4340b")
+		(property "Sheetname" "Stepper_Outputs"
+			(at 179.07 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Stepper_Outputs.kicad_sch"
+			(at 179.07 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 71.12)
+		(size 19.05 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "629c76d2-6f66-4ca5-9833-9cfbfc13e6ac")
+		(property "Sheetname" "DRV8844"
+			(at 148.59 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DRV8844.kicad_sch"
+			(at 148.59 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VM-" input
+			(at 153.67 93.98 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7f57cda8-0575-4df8-90ea-930a885d1e30")
+		)
+		(pin "VM" input
+			(at 156.21 93.98 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e58896e0-ce06-42e5-9112-ef92589b8875")
+		)
+		(pin "NFAULT" input
+			(at 148.59 87.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bf616cef-da56-4de6-834a-27a5c0d8cd3f")
+		)
+		(pin "NSLEEP" input
+			(at 148.59 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "70eff78b-af0a-4e88-bc95-1bbd9565e3f3")
+		)
+		(pin "NRESET" input
+			(at 148.59 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f797a934-cdee-4184-b6a6-06ff4a1585b9")
+		)
+		(pin "EN[1..4]" input
+			(at 148.59 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1ed8d6d2-358e-40a3-bdaa-d87c08ba94a0")
+		)
+		(pin "IN[1..4]" input
+			(at 148.59 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "03254f50-1928-4a65-8a6c-55cadd1a42a7")
+		)
+		(pin "OUT[1..4]" input
+			(at 167.64 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1439ccfd-3ed2-4194-94b2-d43a4d8a86d2")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 105.41 45.72)
+		(size 24.13 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6da1971f-08c3-4e21-a92d-fad67e956a56")
+		(property "Sheetname" "Magnetic_Encoder"
+			(at 105.41 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Magnetic_Encoder.kicad_sch"
+			(at 105.41 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "M_PWM" input
+			(at 129.54 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cb976376-23bf-4f59-b379-724d5794e929")
+		)
+		(pin "3V3_VCC" input
+			(at 105.41 46.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0e0a678e-cc9b-4dc8-a0c2-d288d6cc8103")
+		)
+		(pin "M_MOSI" input
+			(at 120.65 58.42 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2275abed-0e2c-4ae3-84c4-842becda3c72")
+		)
+		(pin "M_SCLK" input
+			(at 115.57 58.42 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9c701a93-e837-4182-b5a3-1a43a5a8255c")
+		)
+		(pin "M_CS0" input
+			(at 118.11 58.42 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bf78e423-c414-455b-9ce7-754fa1025e32")
+		)
+		(pin "M_MISO" input
+			(at 123.19 58.42 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0009a698-8d3f-4190-83da-7d89427b7368")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 71.12)
+		(size 25.4 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b9563b8e-97b8-4046-b1ec-b1f0622bda15")
+		(property "Sheetname" "ESP32_MCU"
+			(at 104.14 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32_MCU.kicad_sch"
+			(at 104.14 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 74.93)
+		(size 22.86 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb")
+		(property "Sheetname" "3V3_VReg"
+			(at 69.85 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "3V3_VReg.kicad_sch"
+			(at 69.85 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3V3_VCC" input
+			(at 92.71 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "102707f0-f2e2-430d-900a-281c14faa5f4")
+		)
+		(pin "V_USB" input
+			(at 69.85 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0ee6d0f0-ac1d-4d1f-a249-13b904d39892")
+		)
+		(pin "VM" input
+			(at 69.85 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1d6d3420-dfd1-40be-8674-c6e943fdba8f")
+		)
+		(pin "VM-" input
+			(at 69.85 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6fa9b801-aeed-45f9-95c6-deb8179320a0")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 104.14 106.68)
+		(size 22.86 15.24)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f6cdbece-6675-4a06-843f-4c3f5c22b49a")
+		(property "Sheetname" "CAN_Transciever"
+			(at 104.14 105.9684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RS485.kicad_sch"
+			(at 104.14 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "TX" input
+			(at 118.11 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d6076a29-f3df-4f88-a497-e3fe1ad56b8d")
+		)
+		(pin "RX" input
+			(at 120.65 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "22d10a7e-a5fc-4a1c-9ca7-7e4ad320f99d")
+		)
+		(pin "3V3" input
+			(at 104.14 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e0ef17ff-88f2-4d08-bfe0-6bf306c3ca5a")
+		)
+		(pin "CANL" input
+			(at 104.14 113.03 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "608a9a22-f84b-4b1e-be02-ff87d803989f")
+		)
+		(pin "CANH" input
+			(at 104.14 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1bca3b53-6fce-4a4c-a334-9931d4d8ccb3")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

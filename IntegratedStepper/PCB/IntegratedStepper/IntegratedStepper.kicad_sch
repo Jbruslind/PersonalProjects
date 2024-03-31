@@ -1331,26 +1331,6 @@
 				(justify left top)
 			)
 		)
-		(pin "TX" input
-			(at 129.54 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d6076a29-f3df-4f88-a497-e3fe1ad56b8d")
-		)
-		(pin "RX" input
-			(at 132.08 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "22d10a7e-a5fc-4a1c-9ca7-7e4ad320f99d")
-		)
 		(pin "3V3" input
 			(at 115.57 114.3 180)
 			(effects
@@ -1380,6 +1360,26 @@
 				(justify left)
 			)
 			(uuid "1bca3b53-6fce-4a4c-a334-9931d4d8ccb3")
+		)
+		(pin "CAN_TX" input
+			(at 129.54 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "55a15389-2559-4cca-9c3f-19d7f9af29ac")
+		)
+		(pin "CAN_RX" input
+			(at 132.08 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "267f2282-8bbd-4a83-80a9-6f6726c4d3be")
 		)
 		(instances
 			(project "IntegratedStepper"

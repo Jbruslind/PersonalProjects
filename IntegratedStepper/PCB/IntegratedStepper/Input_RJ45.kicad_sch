@@ -2836,7 +2836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a96334d-b3cf-4b0e-bed1-03132cc6debc")
-		(property "Reference" "V3v1"
+		(property "Reference" "VUSB1"
 			(at 101.6 42.2274 90)
 			(effects
 				(font
@@ -2890,7 +2890,7 @@
 		(instances
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
-					(reference "V3v1")
+					(reference "VUSB1")
 					(unit 1)
 				)
 			)
@@ -2922,7 +2922,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7051x"
 			(at 77.47 90.17 0)
 			(effects
 				(font

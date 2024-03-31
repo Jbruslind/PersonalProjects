@@ -577,6 +577,7 @@
 	)
 	(label "OUT2"
 		(at 107.95 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -587,6 +588,7 @@
 	)
 	(label "OUT3"
 		(at 107.95 59.69 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -597,6 +599,7 @@
 	)
 	(label "OUT4"
 		(at 107.95 62.23 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -607,6 +610,7 @@
 	)
 	(label "OUT1"
 		(at 107.95 53.34 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

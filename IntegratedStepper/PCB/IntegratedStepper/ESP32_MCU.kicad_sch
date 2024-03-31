@@ -3937,8 +3937,9 @@
 		)
 		(uuid "5e4b3ab1-c866-4606-b794-0375c1808fc8")
 	)
-	(label "EN2"
+	(label "EN4"
 		(at 170.18 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3947,8 +3948,9 @@
 		)
 		(uuid "8c78a9d3-5ecd-4e9b-be83-4ff7736e8b15")
 	)
-	(label "EN4"
+	(label "EN2"
 		(at 170.18 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3957,8 +3959,9 @@
 		)
 		(uuid "a36c168b-7d5d-418a-adb1-1e35d449b5a1")
 	)
-	(label "EN3"
+	(label "EN1"
 		(at 170.18 91.44 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3978,8 +3981,9 @@
 		)
 		(uuid "f5c7ce9a-55e2-4565-9531-23d1027bc16c")
 	)
-	(label "EN1"
+	(label "EN3"
 		(at 170.18 86.36 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

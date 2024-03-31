@@ -1696,6 +1696,12 @@
 		(color 0 0 0 0)
 		(uuid "a480b81f-8144-4cbf-9a13-4eb818d17fd6")
 	)
+	(junction
+		(at 149.86 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8efc998-2635-4c64-b638-b5efe18bc7a4")
+	)
 	(wire
 		(pts
 			(xy 130.81 52.07) (xy 137.16 52.07)
@@ -1835,6 +1841,16 @@
 			(type default)
 		)
 		(uuid "4ce5f333-418f-42f3-a166-5b72c4052907")
+	)
+	(wire
+		(pts
+			(xy 154.94 74.93) (xy 149.86 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab3ee8e-cb08-4013-bed7-4f4d52e9b251")
 	)
 	(wire
 		(pts
@@ -1978,6 +1994,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 80.01) (xy 151.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a692111d-dc2f-47ce-97ee-3d708b82d6a1")
+	)
+	(wire
+		(pts
 			(xy 148.59 90.17) (xy 148.59 92.71)
 		)
 		(stroke
@@ -1985,6 +2011,16 @@
 			(type default)
 		)
 		(uuid "af47f7be-7c12-487e-a99a-1ae0e167d9ea")
+	)
+	(wire
+		(pts
+			(xy 149.86 74.93) (xy 149.86 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd08eb42-0d2a-4aff-b0da-9d6a1b0418c7")
 	)
 	(wire
 		(pts
@@ -2028,7 +2064,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 80.01) (xy 151.13 80.01)
+			(xy 146.05 80.01) (xy 149.86 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2508,7 +2544,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "easyeda2kicad:RJ45-TH_KH-RJ45-58-8P8C"
 			(at 135.89 84.455 90)
 			(effects
 				(font
@@ -2527,6 +2563,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 135.89 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2683360"
+			(at 135.89 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2683360"
+			(at 135.89 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2683360"
 			(at 135.89 85.09 0)
 			(effects
 				(font
@@ -2635,6 +2698,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 154.94 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43fed55f-d717-4408-b667-b402f5646aea")
+		(property "Reference" "#PWR044"
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 74.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fe8006e-901b-4505-93e8-21ac341c61fb")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:8P8C")
 		(at 193.04 83.82 0)
 		(unit 1)
@@ -2660,7 +2790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal"
+		(property "Footprint" "easyeda2kicad:RJ45-TH_KH-RJ45-58-8P8C"
 			(at 193.04 83.185 90)
 			(effects
 				(font
@@ -2679,6 +2809,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2683360"
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2683360"
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2683360"
 			(at 193.04 83.82 0)
 			(effects
 				(font
@@ -2832,6 +2989,33 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2989147"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2989147"
+			(at 97.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C2989147"
 			(at 97.79 49.53 0)
 			(effects
 				(font
@@ -3391,6 +3575,24 @@
 		)
 		(property "LCSC Part" "C168690"
 			(at 35.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C168690"
+			(at 35.56 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C168690"
+			(at 35.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

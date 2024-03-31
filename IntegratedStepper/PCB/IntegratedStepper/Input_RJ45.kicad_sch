@@ -1673,6 +1673,12 @@
 		)
 	)
 	(junction
+		(at 207.01 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "284adeaa-ba9e-4abc-8d30-2cb4509d9ad8")
+	)
+	(junction
 		(at 36.83 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1683,6 +1689,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "690b2b65-c864-4cc3-96ac-6a32adcf73e6")
+	)
+	(junction
+		(at 207.01 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "782d5f79-a96c-4352-86d5-9ca14a35fcf5")
 	)
 	(junction
 		(at 148.59 92.71)
@@ -1701,6 +1713,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8efc998-2635-4c64-b638-b5efe18bc7a4")
+	)
+	(junction
+		(at 149.86 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec86a57b-1b42-4999-8ec1-9aa6f0e64024")
 	)
 	(wire
 		(pts
@@ -1721,6 +1739,16 @@
 			(type default)
 		)
 		(uuid "05f6a920-0a84-44fc-a357-adae99745676")
+	)
+	(wire
+		(pts
+			(xy 149.86 90.17) (xy 149.86 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bbce46c-8260-47d1-91ac-542f865ac387")
 	)
 	(wire
 		(pts
@@ -1814,6 +1842,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 86.36) (xy 208.28 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38716ce6-00e3-4781-953f-6484f6a99e8a")
+	)
+	(wire
+		(pts
 			(xy 146.05 85.09) (xy 151.13 85.09)
 		)
 		(stroke
@@ -1831,6 +1869,16 @@
 			(type default)
 		)
 		(uuid "4019b9f9-5e37-4f19-87db-3a251aca6a8a")
+	)
+	(wire
+		(pts
+			(xy 210.82 88.9) (xy 207.01 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d5dc9a-a73c-430c-8796-11794aa21c09")
 	)
 	(wire
 		(pts
@@ -1924,6 +1972,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 87.63) (xy 151.13 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca614e3-0115-42fe-ae85-ab6fef8cf497")
+	)
+	(wire
+		(pts
 			(xy 203.2 81.28) (xy 208.28 81.28)
 		)
 		(stroke
@@ -1934,7 +1992,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 86.36) (xy 208.28 86.36)
+			(xy 203.2 86.36) (xy 207.01 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1974,7 +2032,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 87.63) (xy 151.13 87.63)
+			(xy 146.05 87.63) (xy 149.86 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2004,6 +2062,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 78.74) (xy 208.28 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9017b1-9052-4d17-9231-2dbbb7a997ac")
+	)
+	(wire
+		(pts
 			(xy 148.59 90.17) (xy 148.59 92.71)
 		)
 		(stroke
@@ -2024,6 +2092,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 73.66) (xy 207.01 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8770c8-6b13-4584-9969-37ea445ab45a")
+	)
+	(wire
+		(pts
 			(xy 130.81 46.99) (xy 137.16 46.99)
 		)
 		(stroke
@@ -2031,6 +2109,16 @@
 			(type default)
 		)
 		(uuid "c0086fdb-49ef-4293-a665-eee520740c2a")
+	)
+	(wire
+		(pts
+			(xy 207.01 73.66) (xy 207.01 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3d76010-3f53-4658-809e-c6ae603a913f")
 	)
 	(wire
 		(pts
@@ -2084,7 +2172,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 78.74) (xy 208.28 78.74)
+			(xy 203.2 78.74) (xy 207.01 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2101,6 +2189,16 @@
 			(type default)
 		)
 		(uuid "e2328174-16bc-4e2f-8ab3-a42289dc9f88")
+	)
+	(wire
+		(pts
+			(xy 207.01 88.9) (xy 207.01 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7bf98ef-14f4-4697-96a3-97b871ffa495")
 	)
 	(wire
 		(pts
@@ -2141,6 +2239,16 @@
 			(type default)
 		)
 		(uuid "edda7a69-467a-467c-b3aa-deeee8f2f8e3")
+	)
+	(wire
+		(pts
+			(xy 152.4 90.17) (xy 149.86 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef6379ea-5c25-4110-a823-c9a5367bfb04")
 	)
 	(global_label "V_USB"
 		(shape input)
@@ -2517,6 +2625,73 @@
 			(justify right)
 		)
 		(uuid "faf01c4d-9b6e-4a6b-8c0d-9416873b9bd7")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e070530-b70f-483e-b7ba-bcab3e817eea")
+		(property "Reference" "#PWR037"
+			(at 158.75 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "646c21dd-d746-426a-ae7e-1d494630a42b")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:8P8C")
@@ -3094,6 +3269,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C965804"
+			(at 97.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C965804"
+			(at 97.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Number" "C965804"
+			(at 97.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9fe77db7-2fdc-4c75-a53b-639c8932bf3f")
 		)
@@ -3314,7 +3516,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7641c58f-ff6e-4f31-908b-69f809071df1")
 		(property "Reference" "J5"
@@ -3454,6 +3656,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 215.9 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9522c012-0ab4-48ad-b2c1-07c0c6cdbe4c")
+		(property "Reference" "#PWR013"
+			(at 222.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2c065f3-f998-48b9-a5ea-8265698c98c8")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 22.86 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3513,6 +3782,73 @@
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 210.82 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ce01a2d-1627-4bfb-a11d-76f39396caae")
+		(property "Reference" "#PWR045"
+			(at 217.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0a8ce5d-ec61-479c-9fb7-577a2d2e267e")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/1bafc6f7-07ea-452b-8b4f-66f8063c8934"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)

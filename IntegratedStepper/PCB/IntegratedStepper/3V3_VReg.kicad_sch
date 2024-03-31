@@ -1196,114 +1196,6 @@
 				)
 			)
 		)
-		(symbol "power:VS"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at -5.08 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VS"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VS\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VS_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "VS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 87.63 99.06)
@@ -1364,12 +1256,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a3a7882-d8d8-44db-8d7e-a2c73dda68f0")
-	)
-	(junction
-		(at 223.52 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90d0be87-6e8f-4c08-ad8f-f2ad91278540")
 	)
 	(junction
 		(at 76.2 99.06)
@@ -1605,16 +1491,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 100.33) (xy 223.52 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3dce65-dab5-4cd4-945e-1126d82a4d35")
-	)
-	(wire
-		(pts
 			(xy 38.1 110.49) (xy 46.99 110.49)
 		)
 		(stroke
@@ -1752,26 +1628,6 @@
 			(type default)
 		)
 		(uuid "c94bfb0e-9de6-4c97-b28a-54cda1e43d51")
-	)
-	(wire
-		(pts
-			(xy 185.42 96.52) (xy 189.23 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad11f19-dd2c-4c25-a29c-290cde0ef07d")
-	)
-	(wire
-		(pts
-			(xy 148.59 96.52) (xy 167.64 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d40f198d-b738-4360-8d3b-4a4cf3adecf8")
 	)
 	(wire
 		(pts
@@ -2100,6 +1956,33 @@
 			)
 		)
 		(property "MPN" "C96446"
+			(at 205.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 205.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 205.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C96446"
 			(at 205.74 80.01 0)
 			(effects
 				(font
@@ -2441,6 +2324,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 76.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 76.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C96446"
+			(at 76.2 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "83b173af-b85a-48de-af52-b1659699fe9c")
 		)
@@ -2497,7 +2407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RESC1608X55N"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 194.31 93.98 0)
 			(effects
 				(font
@@ -2597,7 +2507,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C3016414"
+		(property "LCSC Part Number" "C425661"
 			(at 193.04 80.01 0)
 			(effects
 				(font
@@ -2607,6 +2517,24 @@
 			)
 		)
 		(property "MPN" "C3016414"
+			(at 193.04 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C425661"
+			(at 193.04 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C425661"
 			(at 193.04 80.01 0)
 			(effects
 				(font
@@ -2647,17 +2575,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 189.23 96.52 180)
+		(lib_id "power:GND")
+		(at 193.04 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "47572e3a-d47a-4d2c-bb79-aad26cd5965b")
-		(property "Reference" "#PWR013"
-			(at 194.31 92.71 0)
+		(uuid "39a48433-4848-4920-9bd6-4cd6a3220bd9")
+		(property "Reference" "#PWR012"
+			(at 193.04 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,8 +2593,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VS"
-			(at 189.23 101.6 0)
+		(property "Value" "GND"
+			(at 193.04 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2674,7 +2602,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 96.52 0)
+			(at 193.04 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,7 +2611,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 96.52 0)
+			(at 193.04 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +2620,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 189.23 96.52 0)
+			(at 193.04 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2701,12 +2629,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "84d1987c-0401-4854-b6a0-9916950b824a")
+			(uuid "cf6a266b-7bcd-450a-bdbd-1df5cd6067a7")
 		)
 		(instances
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR013")
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40367e87-191f-4738-87b9-e4051520ba13")
+		(property "Reference" "#PWR08"
+			(at 87.63 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29969dd2-aefe-4300-984d-dc1423a24abf")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2856,6 +2850,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 157.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 157.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 157.48 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "40c0edd4-4388-4d49-b55f-dc0082df1eef")
 		)
@@ -2888,17 +2909,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 193.04 134.62 180)
+		(lib_id "power:GND")
+		(at 130.81 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "49fb0a17-331d-4cd7-ae14-f82c38cffe3d")
-		(property "Reference" "#PWR012"
-			(at 198.12 130.81 0)
+		(uuid "4d8be499-b6c4-4d6d-903e-5775c9ff92a2")
+		(property "Reference" "#PWR011"
+			(at 130.81 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2906,8 +2927,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VS"
-			(at 193.04 139.7 0)
+		(property "Value" "GND"
+			(at 130.81 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +2936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 134.62 0)
+			(at 130.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2924,7 +2945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 134.62 0)
+			(at 130.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +2954,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.04 134.62 0)
+			(at 130.81 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,186 +2963,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a6a2d4ed-80ef-4f6b-9b87-3d5a37bff526")
+			(uuid "359a7143-ff9b-4a86-a3b0-358974ce4a97")
 		)
 		(instances
 			(project "IntegratedStepper"
 				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:RMCF0603ZT0R00")
-		(at 167.64 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4ae952fa-6de5-4b19-9231-c0de68fbe30a")
-		(property "Reference" "R5"
-			(at 179.07 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "154k"
-			(at 173.99 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RESC1608X55N"
-			(at 181.61 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES, 0603, Jumper"
-			(at 181.61 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.55"
-			(at 181.61 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" ""
-			(at 181.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" ""
-			(at 181.61 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 181.61 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 181.61 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" "RMCF0603ZT0R00"
-			(at 181.61 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/rmcf0603zt0r00/stackpole-electronics?region=nac"
-			(at 181.61 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Number" "C3016414"
-			(at 167.64 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "C3016414"
-			(at 167.64 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2315dfd-5ec5-44a4-b107-d0c6fbcf380d")
-		)
-		(pin "2"
-			(uuid "7732690b-260d-49ea-b250-e7c5ba1c6166")
-		)
-		(instances
-			(project "Buck_Boost"
-				(path "/18d4aa55-d7d6-40f4-8d77-25657d8a294f"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-			(project "Dot-LED"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/a9d22b06-9d00-4739-b036-54f1b218cb56"
-					(reference "R5")
-					(unit 1)
-				)
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/eadb16b8-295e-4810-8d56-9eb69942c69b"
-					(reference "R6")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3274,6 +3121,33 @@
 			)
 		)
 		(property "MPN" "C96446"
+			(at 240.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 240.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 240.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C96446"
 			(at 240.03 80.01 0)
 			(effects
 				(font
@@ -3461,72 +3335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 223.52 102.87 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67f6a305-6a80-4672-8531-331cc3c805de")
-		(property "Reference" "#PWR010"
-			(at 228.6 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VS"
-			(at 223.52 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6eff4a42-d30c-4055-814f-283028fa6216")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:PMEG6020ER,115")
 		(at 64.77 110.49 180)
 		(unit 1)
@@ -3674,72 +3482,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 130.81 124.46 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "764e1088-ee0e-45ac-b62c-5327be58bcdd")
-		(property "Reference" "#PWR011"
-			(at 135.89 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VS"
-			(at 130.81 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85d22bf8-b23e-4cc6-b7fc-b68af233c6ac")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:0402B102K500NT")
 		(at 228.6 80.01 270)
 		(unit 1)
@@ -3876,7 +3618,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C15849"
+		(property "LCSC Part Number" " C15849"
 			(at 228.6 80.01 0)
 			(effects
 				(font
@@ -3886,6 +3628,33 @@
 			)
 		)
 		(property "MPN" "C15849"
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C15849"
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 228.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C15849"
 			(at 228.6 80.01 0)
 			(effects
 				(font
@@ -3950,7 +3719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RESC1608X55N"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.3 113.03 0)
 			(effects
 				(font
@@ -4050,7 +3819,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C3016414"
+		(property "LCSC Part Number" " C912530"
 			(at 113.03 99.06 0)
 			(effects
 				(font
@@ -4060,6 +3829,24 @@
 			)
 		)
 		(property "MPN" "C3016414"
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C912530"
+			(at 113.03 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C912530"
 			(at 113.03 99.06 0)
 			(effects
 				(font
@@ -4166,72 +3953,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 113.03 124.46 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "949c48d8-5d5b-414e-9e94-f26128ac6faf")
-		(property "Reference" "#PWR015"
-			(at 118.11 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VS"
-			(at 113.03 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9d47a72a-b0e5-47ab-ac25-0ff84dbfa305")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:LMR38020FSQDDARQ1")
 		(at 113.03 91.44 0)
 		(unit 1)
@@ -4242,7 +3963,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7cd82b5-583f-4bde-85ce-ee2d94efbc39")
 		(property "Reference" "IC3"
-			(at 130.81 85.09 0)
+			(at 130.81 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4250,7 +3971,7 @@
 			)
 		)
 		(property "Value" "LMR38020FSQDDARQ1"
-			(at 130.81 87.63 0)
+			(at 130.81 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,6 +4122,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 113.03 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c038f042-843c-455c-bfd5-7c741a9ba71d")
+		(property "Reference" "#PWR015"
+			(at 113.03 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f04ea9d-bcf0-4017-aaef-bcf304631888")
+		)
+		(instances
+			(project "IntegratedStepper"
+				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 107.95 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4479,72 +4266,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VS")
-		(at 87.63 119.38 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c6c6efba-cf7c-4b30-9a26-11167a091f59")
-		(property "Reference" "#PWR08"
-			(at 92.71 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VS"
-			(at 87.63 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "707b33cd-4091-4e42-8639-54ddda2cb530")
-		)
-		(instances
-			(project "IntegratedStepper"
-				(path "/ab592993-dafc-411a-b466-8e8425f43767/d5a65a76-d2a9-4a70-8b8b-adaaf9a3d4cb"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys_Parts:RMCF0603ZT0R00")
 		(at 193.04 105.41 270)
 		(unit 1)
@@ -4554,7 +4275,7 @@
 		(dnp no)
 		(uuid "ddd288df-e1e0-4533-8e5c-437e97a136e3")
 		(property "Reference" "R5"
-			(at 195.58 115.57 0)
+			(at 195.58 117.094 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4569,7 +4290,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RESC1608X55N"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 194.31 119.38 0)
 			(effects
 				(font
@@ -4669,7 +4390,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C101235"
+		(property "LCSC Part Number" " C912530"
 			(at 193.04 105.41 0)
 			(effects
 				(font
@@ -4679,6 +4400,24 @@
 			)
 		)
 		(property "MPN" "C101235"
+			(at 193.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C912530"
+			(at 193.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C912530"
 			(at 193.04 105.41 0)
 			(effects
 				(font
@@ -4864,6 +4603,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 218.44 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 218.44 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 218.44 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f1b9048a-4cd1-4424-a236-842b0420c940")
 		)
@@ -5041,6 +4807,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C14663"
+			(at 97.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae56f9b6-26d7-4c9c-a3b1-6accc4f400f8")
 		)
@@ -5209,7 +5002,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part Number" "C15849"
+		(property "LCSC Part Number" " C15849"
 			(at 87.63 111.76 0)
 			(effects
 				(font
@@ -5219,6 +5012,33 @@
 			)
 		)
 		(property "MPN" "C15849"
+			(at 87.63 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C15849"
+			(at 87.63 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" ""
+			(at 87.63 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" " C15849"
 			(at 87.63 111.76 0)
 			(effects
 				(font

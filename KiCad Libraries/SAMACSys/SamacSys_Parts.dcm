@@ -180,4 +180,10 @@ K
 F https://componentsearchengine.com/Datasheets/1/PTS815 SJG 250 SMTR LFS.pdf
 $ENDCMP
 #
+$CMP EEU-FC1J101LB
+D Aluminium Electrolytic Capacitor, Radial Lead, AEC-Q200, 105?C
+K
+F http://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1209.pdf
+$ENDCMP
+#
 #End Doc Library

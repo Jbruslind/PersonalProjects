@@ -2165,7 +2165,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PMEG6020ER115"
+		(property "Footprint" "SamacSys_Parts:PMEG6020ER115"
 			(at 52.07 5.41 0)
 			(effects
 				(font
@@ -3498,7 +3498,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PMEG6020ER115"
+		(property "Footprint" "SamacSys_Parts:PMEG6020ER115"
 			(at 52.07 16.84 0)
 			(effects
 				(font
@@ -4176,7 +4176,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC127P600X170-9N"
+		(property "Footprint" "SamacSys_Parts:SOIC127P600X170-9N"
 			(at 144.78 186.36 0)
 			(effects
 				(font

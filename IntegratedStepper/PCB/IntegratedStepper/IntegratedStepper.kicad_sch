@@ -12,12 +12,6 @@
 		(uuid "2dbdf8c0-0474-4ad2-8d56-84ba3905a0d4")
 	)
 	(junction
-		(at 69.85 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "391a35e5-77ec-4622-a4b9-eec80f06c4b7")
-	)
-	(junction
 		(at 96.52 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -28,6 +22,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c25271cd-6392-4d64-82e3-22b5c912c643")
+	)
+	(junction
+		(at 68.58 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de38df86-096d-4551-adc8-f490a7c31bad")
 	)
 	(wire
 		(pts
@@ -41,7 +41,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 74.93) (xy 69.85 86.36)
+			(xy 68.58 74.93) (xy 68.58 86.36)
 		)
 		(stroke
 			(width 0)
@@ -61,6 +61,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 96.52) (xy 69.85 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09da7cdb-41b2-4b0e-8dc0-3ffd38ec1750")
+	)
+	(wire
+		(pts
 			(xy 120.65 105.41) (xy 132.08 105.41)
 		)
 		(stroke
@@ -71,7 +81,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 110.49) (xy 71.12 110.49)
+			(xy 68.58 113.03) (xy 71.12 113.03)
 		)
 		(stroke
 			(width 0)
@@ -98,16 +108,6 @@
 			(type default)
 		)
 		(uuid "1802ecae-9b9c-4bd2-aa2c-336cf4dd5c5a")
-	)
-	(wire
-		(pts
-			(xy 104.14 86.36) (xy 69.85 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27684601-f9f1-4285-ab41-bdf686f05a85")
 	)
 	(wire
 		(pts
@@ -331,7 +331,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 86.36) (xy 69.85 110.49)
+			(xy 68.58 86.36) (xy 68.58 113.03)
 		)
 		(stroke
 			(width 0)
@@ -348,6 +348,16 @@
 			(type default)
 		)
 		(uuid "965c8a32-9e2e-4eae-a966-0ebb114f1b5d")
+	)
+	(wire
+		(pts
+			(xy 68.58 86.36) (xy 104.14 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981a2ebb-b3d9-44bd-8914-a5707bef17a4")
 	)
 	(wire
 		(pts
@@ -378,6 +388,16 @@
 			(type default)
 		)
 		(uuid "a4e5b0a5-a147-46cc-9c24-8bf8032fbc3a")
+	)
+	(wire
+		(pts
+			(xy 72.39 96.52) (xy 69.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5167b61-ccd2-43ca-a531-68362fd7ea27")
 	)
 	(bus
 		(pts
@@ -438,6 +458,16 @@
 			(type default)
 		)
 		(uuid "b670ba66-6e81-41bd-9de5-0413364bcf94")
+	)
+	(wire
+		(pts
+			(xy 69.85 106.68) (xy 71.12 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b849824a-e37f-4046-868d-be6bff91cf16")
 	)
 	(wire
 		(pts
@@ -511,7 +541,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 74.93) (xy 69.85 74.93)
+			(xy 71.12 74.93) (xy 68.58 74.93)
 		)
 		(stroke
 			(width 0)
@@ -558,6 +588,28 @@
 			(type default)
 		)
 		(uuid "fe511bc3-83e8-4236-85b3-757dd4f25af5")
+	)
+	(global_label "3V3_VCC"
+		(shape input)
+		(at 72.39 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18481fba-ae0b-438b-aa2a-444dbb862c76")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.479 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "3V3_VCC"
 		(shape input)
@@ -674,7 +726,7 @@
 			(uuid "fcb1e379-073e-426c-bc30-6da3bf79af14")
 		)
 		(pin "V_USB" output
-			(at 71.12 110.49 180)
+			(at 71.12 113.03 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -732,6 +784,16 @@
 				(justify right)
 			)
 			(uuid "eeace12a-0b65-4282-b61f-4947c6b61542")
+		)
+		(pin "3V3_VCC" output
+			(at 71.12 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "90e025d0-0d67-4fc1-9401-77418089f990")
 		)
 		(instances
 			(project "IntegratedStepper"

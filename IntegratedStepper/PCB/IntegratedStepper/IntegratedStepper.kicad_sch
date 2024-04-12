@@ -521,6 +521,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 93.98) (xy 161.29 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5244f08-4e80-4ddc-9cfb-894c042f4e1a")
+	)
+	(wire
+		(pts
 			(xy 99.06 113.03) (xy 90.17 113.03)
 		)
 		(stroke
@@ -588,6 +598,28 @@
 			(type default)
 		)
 		(uuid "fe511bc3-83e8-4236-85b3-757dd4f25af5")
+	)
+	(global_label "3V3_VCC"
+		(shape input)
+		(at 161.29 97.79 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14af8e95-bf7a-4917-b6af-ada412bb9eb6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 108.879 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "3V3_VCC"
 		(shape input)
@@ -960,6 +992,16 @@
 				(justify right)
 			)
 			(uuid "1439ccfd-3ed2-4194-94b2-d43a4d8a86d2")
+		)
+		(pin "3V3_VCC" input
+			(at 161.29 93.98 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "83ceb30b-6f56-4ab0-b25d-0525c23d308f")
 		)
 		(instances
 			(project "IntegratedStepper"

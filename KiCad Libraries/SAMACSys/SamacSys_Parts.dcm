@@ -186,4 +186,10 @@ K
 F http://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1209.pdf
 $ENDCMP
 #
+$CMP XT30PW-F
+D Socket; DC supply; XT30; female; PIN:2; on PCBs; THT; Colour: yellow
+K
+F https://www.tme.eu/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf
+$ENDCMP
+#
 #End Doc Library

@@ -82,7 +82,7 @@ uint8_t CANDriver::getBits(uint32_t value, uint8_t index) {
 void CANDriver::transmit() {
     if(stream.dataType != stream.none) {
         uint32_t identifier = this->identifier;
-        printf("--- Transmitting CAN Frame with ID: %d ---\n", identifier);
+        // printf("--- Transmitting CAN Frame with ID: %d ---\n", identifier);
         uint8_t data[] = {0,0,0,0,0,0,0,0};
         identifier &= ~(bitMask[0] << shr[0]); // clear bits
         switch(stream.dataType) {
@@ -122,7 +122,7 @@ void CANDriver::receive() {
 
     // hardware specific call
     if (_receiveCAN(&identifier, data, &length) ) {
-        printf("--- Recieved CAN Frame with ID: %d ---\n", identifier);
+        // printf("--- Recieved CAN Frame with ID: %d ---\n", identifier);
         uint8_t dataType = getBits(identifier, 0);
         uint8_t command = getBits(identifier, 1);
         uint8_t motorID = getBits(identifier, 2);
@@ -197,7 +197,7 @@ void CANDriver::adminTasks() {
         uint8_t data[] = {0,0,0,0,0,0,0,0};
         memcpy(data, uniqueId, 6);
         memcpy(data+6, versionId, 2);
-        printf("--- Transmitting CAN Frame with ID: %d ---\n", id);
+        // printf("--- Transmitting CAN Frame with ID: %d ---\n", id);
         // hardware specific call
         _transmitCAN(id, data, 8);
     }

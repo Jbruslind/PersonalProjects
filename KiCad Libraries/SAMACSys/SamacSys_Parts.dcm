@@ -186,4 +186,22 @@ K
 F http://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1209.pdf
 $ENDCMP
 #
+$CMP DRV8243HQRXYRQ1
+D Motor/Motion/Ignition Controllers & Drivers Automotive 40-V, 12-A H-Bridge driver with integrated current sensing and feedback
+K
+F 
+$ENDCMP
+#
+$CMP DRV8244HQRYJRQ1
+D Motor / Motion / Ignition Controllers & Drivers Automotive 40-V, 21-A H-Bridge driver with integrated current sensing and feedback 16-VQFN-HR -40 to 125
+K
+F https://www.ti.com/lit/ds/symlink/drv8244-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe
+$ENDCMP
+#
+$CMP DRV8244HQDGQRQ1
+D Bipolar Motor Driver Power MOSFET SPI 28-HTSSOP
+K
+F https://www.ti.com/lit/ds/symlink/drv8244-q1.pdf?ts=1678786213216&ref_url=https%253A%252F%252Fwww.google.com%252F
+$ENDCMP
+#
 #End Doc Library

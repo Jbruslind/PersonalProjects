@@ -1,5 +1,5 @@
 #include <SimpleFOC.h>
-// #include <SimpleFOCCAN.h>
+#include <SimpleFOCCAN.h>
 
 #define CAN_TX 16
 #define CAN_RX 17
@@ -14,12 +14,12 @@ StepperDriver4PWM driver = StepperDriver4PWM(26,25,33,32, 19, 23);
 MagneticSensorSPI sensor = MagneticSensorSPI(AS5048_SPI, 15);
 SPIClass* hspi = new SPIClass(HSPI); 
 
-// CANDriver can = CANDriver(CAN_TX, CAN_RX);
-// CANCommander canCommand = CANCommander(can);
+CANDriver can = CANDriver(CAN_TX, CAN_RX);
+CANCommander canCommand = CANCommander(can);
 Commander command = Commander(Serial);
 
 void onMotor(char* cmd){ command.motor(&motor, cmd); }
-// void doCommanderCAN(char* cmd) { canCommand.motor(&motor, cmd); }
+void doCommanderCAN(char* cmd) { canCommand.motor(&motor, cmd); }
 
 void setup() {
   Serial.begin(115200);
@@ -41,7 +41,7 @@ void setup() {
     // comment out if not needed
   motor.useMonitoring(Serial);
   command.add('M', onMotor, "motor");
-  // canCommand.add('M', doCommanderCAN, (char*)"motor");
+  canCommand.add('M', doCommanderCAN, (char*)"motor");
 
   _delay(1000);
 }
@@ -86,21 +86,21 @@ void moveMotorsfun( void * pvParameters) {
 
   // set control loop type to be used]
   
-  driver.pwm_frequency = 20000;
+  // driver.pwm_frequency = 20000;
   driver.voltage_limit = driver.voltage_power_supply / 2;
   motor.voltage_limit = driver.voltage_power_supply / 2;
   // controller configuration based on the control type 
-  motor.PID_velocity.P = 2;
-  motor.PID_velocity.I = 20;
-  motor.PID_velocity.D = 0;
+  motor.PID_velocity.P = 0.1;
+  motor.PID_velocity.I = 100;
+  motor.PID_velocity.D = 0.001;
   motor.LPF_velocity.Tf = 0.009;
 
   // angle loop controller
   motor.P_angle.P = 20;
-  motor.P_angle.P = 0;
+  motor.P_angle.I = 20;
   motor.P_angle.D = 0;
   // angle loop velocity limit
-  motor.velocity_limit = 30;
+  motor.velocity_limit = 20;
 
   // use monitoring with serial for motor init
   // monitoring port
@@ -108,7 +108,7 @@ void moveMotorsfun( void * pvParameters) {
 
   motor.monitor_downsample = 1000;
   // initialise motor
-  motor.monitor_variables =  _MON_TARGET | _MON_VOLT_Q | _MON_VOLT_D | _MON_VEL | _MON_ANGLE; 
+  // motor.monitor_variables =  _MON_TARGET | _MON_VOLT_Q | _MON_VOLT_D | _MON_VEL | _MON_ANGLE; 
   motor.init();
   // align encoder and start FOC
   motor.initFOC();
@@ -122,5 +122,5 @@ void moveMotorsfun( void * pvParameters) {
 void loop() {
   command.run();
   motor.monitor();
-  // canCommand.runWithCAN();
+  canCommand.runWithCAN();
 }

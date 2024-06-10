@@ -204,4 +204,16 @@ K
 F https://www.ti.com/lit/ds/symlink/drv8244-q1.pdf?ts=1678786213216&ref_url=https%253A%252F%252Fwww.google.com%252F
 $ENDCMP
 #
+$CMP DRV8244SQRYJRQ1
+D Texas Instruments
+K
+F https://www.ti.com/lit/ds/symlink/drv8244-q1.pdf?ts=1659358010230&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDRV8244-Q1
+$ENDCMP
+#
+$CMP DRV8245SQRXZRQ1
+D Motor / Motion / Ignition Controllers & Drivers Automotive 40-V, 32-A H-Bridge driver with integrated current sensing and feedback
+K
+F https://www.ti.com/lit/ds/symlink/drv8245-q1.pdf
+$ENDCMP
+#
 #End Doc Library
